@@ -8,7 +8,7 @@
 
 ### 🔭 Currently building
 
-**[Madar](https://github.com/mtzm2225-ship-it/madar)** — a multi-tenant team-operations platform with a fully Arabic RTL interface: daily tasks with timers, departments and roles, monthly reports, and a developer console. Live at [madar-three-liart.vercel.app](https://madar-three-liart.vercel.app).
+**[Madar](https://github.com/moatazsmohamed/madar)** — a multi-tenant team-operations platform with a fully Arabic RTL interface: daily tasks with timers, departments and roles, monthly reports, and a developer console. Live at [madar-three-liart.vercel.app](https://madar-three-liart.vercel.app).
 
 I own it end-to-end: PostgreSQL schema and row-level permissions, the API layer, the client experience, and the deployment.
 
@@ -25,18 +25,31 @@ I own it end-to-end: PostgreSQL schema and row-level permissions, the API layer,
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-###  Featured work
+###  🌟 Featured work
 
-| Project | What it is | Live |
-|---|---|---|
-| **[madar](https://github.com/mtzm2225-ship-it/madar)** | Multi-tenant team management, Arabic RTL, React Native + Supabase | [open ↗](https://madar-three-liart.vercel.app) |
-| **[portfolio](https://github.com/mtzm2225-ship-it/portfolio)** | Bilingual AR/EN portfolio with an embedded AI assistant | [open ↗](https://portfolio-moataz.vercel.app) |
-| **[ms-wood-works](https://github.com/mtzm2225-ship-it/ms-wood-works)** | Site for a 25-year handcrafted furniture house | [open ↗](https://ms-wood-works.vercel.app) |
+#### [Madar](https://github.com/moatazsmohamed/madar) — multi-tenant team management, fully Arabic RTL
+Daily tasks with timers · departments and roles · monthly reports · developer console
+Built end-to-end: PostgreSQL schema + row-level permissions, API layer, client, deployment.
+`React Native (Expo)` `TypeScript` `Supabase` `PostgreSQL`
+
+[![Madar — Arabic RTL team operations platform](assets/madar.png)](https://madar-three-liart.vercel.app)
+
+#### [Portfolio](https://github.com/moatazsmohamed/portfolio) — bilingual AR/EN site with an embedded AI assistant
+A chat assistant that answers questions about my projects, skills and experience — plus RTL/LTR switching and live visit counters.
+`JavaScript` `CSS` `HTML` `Vercel`
+
+[![Moataz's portfolio site with an AI assistant](assets/portfolio.png)](https://portfolio-moataz.vercel.app)
+
+#### [MS Woodworks](https://github.com/moatazsmohamed/ms-wood-works) — luxury handcrafted furniture house
+Marketing site for Mohamed Ismail & Sons: 25+ years of bespoke and executive office furniture, with a works gallery and materials breakdown.
+`HTML` `CSS` `JavaScript`
+
+[![MS Woodworks furniture website](assets/ms-wood-works.png)](https://ms-wood-works.vercel.app)
 
 ### 📊 Activity
 
-[![Moataz's GitHub stats](https://github-readme-stats.vercel.app/api?username=mtzm2225-ship-it&show_icons=true&theme=tokyo-night&hide_border=true&count_public=true)](https://github.com/mtzm2225-ship-it)
-[![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mtzm2225-ship-it&layout=compact&theme=tokyo-night&hide_border=true)](https://github.com/mtzm2225-ship-it)
+[![Moataz's GitHub stats](https://github-readme-stats.vercel.app/api?username=moatazsmohamed&show_icons=true&theme=tokyo-night&hide_border=true&count_public=true)](https://github.com/moatazsmohamed)
+[![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=moatazsmohamed&layout=compact&theme=tokyo-night&hide_border=true)](https://github.com/moatazsmohamed)
 
 ### 📫 Reach me
 
