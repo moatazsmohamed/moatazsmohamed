@@ -3,6 +3,7 @@
 **Frontend Developer** building **Arabic-first** web & mobile products — from database schema to shipped UI.
 
 🎓 IT student at Borg El Arab Technological University · 📍 Alexandria, Egypt · 🌍 العربية / English
+🌐 Live at [moatazsmohamed.github.io](https://moatazsmohamed.github.io) · [portfolio-moataz.vercel.app](https://portfolio-moataz.vercel.app)
 
 ---
 
