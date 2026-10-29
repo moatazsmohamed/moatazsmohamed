@@ -9,9 +9,11 @@
 
 ### 🔭 Currently building
 
-**[Madar](https://github.com/moatazsmohamed/madar)** — a multi-tenant team-operations platform with a fully Arabic RTL interface: daily tasks with timers, departments and roles, monthly reports, and a developer console. Live at [madar-three-liart.vercel.app](https://madar-three-liart.vercel.app).
+**[WebVault](https://github.com/moatazsmohamed/webvault)** — a private, single-owner dashboard for every site I build: projects, links, and an **AES-256-GCM encrypted credential vault** on Next.js 15 + Supabase, with no privilege escalation and a one-time-code password recovery flow. Live at [webvault-app.vercel.app](https://webvault-app.vercel.app).
 
-I own it end-to-end: PostgreSQL schema and row-level permissions, the API layer, the client experience, and the deployment.
+**[Madar](https://github.com/moatazsmohamed/madar)** — a multi-tenant team-operations platform with a fully Arabic RTL interface: daily tasks with timers, departments and roles, monthly reports, and a developer console. Live at [madar-m.vercel.app](https://madar-m.vercel.app).
+
+I own both end-to-end: PostgreSQL schema and row-level permissions, the API layer, the client experience, and the deployment.
 
 ### 🧰 Stack
 
@@ -28,18 +30,30 @@ I own it end-to-end: PostgreSQL schema and row-level permissions, the API layer,
 
 ###  🌟 Featured work
 
+#### [WebVault](https://github.com/moatazsmohamed/webvault) — encrypted credential vault for every site I ship
+Next.js 15 + Supabase, single owner, bilingual RTL/LTR. Credentials sealed with **AES-256-GCM** (random IV per record, auth tag, blind-indexed usernames), **RLS deny-all** with server-only service-role access, a 5-minute unlock cookie, a 20-reveals/10-minutes reveal gate, brute-force locks tracked per IP *and* per username, and a **one-time-code password recovery** flow that revokes old sessions without ever exposing a secret in a URL, a response or a log.
+`Next.js 15` `TypeScript` `Supabase` `PostgreSQL` `CSP / HSTS`
+
+[![WebVault — encrypted credential vault](assets/webvault.webp)](https://webvault-app.vercel.app)
+
 #### [Madar](https://github.com/moatazsmohamed/madar) — multi-tenant team management, fully Arabic RTL
 Daily tasks with timers · departments and roles · monthly reports · developer console
 Built end-to-end: PostgreSQL schema + row-level permissions, API layer, client, deployment.
 `React Native (Expo)` `TypeScript` `Supabase` `PostgreSQL`
 
-[![Madar — Arabic RTL team operations platform](assets/madar.png)](https://madar-three-liart.vercel.app)
+[![Madar — Arabic RTL team operations platform](assets/madar.png)](https://madar-m.vercel.app)
 
 #### [Portfolio](https://github.com/moatazsmohamed/portfolio) — bilingual AR/EN site with an embedded AI assistant
 A chat assistant that answers questions about my projects, skills and experience — plus RTL/LTR switching and live visit counters.
 `JavaScript` `CSS` `HTML` `Vercel`
 
 [![Moataz's portfolio site with an AI assistant](assets/portfolio.png)](https://portfolio-moataz.vercel.app)
+
+#### [TAFRA](https://github.com/moatazsmohamed/12.tafra) — streetwear storefront with a luxury visual identity
+Single page, no build step: Arabic/English switching, product rendering from one editable `catalog.js`, search + filtering + sorting, WhatsApp checkout and a contact form wired to the same Supabase leads table as my portfolio.
+`JavaScript` `CSS` `HTML` `Supabase` `Vercel`
+
+[![TAFRA — wear your confidence](assets/tafra.webp)](https://tafrawear.vercel.app)
 
 #### [MS Woodworks](https://github.com/moatazsmohamed/ms-wood-works) — luxury handcrafted furniture house
 Marketing site for Mohamed Ismail & Sons: 25+ years of bespoke and executive office furniture, with a works gallery and materials breakdown.
@@ -65,6 +79,7 @@ Marketing site for Mohamed Ismail & Sons: 25+ years of bespoke and executive off
 
 أنا معتز محمد، مطوّر واجهات أمامية من الإسكندرية، طالب IT في جامعة برج العرب التكنولوجية.
 ببني منتجات تشتغل بالعربي من أولها: قاعدة البيانات، الصلاحيات، الواجهة، والنشر.
-أحدث شغلي هو **مدار** — منصة لإدارة فرق العمل متعددة الشركات، فيها المهام اليومية بمؤقّت، الأقسام والأدوار، التقارير الشهرية، وواجهة عربية RTL بالكامل.
+أحدث شغلي **WebVault** — داشبورد خاص لكل مشاريعي فيه خزنة بيانات اعتماد بتشفير AES-256-GCM فوق Next.js 15 و Supabase، مع صلاحيات RLS مقفولة تمامًا واستعادة كلمة المرور بكود مؤقت على الإيميل.
+قبله **مدار** — منصة لإدارة فرق العمل متعددة الشركات، فيها المهام اليومية بمؤقّت، الأقسام والأدوار، التقارير الشهرية، وواجهة عربية RTL بالكامل.
 
 📩 مفتوح لتدريب أو وظيفة Frontend Developer مبتدئ — راسلني على البريد أو LinkedIn.
