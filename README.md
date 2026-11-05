@@ -45,7 +45,7 @@ I’m a frontend developer focused on building useful, accessible products with 
 
 ## 🚀 Selected projects
 
-A few projects I’ve designed and built. Select a preview to open the live project, or use the buttons to visit the demo and source code.
+A selection of my web, mobile, AI, and interactive projects. Open a preview to visit the live project; projects without a public source link are linked to their live demo and portfolio showcase.
 
 <table>
 <tr>
@@ -85,11 +85,101 @@ A multi-tenant team-operations platform with a fully Arabic RTL experience.
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://portfolio-moataz.vercel.app"><img src="assets/portfolio.png" alt="Portfolio website preview" width="100%"></a>
+<a href="https://moataz-portfolio-v3.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/preview-desktop.jpg" alt="Moataz portfolio v3 preview" width="100%"></a>
+
+### 🎞️ Portfolio v3
+
+A reel-inspired portfolio experience with an interactive project showcase and a project-request form.
+
+**Stack:** HTML · CSS · JavaScript
+
+[![Live site](https://img.shields.io/badge/Live_Site-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+[![Source code](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/moatazsmohamed/moataz-portfolio-v3)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://motryx-delta.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/motryx-preview.webp" alt="MOTRYX studio website preview" width="100%"></a>
+
+### 🧠 MOTRYX
+
+A bilingual digital presence for a software and AI studio, with service pages and project case studies.
+
+**Focus:** Web design · Software · AI · Arabic/English
+
+[![Live site](https://img.shields.io/badge/Live_Site-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://motryx-delta.vercel.app)
+[![Portfolio showcase](https://img.shields.io/badge/Portfolio_Showcase-View-181717?style=for-the-badge&logo=github&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://mtzz-ai-pi.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/mtz-ai-preview.webp" alt="MTZ AI workspace preview" width="100%"></a>
+
+### 🤖 MTZ AI
+
+A personal AI workspace with saved conversations and private memory, designed for Arabic and English.
+
+**Focus:** AI workspace · Conversation history · RTL/LTR
+
+[![Live app](https://img.shields.io/badge/Live_App-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://mtzz-ai-pi.vercel.app)
+[![Portfolio showcase](https://img.shields.io/badge/Portfolio_Showcase-View-181717?style=for-the-badge&logo=github&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://pcverse-lac.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/pcverse-preview.webp" alt="PCVERSE interactive 3D computer lab preview" width="100%"></a>
+
+### 🖥️ PCVERSE
+
+An interactive 3D computer lab that helps visitors explore PC components and learn about them in Arabic and English.
+
+**Focus:** Interactive 3D · Computer hardware · Bilingual learning
+
+[![Live experience](https://img.shields.io/badge/Live_Experience-Explore-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://pcverse-lac.vercel.app)
+[![Portfolio showcase](https://img.shields.io/badge/Portfolio_Showcase-View-181717?style=for-the-badge&logo=github&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://computer-explorer-three.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/computer-explorer-preview.webp" alt="3D computer component explorer preview" width="100%"></a>
+
+### 🧩 Computer Explorer
+
+An Arabic 3D computer explorer for rotating, zooming into, and learning about individual hardware components.
+
+**Focus:** 3D interaction · Hardware education · Arabic UI
+
+[![Live experience](https://img.shields.io/badge/Live_Experience-Explore-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://computer-explorer-three.vercel.app)
+[![Portfolio showcase](https://img.shields.io/badge/Portfolio_Showcase-View-181717?style=for-the-badge&logo=github&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://car-showcase-weld.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/marab-preview.webp" alt="مِرَآب interactive car showcase preview" width="100%"></a>
+
+### 🚘 مِرَآب · Marab
+
+An interactive Arabic car showcase with a premium visual experience and hands-on customization.
+
+**Focus:** Interactive showcase · Automotive · Arabic UI
+
+[![Live experience](https://img.shields.io/badge/Live_Experience-Explore-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://car-showcase-weld.vercel.app)
+[![Portfolio showcase](https://img.shields.io/badge/Portfolio_Showcase-View-181717?style=for-the-badge&logo=github&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://portfolio-moataz.vercel.app"><img src="assets/portfolio.png" alt="Personal portfolio preview" width="100%"></a>
 
 ### 🤖 Personal portfolio
 
-A bilingual portfolio with RTL/LTR switching and an AI assistant that answers questions about my projects and experience.
+A bilingual portfolio with RTL/LTR switching and an AI assistant that answers questions about my work and experience.
 
 **Stack:** JavaScript · HTML · CSS · Vercel
 
