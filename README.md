@@ -27,15 +27,13 @@ I’m a frontend developer focused on building useful, accessible products with 
 
 ## 🛠️ Languages & technologies
 
-### Languages
-
+**Languages**  
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### Frameworks, tools & database
-
+**Frameworks, tools & database**  
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
@@ -45,50 +43,102 @@ I’m a frontend developer focused on building useful, accessible products with 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-## 🚀 Featured projects
+## 🚀 Selected projects
 
-### [WebVault](https://github.com/moatazsmohamed/webvault)
-A private dashboard for managing projects, links, and credentials across my sites.
+A few projects I’ve designed and built. Select a preview to open the live project, or use the buttons to visit the demo and source code.
 
-- Built with Next.js 15, TypeScript, Supabase, and PostgreSQL
-- Credential encryption using AES-256-GCM
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://webvault-app.vercel.app"><img src="assets/webvault.webp" alt="WebVault project preview" width="100%"></a>
+
+### 🔐 WebVault
+
+A private dashboard to organize projects, links, and credentials for the sites I build.
+
+- AES-256-GCM credential encryption
 - Bilingual RTL/LTR interface
+- Built with Next.js 15, TypeScript, Supabase, and PostgreSQL
 
-[![Live demo](https://img.shields.io/badge/Live_Demo-Visit-6C63FF?style=flat-square&logo=vercel&logoColor=white)](https://webvault-app.vercel.app)
+[![Live demo](https://img.shields.io/badge/Live_Demo-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://webvault-app.vercel.app)
+[![Source code](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/moatazsmohamed/webvault)
 
-[![WebVault preview](assets/webvault.webp)](https://webvault-app.vercel.app)
+</td>
+<td width="50%" valign="top">
 
-### [Madar](https://github.com/moatazsmohamed/madar)
-A multi-tenant team-operations platform with a fully Arabic RTL interface.
+<a href="https://madar-m.vercel.app"><img src="assets/madar.png" alt="Madar project preview" width="100%"></a>
 
-- Daily tasks with timers, departments and roles, and monthly reports
-- End-to-end implementation: database schema, row-level permissions, API, client, and deployment
+### 🗂️ Madar
+
+A multi-tenant team-operations platform with a fully Arabic RTL experience.
+
+- Daily tasks with timers, departments, roles, and monthly reports
+- End-to-end work across schema, row-level permissions, API, and client
 - Built with React Native (Expo), TypeScript, Supabase, and PostgreSQL
 
-[![Live demo](https://img.shields.io/badge/Live_Demo-Visit-6C63FF?style=flat-square&logo=vercel&logoColor=white)](https://madar-m.vercel.app)
+[![Live demo](https://img.shields.io/badge/Live_Demo-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://madar-m.vercel.app)
+[![Source code](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/moatazsmohamed/madar)
 
-[![Madar preview](assets/madar.png)](https://madar-m.vercel.app)
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### [Portfolio](https://github.com/moatazsmohamed/portfolio)
-A bilingual portfolio with RTL/LTR switching and an AI assistant that answers questions about my work and experience.
+<a href="https://portfolio-moataz.vercel.app"><img src="assets/portfolio.png" alt="Portfolio website preview" width="100%"></a>
 
-[![Live portfolio](https://img.shields.io/badge/Live_Portfolio-Visit-6C63FF?style=flat-square&logo=vercel&logoColor=white)](https://portfolio-moataz.vercel.app) · `JavaScript` `HTML` `CSS`
+### 🤖 Personal portfolio
 
-[![Portfolio preview](assets/portfolio.png)](https://portfolio-moataz.vercel.app)
+A bilingual portfolio with RTL/LTR switching and an AI assistant that answers questions about my projects and experience.
 
-### [TAFRA](https://github.com/moatazsmohamed/12.tafra)
+**Stack:** JavaScript · HTML · CSS · Vercel
+
+[![Live site](https://img.shields.io/badge/Live_Site-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-moataz.vercel.app)
+[![Source code](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/moatazsmohamed/portfolio)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://tafrawear.vercel.app"><img src="assets/tafra.webp" alt="TAFRA storefront preview" width="100%"></a>
+
+### 👕 TAFRA
+
 A bilingual streetwear storefront with product search, filtering, sorting, and WhatsApp checkout.
 
-[![Live store](https://img.shields.io/badge/Live_Store-Visit-6C63FF?style=flat-square&logo=vercel&logoColor=white)](https://tafrawear.vercel.app) · `JavaScript` `HTML` `CSS` `Supabase`
+**Stack:** JavaScript · HTML · CSS · Supabase · Vercel
 
-[![TAFRA preview](assets/tafra.webp)](https://tafrawear.vercel.app)
+[![Live store](https://img.shields.io/badge/Live_Store-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://tafrawear.vercel.app)
+[![Source code](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/moatazsmohamed/12.tafra)
 
-### [MS Woodworks](https://github.com/moatazsmohamed/ms-wood-works)
-A marketing site and works gallery for a handcrafted furniture business.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-[![Live website](https://img.shields.io/badge/Live_Website-Visit-6C63FF?style=flat-square&logo=vercel&logoColor=white)](https://ms-wood-works.vercel.app) · `HTML` `CSS` `JavaScript`
+<a href="https://ms-wood-works.vercel.app"><img src="assets/ms-wood-works.png" alt="MS Woodworks website preview" width="100%"></a>
 
-[![MS Woodworks preview](assets/ms-wood-works.png)](https://ms-wood-works.vercel.app)
+### 🪵 MS Woodworks
+
+A marketing site and works gallery for a handcrafted furniture business, showcasing its work and materials.
+
+**Stack:** HTML · CSS · JavaScript
+
+[![Live site](https://img.shields.io/badge/Live_Site-Visit-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://ms-wood-works.vercel.app)
+[![Source code](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/moatazsmohamed/ms-wood-works)
+
+</td>
+<td width="50%" valign="top">
+
+### ✨ What I focus on
+
+- Arabic-first, RTL-friendly product experiences
+- Responsive web and mobile interfaces
+- Frontend development with React, Next.js, and React Native
+- Connecting UI to databases, APIs, and access-control rules
+
+</td>
+</tr>
+</table>
 
 ## 📊 GitHub activity
 
