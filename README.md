@@ -1,85 +1,96 @@
-# Hi 👋 I'm Moataz — معتز محمد
+<div align="center">
 
-**Frontend Developer** building **Arabic-first** web & mobile products — from database schema to shipped UI.
+# Moataz Mohamed | معتز محمد
 
-🎓 IT student at Borg El Arab Technological University · 📍 Alexandria, Egypt · 🌍 العربية / English
-🌐 Live at [moatazsmohamed.github.io](https://moatazsmohamed.github.io) · [portfolio-moataz.vercel.app](https://portfolio-moataz.vercel.app)
+### Frontend Developer · Arabic-first web & mobile experiences
+
+**I build polished, bilingual products—from database design and permissions to the interface and deployment.**
+
+Alexandria, Egypt · IT student at Borg El Arab Technological University · العربية / English
+
+[Portfolio](https://portfolio-moataz.vercel.app) · [GitHub Pages](https://moatazsmohamed.github.io) · [Email](mailto:mtzm2225@gmail.com) · [LinkedIn](https://www.linkedin.com/in/moataz-mohamed-342b32399)
+
+</div>
 
 ---
 
-### 🔭 Currently building
+## About
 
-**[WebVault](https://github.com/moatazsmohamed/webvault)** — a private, single-owner dashboard for every site I build: projects, links, and an **AES-256-GCM encrypted credential vault** on Next.js 15 + Supabase, with no privilege escalation and a one-time-code password recovery flow. Live at [webvault-app.vercel.app](https://webvault-app.vercel.app).
+I’m a frontend developer focused on building useful, accessible products with thoughtful Arabic RTL and English LTR experiences. I enjoy owning the full product journey—from data models and access control to responsive UI and deployment.
 
-**[Madar](https://github.com/moatazsmohamed/madar)** — a multi-tenant team-operations platform with a fully Arabic RTL interface: daily tasks with timers, departments and roles, monthly reports, and a developer console. Live at [madar-m.vercel.app](https://madar-m.vercel.app).
+Currently, I’m building **WebVault** and **Madar**, alongside client and portfolio projects.
 
-I own both end-to-end: PostgreSQL schema and row-level permissions, the API layer, the client experience, and the deployment.
+## Featured projects
 
-### 🧰 Stack
+### [WebVault](https://github.com/moatazsmohamed/webvault)
+A private dashboard for managing projects, links, and credentials across my sites.
+
+- Built with Next.js 15, TypeScript, Supabase, and PostgreSQL
+- Credential encryption using AES-256-GCM
+- Bilingual RTL/LTR interface
+
+[Live demo](https://webvault-app.vercel.app)
+
+[![WebVault preview](assets/webvault.webp)](https://webvault-app.vercel.app)
+
+### [Madar](https://github.com/moatazsmohamed/madar)
+A multi-tenant team-operations platform with a fully Arabic RTL interface.
+
+- Daily tasks with timers, departments and roles, and monthly reports
+- End-to-end implementation: database schema, row-level permissions, API, client, and deployment
+- Built with React Native (Expo), TypeScript, Supabase, and PostgreSQL
+
+[Live demo](https://madar-m.vercel.app)
+
+[![Madar preview](assets/madar.png)](https://madar-m.vercel.app)
+
+### [Portfolio](https://github.com/moatazsmohamed/portfolio)
+A bilingual portfolio with RTL/LTR switching and an AI assistant that answers questions about my work and experience.
+
+[Visit portfolio](https://portfolio-moataz.vercel.app) · `JavaScript` `HTML` `CSS`
+
+[![Portfolio preview](assets/portfolio.png)](https://portfolio-moataz.vercel.app)
+
+### [TAFRA](https://github.com/moatazsmohamed/12.tafra)
+A bilingual streetwear storefront with product search, filtering, sorting, and WhatsApp checkout.
+
+[Live demo](https://tafrawear.vercel.app) · `JavaScript` `HTML` `CSS` `Supabase`
+
+[![TAFRA preview](assets/tafra.webp)](https://tafrawear.vercel.app)
+
+### [MS Woodworks](https://github.com/moatazsmohamed/ms-wood-works)
+A marketing site and works gallery for a handcrafted furniture business.
+
+[Live demo](https://ms-wood-works.vercel.app) · `HTML` `CSS` `JavaScript`
+
+[![MS Woodworks preview](assets/ms-wood-works.png)](https://ms-wood-works.vercel.app)
+
+## Tech I use
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-###  🌟 Featured work
+## GitHub activity
 
-#### [WebVault](https://github.com/moatazsmohamed/webvault) — encrypted credential vault for every site I ship
-Next.js 15 + Supabase, single owner, bilingual RTL/LTR. Credentials sealed with **AES-256-GCM** (random IV per record, auth tag, blind-indexed usernames), **RLS deny-all** with server-only service-role access, a 5-minute unlock cookie, a 20-reveals/10-minutes reveal gate, brute-force locks tracked per IP *and* per username, and a **one-time-code password recovery** flow that revokes old sessions without ever exposing a secret in a URL, a response or a log.
-`Next.js 15` `TypeScript` `Supabase` `PostgreSQL` `CSP / HSTS`
+<div align="center">
 
-[![WebVault — encrypted credential vault](assets/webvault.webp)](https://webvault-app.vercel.app)
-
-#### [Madar](https://github.com/moatazsmohamed/madar) — multi-tenant team management, fully Arabic RTL
-Daily tasks with timers · departments and roles · monthly reports · developer console
-Built end-to-end: PostgreSQL schema + row-level permissions, API layer, client, deployment.
-`React Native (Expo)` `TypeScript` `Supabase` `PostgreSQL`
-
-[![Madar — Arabic RTL team operations platform](assets/madar.png)](https://madar-m.vercel.app)
-
-#### [Portfolio](https://github.com/moatazsmohamed/portfolio) — bilingual AR/EN site with an embedded AI assistant
-A chat assistant that answers questions about my projects, skills and experience — plus RTL/LTR switching and live visit counters.
-`JavaScript` `CSS` `HTML` `Vercel`
-
-[![Moataz's portfolio site with an AI assistant](assets/portfolio.png)](https://portfolio-moataz.vercel.app)
-
-#### [TAFRA](https://github.com/moatazsmohamed/12.tafra) — streetwear storefront with a luxury visual identity
-Single page, no build step: Arabic/English switching, product rendering from one editable `catalog.js`, search + filtering + sorting, WhatsApp checkout and a contact form wired to the same Supabase leads table as my portfolio.
-`JavaScript` `CSS` `HTML` `Supabase` `Vercel`
-
-[![TAFRA — wear your confidence](assets/tafra.webp)](https://tafrawear.vercel.app)
-
-#### [MS Woodworks](https://github.com/moatazsmohamed/ms-wood-works) — luxury handcrafted furniture house
-Marketing site for Mohamed Ismail & Sons: 25+ years of bespoke and executive office furniture, with a works gallery and materials breakdown.
-`HTML` `CSS` `JavaScript`
-
-[![MS Woodworks furniture website](assets/ms-wood-works.png)](https://ms-wood-works.vercel.app)
-
-### 📊 Activity
-
-[![Moataz's GitHub stats](https://github-readme-stats.vercel.app/api?username=moatazsmohamed&show_icons=true&theme=tokyo-night&hide_border=true&count_public=true)](https://github.com/moatazsmohamed)
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=moatazsmohamed&show_icons=true&theme=tokyo-night&hide_border=true)](https://github.com/moatazsmohamed)
 [![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=moatazsmohamed&layout=compact&theme=tokyo-night&hide_border=true)](https://github.com/moatazsmohamed)
 
-### 📫 Reach me
+</div>
 
-[![Email](https://img.shields.io/badge/mtzm2225@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mtzm2225@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/Moataz__Mohamed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moataz-mohamed-342b32399)
-[![Instagram](https://img.shields.io/badge/@moataz_____mohamed-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/moataz_____mohamed)
-[![WhatsApp](https://img.shields.io/badge/+20_128_009_0726-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/201280090726)
+## تواصل معي
 
----
+أنا معتز محمد، مطوّر واجهات أمامية من الإسكندرية وطالب IT في جامعة برج العرب التكنولوجية. أحب بناء منتجات عربية وإنجليزية بتجربة RTL/LTR متقنة، وأهتم برحلة المنتج كاملة من قاعدة البيانات والصلاحيات إلى الواجهة والنشر.
 
-### نبذة بالعربي
+مفتوح لفرص تدريب أو وظيفة **Frontend Developer** للمبتدئين.
 
-أنا معتز محمد، مطوّر واجهات أمامية من الإسكندرية، طالب IT في جامعة برج العرب التكنولوجية.
-ببني منتجات تشتغل بالعربي من أولها: قاعدة البيانات، الصلاحيات، الواجهة، والنشر.
-أحدث شغلي **WebVault** — داشبورد خاص لكل مشاريعي فيه خزنة بيانات اعتماد بتشفير AES-256-GCM فوق Next.js 15 و Supabase، مع صلاحيات RLS مقفولة تمامًا واستعادة كلمة المرور بكود مؤقت على الإيميل.
-قبله **مدار** — منصة لإدارة فرق العمل متعددة الشركات، فيها المهام اليومية بمؤقّت، الأقسام والأدوار، التقارير الشهرية، وواجهة عربية RTL بالكامل.
-
-📩 مفتوح لتدريب أو وظيفة Frontend Developer مبتدئ — راسلني على البريد أو LinkedIn.
+[البريد الإلكتروني](mailto:mtzm2225@gmail.com) · [LinkedIn](https://www.linkedin.com/in/moataz-mohamed-342b32399) · [Instagram](https://www.instagram.com/moataz_____mohamed) · [WhatsApp](https://wa.me/201280090726)
