@@ -136,6 +136,16 @@ Interactive 3D learning experience for exploring computer hardware.
 
 ---
 
+## How I work
+
+**Understand the problem → shape the experience → build thoughtfully → refine the details.**
+
+I think about the user flow before the UI, treat Arabic and English as first-class experiences, and care about how the product behaves beyond the screen.
+
+| **Product thinking** | **Bilingual UX** | **Frontend craft** |
+| --- | --- | --- |
+| Start with the user need and a clear flow. | Design RTL and LTR intentionally, not as an afterthought. | Build responsive interfaces with attention to interaction and detail. |
+
 ## GitHub at a glance
 
 <div align="center">
@@ -149,19 +159,20 @@ Interactive 3D learning experience for exploring computer hardware.
 
 ---
 
-## Let’s connect
+## Let’s connect · خلّينا نتواصل
 
-Have an idea, a product, or a collaboration in mind? I’d love to hear from you.
+Have an opportunity, a product idea, or a collaboration in mind? I’d love to hear from you.
 
-[![Email](https://img.shields.io/badge/EMAIL-Contact-A75E43?style=flat-square&logo=gmail&logoColor=white)](mailto:mtzm2225@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-315B78?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moataz-mohamed-342b32399)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-Follow-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/moataz_____mohamed)
-[![WhatsApp](https://img.shields.io/badge/WHATSAPP-Message-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/201280090726)
+عندك فرصة أو فكرة مشروع أو حابب نتعاون؟ يسعدني تواصلك.
 
 <div align="center">
 
+[![Email](https://img.shields.io/badge/EMAIL-Say_hello-A75E43?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mtzm2225@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-315B78?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moataz-mohamed-342b32399)
+[![WhatsApp](https://img.shields.io/badge/WHATSAPP-Message-557A62?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/201280090726)
+
 **ببني منتجات رقمية بتجربة عربية وإنجليزية — من الفكرة لحد الإطلاق.**
 
-صُنع بشغف في الإسكندرية 🇪🇬
+*Built with care in Alexandria, Egypt 🇪🇬 · صُنع بشغف في الإسكندرية*
 
 </div>
