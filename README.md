@@ -144,25 +144,49 @@ An interactive 3D computer lab that makes exploring PC components approachable i
 
 </div>
 
-## GitHub
+---
+
+## How I approach building
+
+**Understand the need → shape the experience → build the product → refine the details.**
+
+I aim to make the interface feel clear and natural, keep Arabic and English in mind from the beginning, and connect the polished UI to reliable product behavior.
+
+| **Product thinking** | **Inclusive UX** | **Thoughtful engineering** |
+| --- | --- | --- |
+| Start from the user flow and the problem to solve. | Treat RTL, language, and readability as core design needs. | Care about data, permissions, and maintainable implementation—not only the pixels. |
+
+## GitHub at a glance
 
 <div align="center">
 
-<a href="https://github.com/moatazsmohamed"><img height="165" src="https://github-readme-stats.vercel.app/api?username=moatazsmohamed&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Moataz's GitHub statistics" /></a>
-<a href="https://github.com/moatazsmohamed"><img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moatazsmohamed&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages on GitHub" /></a>
+<a href="https://github.com/moatazsmohamed"><img height="165" src="https://github-readme-stats.vercel.app/api?username=moatazsmohamed&show_icons=true&hide_border=true&rank_icon=github&bg_color=172238&title_color=F1D2A0&text_color=D9DFE7&icon_color=D7A66A&border_color=493127" alt="Moataz's GitHub statistics" /></a>
+<a href="https://github.com/moatazsmohamed"><img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moatazsmohamed&layout=compact&hide_border=true&bg_color=172238&title_color=F1D2A0&text_color=D9DFE7&border_color=493127" alt="Most used languages in Moataz's public repositories" /></a>
 
 </div>
 
-## أهلاً، أنا معتز
+*These cards are generated from public GitHub activity and may take a little time to refresh.*
 
-مطوّر واجهات أمامية وطالب IT من الإسكندرية. ببني منتجات ويب وموبايل بتجربة عربية وإنجليزية من البداية، وباهتم إن التفاصيل تكون واضحة ومريحة للمستخدم.
+## Let’s build something useful
 
-متاح لفرص **Frontend Developer** للمبتدئين، والتدريب، والتعاون على مشاريع مفيدة.
+Have an opportunity, a product idea, or a collaboration in mind? I’m open to **junior frontend roles, internships, and thoughtful collaborations**.
 
 <div align="center">
 
-[البريد الإلكتروني](mailto:mtzm2225@gmail.com) · [LinkedIn](https://www.linkedin.com/in/moataz-mohamed-342b32399) · [Instagram](https://www.instagram.com/moataz_____mohamed) · [WhatsApp](https://wa.me/201280090726)
+[![Email Moataz](https://img.shields.io/badge/EMAIL-Say_hello-A75E43?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mtzm2225@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-315B78?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moataz-mohamed-342b32399)
+[![WhatsApp](https://img.shields.io/badge/WHATSAPP-Message-557A62?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/201280090726)
 
-*Built with care in Alexandria, Egypt 🇪🇬*
+</div>
+
+### بالعربي
+
+أنا معتز، مطوّر واجهات أمامية وطالب IT من الإسكندرية. ببني منتجات ويب وموبايل بتجربة عربية وإنجليزية من البداية، وباهتم إن التفاصيل تكون واضحة ومريحة للمستخدم. **متاح لفرص تدريب أو وظيفة Frontend Developer للمبتدئين، وللتعاون على أفكار مفيدة.**
+
+<div align="center">
+
+[البريد الإلكتروني](mailto:mtzm2225@gmail.com) · [LinkedIn](https://www.linkedin.com/in/moataz-mohamed-342b32399) · [Instagram](https://www.instagram.com/moataz_____mohamed)
+
+*Built with care in Alexandria, Egypt 🇪🇬 · صُنع بشغف في الإسكندرية*
 
 </div>
