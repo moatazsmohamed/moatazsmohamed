@@ -1,66 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430" role="img" aria-labelledby="title desc">
   <title id="title">Moataz Mohamed — Frontend Developer</title>
-  <desc id="desc">Frontend developer from Alexandria, building Arabic-first web and mobile experiences in Arabic and English.</desc>
+  <desc id="desc">A warm, evening-inspired profile banner in deep navy, amber, and cocoa tones to complement Moataz's portrait.</desc>
   <defs>
-    <linearGradient id="bg" x1="48" y1="22" x2="1456" y2="422" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220"/>
-      <stop offset=".52" stop-color="#191B3D"/>
-      <stop offset="1" stop-color="#482078"/>
+    <linearGradient id="night" x1="60" y1="24" x2="1430" y2="415" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A2B"/>
+      <stop offset=".58" stop-color="#172238"/>
+      <stop offset="1" stop-color="#382A2C"/>
     </linearGradient>
-    <linearGradient id="accent" x1="80" y1="0" x2="1420" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#67E8F9"/>
-      <stop offset=".52" stop-color="#A78BFA"/>
-      <stop offset="1" stop-color="#F0ABFC"/>
+    <linearGradient id="warm" x1="120" y1="0" x2="1380" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7A66A"/>
+      <stop offset=".5" stop-color="#F1D2A0"/>
+      <stop offset="1" stop-color="#B97948"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1195 112) rotate(90) scale(300 390)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8B5CF6" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    <radialGradient id="lamp" cx="0" cy="0" r="1" gradientTransform="translate(1190 114) rotate(90) scale(290 390)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D99858" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#D99858" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M38 0H0V38" fill="none" stroke="#C4B5FD" stroke-opacity=".045"/>
-    </pattern>
-    <linearGradient id="card" x1="1080" y1="105" x2="1380" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF" stop-opacity=".105"/>
+    <linearGradient id="glass" x1="1070" y1="82" x2="1390" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".09"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity=".025"/>
     </linearGradient>
+    <pattern id="grain" width="96" height="96" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="12" r=".7" fill="#F5E9D5" fill-opacity=".14"/>
+      <circle cx="54" cy="33" r=".6" fill="#F5E9D5" fill-opacity=".1"/>
+      <circle cx="83" cy="76" r=".7" fill="#F5E9D5" fill-opacity=".12"/>
+      <circle cx="28" cy="67" r=".5" fill="#F5E9D5" fill-opacity=".1"/>
+    </pattern>
     <clipPath id="clip"><rect width="1500" height="430" rx="28"/></clipPath>
   </defs>
 
   <g clip-path="url(#clip)">
-    <rect width="1500" height="430" fill="url(#bg)"/>
-    <rect width="1500" height="430" fill="url(#grid)"/>
-    <rect width="1500" height="430" fill="url(#glow)"/>
+    <rect width="1500" height="430" fill="url(#night)"/>
+    <rect width="1500" height="430" fill="url(#lamp)"/>
+    <rect width="1500" height="430" fill="url(#grain)"/>
 
-    <!-- Quiet decorative orbit stays below the text for legibility. -->
-    <path d="M0 382C245 382 315 337 528 337S835 397 1047 365 1291 314 1500 314" fill="none" stroke="url(#accent)" stroke-opacity=".38" stroke-width="2"/>
-    <path d="M0 401C245 401 330 357 528 357S836 413 1048 383 1300 335 1500 335" fill="none" stroke="url(#accent)" stroke-opacity=".12"/>
-    <circle cx="1065" cy="362" r="4" fill="#E9D5FF" fill-opacity=".9"/>
-    <circle cx="1065" cy="362" r="10" fill="#C4B5FD" fill-opacity=".13"/>
+    <!-- Quiet coastal-night horizon and a warm reflection. -->
+    <path d="M0 348C220 331 400 359 610 345s393-10 566 1 232-5 324-16v100H0V348Z" fill="#0B1422" fill-opacity=".48"/>
+    <path d="M0 348C220 331 400 359 610 345s393-10 566 1 232-5 324-16" fill="none" stroke="#D7A66A" stroke-opacity=".36" stroke-width="1.5"/>
+    <path d="M1030 370c76-8 145-8 220 0M1080 384c54-5 99-5 154 0M1138 397c25-2 49-2 73 0" stroke="#D7A66A" stroke-opacity=".22" stroke-linecap="round"/>
+
+    <!-- Minimal moon and distant lights, echoing the evening portrait. -->
+    <circle cx="1310" cy="93" r="23" fill="#F1D2A0" fill-opacity=".1"/>
+    <circle cx="1310" cy="93" r="13" fill="#F1D2A0" fill-opacity=".78"/>
+    <circle cx="1254" cy="137" r="2" fill="#F1D2A0" fill-opacity=".76"/>
+    <circle cx="1371" cy="167" r="1.7" fill="#F1D2A0" fill-opacity=".58"/>
+    <circle cx="1192" cy="94" r="1.5" fill="#F1D2A0" fill-opacity=".6"/>
 
     <!-- Left identity -->
-    <rect x="92" y="67" width="150" height="34" rx="17" fill="#FFFFFF" fill-opacity=".055" stroke="#C4B5FD" stroke-opacity=".2"/>
-    <circle cx="111" cy="84" r="4" fill="#34D399"/>
-    <text x="125" y="89" fill="#DDD6FE" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.6">ALEXANDRIA · EGYPT</text>
+    <rect x="92" y="66" width="154" height="34" rx="17" fill="#FFFFFF" fill-opacity=".055" stroke="#E7C99D" stroke-opacity=".24"/>
+    <circle cx="111" cy="83" r="4" fill="#D9A36A"/>
+    <text x="125" y="88" fill="#E7D7C2" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">ALEXANDRIA · EGYPT</text>
 
-    <text x="90" y="182" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="58" font-weight="700" letter-spacing="-1.6">MOATAZ</text>
-    <text x="90" y="244" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="58" font-weight="700" letter-spacing="-1.6">MOHAMED</text>
-    <rect x="94" y="267" width="56" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="92" y="307" fill="#E9D5FF" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2.5">FRONTEND DEVELOPER</text>
-    <text x="92" y="340" fill="#CBD5E1" font-family="Arial,sans-serif" font-size="17">Arabic-first web &amp; mobile experiences</text>
+    <text x="90" y="185" fill="#FFFDF9" font-family="Arial,sans-serif" font-size="60" font-weight="700" letter-spacing="-1.8">MOATAZ</text>
+    <text x="90" y="249" fill="#FFFDF9" font-family="Arial,sans-serif" font-size="60" font-weight="700" letter-spacing="-1.8">MOHAMED</text>
+    <rect x="94" y="272" width="54" height="3" rx="1.5" fill="url(#warm)"/>
+    <text x="92" y="312" fill="#E7C99D" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2.4">FRONTEND DEVELOPER</text>
+    <text x="92" y="345" fill="#D9DFE7" font-family="Arial,sans-serif" font-size="17">Thoughtful web &amp; mobile experiences</text>
 
-    <!-- Right identity panel -->
-    <rect x="1060" y="70" width="350" height="222" rx="24" fill="url(#card)" stroke="#DDD6FE" stroke-opacity=".19"/>
-    <rect x="1060" y="70" width="3" height="222" rx="1.5" fill="url(#accent)"/>
-    <text x="1370" y="157" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="62" font-weight="700" text-anchor="end">معتز</text>
-    <text x="1370" y="207" fill="#DDD6FE" font-family="Arial,sans-serif" font-size="29" font-weight="500" text-anchor="end">محمد</text>
-    <line x1="1110" y1="230" x2="1370" y2="230" stroke="#DDD6FE" stroke-opacity=".18"/>
-    <text x="1370" y="263" fill="#C4B5FD" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" text-anchor="end">ARABIC RTL  ·  ENGLISH LTR</text>
+    <!-- Bilingual signature panel -->
+    <rect x="1050" y="72" width="360" height="220" rx="24" fill="url(#glass)" stroke="#E7C99D" stroke-opacity=".2"/>
+    <rect x="1050" y="72" width="3" height="220" rx="1.5" fill="url(#warm)"/>
+    <text x="1366" y="160" fill="#FFFDF9" font-family="Arial,sans-serif" font-size="64" font-weight="700" text-anchor="end">معتز</text>
+    <text x="1366" y="210" fill="#E7C99D" font-family="Arial,sans-serif" font-size="30" font-weight="500" text-anchor="end">محمد</text>
+    <line x1="1100" y1="233" x2="1366" y2="233" stroke="#E7C99D" stroke-opacity=".22"/>
+    <text x="1366" y="265" fill="#D9C3A6" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.35" text-anchor="end">ARABIC RTL  ·  ENGLISH LTR</text>
 
-    <!-- Availability pill -->
-    <rect x="1110" y="318" width="260" height="46" rx="23" fill="#FFFFFF" fill-opacity=".065" stroke="#C4B5FD" stroke-opacity=".24"/>
-    <circle cx="1137" cy="341" r="5" fill="#34D399"/>
-    <text x="1155" y="346" fill="#F8FAFC" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing=".65">OPEN TO OPPORTUNITIES</text>
+    <!-- Availability badge -->
+    <rect x="1110" y="319" width="256" height="46" rx="23" fill="#FFFFFF" fill-opacity=".065" stroke="#E7C99D" stroke-opacity=".24"/>
+    <circle cx="1137" cy="342" r="5" fill="#D9A36A"/>
+    <text x="1155" y="347" fill="#FFF9F0" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing=".45">OPEN TO OPPORTUNITIES</text>
   </g>
 
-  <rect x="1" y="1" width="1498" height="428" rx="27" fill="none" stroke="#C4B5FD" stroke-opacity=".2" stroke-width="2"/>
+  <rect x="1" y="1" width="1498" height="428" rx="27" fill="none" stroke="#E7C99D" stroke-opacity=".2" stroke-width="2"/>
 </svg>
