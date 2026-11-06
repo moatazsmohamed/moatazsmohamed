@@ -1,18 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="132" viewBox="0 0 1200 132" role="img" aria-labelledby="title desc">
+  <title id="title">Designed for every direction</title>
+  <desc id="desc">Arabic right-to-left and English left-to-right interfaces, designed with care.</desc>
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="900" y2="150" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#111827"/><stop offset=".52" stop-color="#312E81"/><stop offset="1" stop-color="#6D28D9"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172238"/>
+      <stop offset=".58" stop-color="#29252D"/>
+      <stop offset="1" stop-color="#493127"/>
     </linearGradient>
-    <linearGradient id="t" x1="102" y1="31" x2="790" y2="119" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#67E8F9"/><stop offset=".55" stop-color="#C4B5FD"/><stop offset="1" stop-color="#F0ABFC"/>
+    <linearGradient id="accent" x1="72" y1="20" x2="1120" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7A66A"/>
+      <stop offset=".52" stop-color="#F1D2A0"/>
+      <stop offset="1" stop-color="#B97948"/>
     </linearGradient>
   </defs>
-  <rect width="900" height="150" rx="24" fill="url(#g)"/>
-  <path d="M0 118C190 30 310 176 485 89s257-53 415-21" stroke="#C4B5FD" stroke-opacity=".18" stroke-width="2"/>
-  <path d="M0 132C185 47 317 189 495 103s246-50 405-20" stroke="#C4B5FD" stroke-opacity=".12"/>
-  <circle cx="82" cy="75" r="28" fill="#FFFFFF" fill-opacity=".1" stroke="#C4B5FD" stroke-opacity=".4"/>
-  <path d="M72 75h20M82 65v20" stroke="#E9D5FF" stroke-width="2" stroke-linecap="round"/>
-  <text x="132" y="68" fill="url(#t)" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">DESIGNING FOR EVERY DIRECTION</text>
-  <text x="132" y="105" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="25" font-weight="700">Arabic RTL <tspan fill="#A78BFA">×</tspan> English LTR <tspan fill="#A78BFA">×</tspan> Thoughtful UI</text>
-  <text x="847" y="91" fill="#E9D5FF" font-family="Arial,sans-serif" font-size="28" font-weight="600" text-anchor="end">من الفكرة للمنتج</text>
+  <rect width="1200" height="132" rx="22" fill="url(#bg)"/>
+  <path d="M0 112C218 112 291 57 477 57s252 52 376 34 220-48 347-48" fill="none" stroke="url(#accent)" stroke-opacity=".28" stroke-width="1.5"/>
+  <circle cx="83" cy="66" r="24" fill="#FFFFFF" fill-opacity=".06" stroke="#E7C99D" stroke-opacity=".34"/>
+  <path d="M73 66h20m-7-7 7 7-7 7" fill="none" stroke="#F1D2A0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="128" y="52" fill="#D9C3A6" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2.4">PRODUCT UI, BUILT FOR PEOPLE</text>
+  <text x="128" y="85" fill="#FFF9F0" font-family="Arial,sans-serif" font-size="24" font-weight="700">Arabic RTL <tspan fill="#D7A66A">·</tspan> English LTR <tspan fill="#D7A66A">·</tspan> Thoughtful experiences</text>
+  <text x="1120" y="77" fill="#F1D2A0" font-family="Arial,sans-serif" font-size="27" font-weight="600" text-anchor="end">من أول يوم</text>
+  <rect x="1" y="1" width="1198" height="130" rx="21" fill="none" stroke="#E7C99D" stroke-opacity=".17"/>
 </svg>
