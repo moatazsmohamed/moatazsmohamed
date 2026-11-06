@@ -1,16 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430" role="img" aria-labelledby="title desc">
   <title id="title">Moataz Mohamed — Frontend Developer</title>
-  <desc id="desc">Frontend developer from Alexandria, building Arabic-first web and mobile experiences in Arabic and English.</desc>
+  <desc id="desc">Animated banner for Moataz Mohamed, frontend developer from Alexandria, building Arabic-first web and mobile experiences.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1500" y2="430" gradientUnits="userSpaceOnUse">
       <stop stop-color="#111827"/>
       <stop offset=".55" stop-color="#211B4B"/>
       <stop offset="1" stop-color="#4C1D75"/>
+      <animate attributeName="x2" values="1200;1500;1200" dur="12s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="accent" x1="100" y1="0" x2="1390" y2="0" gradientUnits="userSpaceOnUse">
       <stop stop-color="#67E8F9"/>
       <stop offset=".52" stop-color="#A78BFA"/>
       <stop offset="1" stop-color="#F0ABFC"/>
+      <animate attributeName="x1" values="100;360;100" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1390;1120;1390" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
     <radialGradient id="orb" cx="0" cy="0" r="1" gradientTransform="translate(1190 125) rotate(90) scale(265 360)" gradientUnits="userSpaceOnUse">
       <stop stop-color="#8B5CF6" stop-opacity=".32"/>
@@ -20,6 +23,10 @@
       <path d="M40 0H0V40" fill="none" stroke="#C4B5FD" stroke-opacity=".055"/>
     </pattern>
     <clipPath id="clip"><rect width="1500" height="430" rx="28"/></clipPath>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
   <g clip-path="url(#clip)">
@@ -27,30 +34,41 @@
     <rect width="1500" height="430" fill="url(#grid)"/>
     <rect width="1500" height="430" fill="url(#orb)"/>
 
-    <!-- Subtle flowing line, kept to the lower background so it never crosses the text. -->
-    <path d="M0 365C230 365 345 290 535 290S860 370 1040 330s270-105 460-105" fill="none" stroke="url(#accent)" stroke-opacity=".34" stroke-width="2"/>
-    <path d="M0 385C250 385 355 314 535 314s322 70 495 34 275-100 470-100" fill="none" stroke="url(#accent)" stroke-opacity=".14" stroke-width="1"/>
+    <!-- Slow, subtle motion stays in the lower background and away from the copy. -->
+    <path d="M0 365C230 365 345 290 535 290S860 370 1040 330s270-105 460-105" fill="none" stroke="url(#accent)" stroke-opacity=".34" stroke-width="2">
+      <animate attributeName="stroke-opacity" values=".22;.52;.22" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 385C250 385 355 314 535 314s322 70 495 34 275-100 470-100" fill="none" stroke="url(#accent)" stroke-opacity=".14" stroke-width="1">
+      <animate attributeName="stroke-opacity" values=".08;.24;.08" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="0" cy="365" r="5" fill="#E9D5FF" filter="url(#softGlow)">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M0 0C230 0 345-75 535-75S860 5 1040-35s270-105 460-105"/>
+    </circle>
 
-    <!-- Left identity -->
+    <!-- Location pill -->
     <rect x="92" y="72" width="126" height="34" rx="17" fill="#FFFFFF" fill-opacity=".07" stroke="#C4B5FD" stroke-opacity=".24"/>
     <circle cx="111" cy="89" r="4" fill="#34D399"/>
     <text x="125" y="94" fill="#E9D5FF" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.7">ALEXANDRIA · EG</text>
 
+    <!-- Name and role -->
     <text x="92" y="190" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="60" font-weight="700" letter-spacing="-1.6">MOATAZ</text>
     <text x="92" y="254" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="60" font-weight="700" letter-spacing="-1.6">MOHAMED</text>
     <rect x="94" y="280" width="54" height="3" rx="1.5" fill="url(#accent)"/>
     <text x="92" y="320" fill="#DDD6FE" font-family="Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="2.3">FRONTEND DEVELOPER</text>
     <text x="92" y="354" fill="#E2E8F0" font-family="Arial,sans-serif" font-size="17">Arabic-first web &amp; mobile experiences</text>
 
-    <!-- Right bilingual identity -->
+    <!-- Arabic / English identity -->
     <line x1="1055" y1="92" x2="1055" y2="290" stroke="#C4B5FD" stroke-opacity=".22"/>
     <text x="1370" y="165" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="66" font-weight="700" text-anchor="end">معتز</text>
     <text x="1370" y="220" fill="#DDD6FE" font-family="Arial,sans-serif" font-size="31" font-weight="500" text-anchor="end">محمد</text>
-    <text x="1370" y="264" fill="#C4B5FD" font-family="Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="2" text-anchor="end">ARABIC RTL  ·  ENGLISH LTR</text>
+    <text x="1370" y="264" fill="#C4B5FD" font-family="Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="2" text-anchor="end">ARABIC RTL · ENGLISH LTR</text>
 
-    <!-- Work status pill: ample width and balanced padding -->
+    <!-- Animated availability indicator -->
     <rect x="1110" y="318" width="260" height="48" rx="24" fill="#FFFFFF" fill-opacity=".07" stroke="#C4B5FD" stroke-opacity=".28"/>
-    <circle cx="1137" cy="342" r="5" fill="#34D399"/>
+    <circle cx="1137" cy="342" r="5" fill="#34D399">
+      <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="5;6;5" dur="2s" repeatCount="indefinite"/>
+    </circle>
     <text x="1155" y="347" fill="#F8FAFC" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing=".7">OPEN TO OPPORTUNITIES</text>
   </g>
 
