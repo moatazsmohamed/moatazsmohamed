@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,45:312e81,100:7c3aed&height=220&section=header&text=Moataz%20Mohamed&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Frontend%20Developer%20%7C%20Arabic-first%20digital%20experiences&descAlignY=60&descSize=17" alt="Moataz Mohamed — Frontend Developer" width="100%" />
+<img src="assets/profile-banner.svg" alt="Moataz Mohamed — Frontend Developer from Alexandria, building Arabic-first web and mobile experiences" width="100%" />
 
 <a href="https://readme-typing-svg.demolab.com"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+for+Arabic+RTL+%26+English+LTR;Turning+ideas+into+real+products;Frontend+%7C+Web+%7C+Mobile+%7C+Product" alt="Building for Arabic RTL and English LTR; turning ideas into real products" /></a>
 
@@ -18,6 +18,8 @@
 
 ---
 
+<img src="assets/rtl-ltr-strip.svg" alt="Designing for every direction: Arabic RTL, English LTR, thoughtful user interfaces" width="100%" />
+
 ## ✦ The short version
 
 I build thoughtful, responsive products that feel natural in both **Arabic RTL** and **English LTR**. My work spans the whole experience—from shaping data and permissions to crafting the UI and shipping the product.
@@ -28,11 +30,15 @@ I build thoughtful, responsive products that feel natural in both **Arabic RTL**
 
 ## ✦ My toolkit
 
-<p>
+<p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,reactnative,tailwind,supabase,postgres,git,github,vercel&perline=7" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, React Native, Tailwind, Supabase, PostgreSQL, Git, GitHub, and Vercel" />
 </p>
 
+<div align="center">
+
 <sub>Languages: Arabic (native) · English</sub>
+
+</div>
 
 ## ✦ Project gallery
 
@@ -175,6 +181,12 @@ I like projects where design meets useful engineering: clear interfaces, real da
 </td>
 </tr>
 </table>
+
+<div align="center">
+
+[![Explore the full portfolio](https://img.shields.io/badge/Explore_the_full_portfolio-7c3aed?style=for-the-badge&logo=vercel&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+
+</div>
 
 ## ✦ GitHub at a glance
 
