@@ -2,45 +2,32 @@
 
 <img src="assets/profile-banner.svg" alt="Moataz Mohamed — Frontend Developer from Alexandria, building Arabic-first web and mobile experiences" width="100%" />
 
-### معتز محمد · Frontend Developer
-
-**I turn ideas into polished web & mobile products — with Arabic RTL and English LTR at their core.**
-
-📍 Alexandria, Egypt &nbsp;·&nbsp; 🎓 IT Student &nbsp;·&nbsp; 🌍 Arabic & English
-
 [![Portfolio](https://img.shields.io/badge/Explore_my_work-Portfolio-7c3aed?style=for-the-badge&logo=vercel&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/Let's_connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moataz-mohamed-342b32399)
 [![Email](https://img.shields.io/badge/Get_in_touch-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mtzm2225@gmail.com)
 
 </div>
 
----
-
 <img src="assets/rtl-ltr-strip.svg" alt="Designing for every direction: Arabic RTL, English LTR, thoughtful user interfaces" width="100%" />
 
-## ✦ The short version
+## About
 
-I build thoughtful, responsive products that feel natural in both **Arabic RTL** and **English LTR**. My work spans the whole experience—from shaping data and permissions to crafting the UI and shipping the product.
+I’m **Moataz**, a frontend developer and IT student based in Alexandria, Egypt. I build responsive web and mobile products with **Arabic RTL and English LTR** considered from the start—not added as an afterthought.
 
-| 🔭 Building | 🎯 Focus | 💼 Open to |
-| --- | --- | --- |
-| **WebVault** & **Madar** | Frontend · Product UI · RTL/LTR | Junior frontend roles · Internships · Collaborations |
+I enjoy the full product journey: turning an idea into a useful interface, connecting it to data and permissions, and shipping it for people to use.
 
-## ✦ My toolkit
+- 🔭 Building **WebVault** and **Madar**
+- 🧭 Focused on frontend engineering, product UI, and bilingual experiences
+- 💼 Open to junior frontend roles, internships, and collaborations
+- 🗣️ Arabic (native) · English
+
+## Tech stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,reactnative,tailwind,supabase,postgres,git,github,vercel&perline=7" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, React Native, Tailwind, Supabase, PostgreSQL, Git, GitHub, and Vercel" />
 </p>
 
-<div align="center">
-
-<sub>Languages: Arabic (native) · English</sub>
-
-</div>
-
-## ✦ Project gallery
-
-**A selection of products and experiments.** Click any image to open its live experience; source links are included when publicly available.
+## Selected projects
 
 <table>
 <tr>
@@ -48,25 +35,21 @@ I build thoughtful, responsive products that feel natural in both **Arabic RTL**
 <a href="https://webvault-app.vercel.app"><img src="assets/webvault.webp" alt="WebVault dashboard preview" width="100%"></a>
 
 ### 🔐 WebVault
-A private dashboard for managing websites, projects, and credentials.
+A private dashboard for organizing websites, projects, and credentials, with an encrypted credential vault and a bilingual RTL/LTR interface.
 
-`Next.js` `TypeScript` `Supabase` `PostgreSQL`
+`Next.js` · `TypeScript` · `Supabase` · `PostgreSQL`
 
-AES-256-GCM encrypted credential vault · Bilingual RTL/LTR interface
-
-[**↗ Live demo**](https://webvault-app.vercel.app) · [**⌘ Source**](https://github.com/moatazsmohamed/webvault)
+[Live demo ↗](https://webvault-app.vercel.app) · [Source code ↗](https://github.com/moatazsmohamed/webvault)
 </td>
 <td width="50%" valign="top">
 <a href="https://madar-m.vercel.app"><img src="assets/madar.png" alt="Madar Arabic team operations platform preview" width="100%"></a>
 
 ### 🗂️ Madar · مدار
-A multi-tenant team-operations platform with a fully Arabic RTL experience.
+A multi-tenant team-operations platform with a fully Arabic RTL experience: tasks and timers, departments, roles, and reports.
 
-`React Native` `Expo` `TypeScript` `Supabase`
+`React Native` · `Expo` · `TypeScript` · `Supabase`
 
-Tasks and timers · Departments and roles · Reports
-
-[**↗ Live demo**](https://madar-m.vercel.app) · [**⌘ Source**](https://github.com/moatazsmohamed/madar)
+[Live demo ↗](https://madar-m.vercel.app) · [Source code ↗](https://github.com/moatazsmohamed/madar)
 </td>
 </tr>
 <tr>
@@ -76,9 +59,9 @@ Tasks and timers · Departments and roles · Reports
 ### 🎞️ Portfolio v3
 A reel-inspired portfolio with interactive project posters and a project inquiry form.
 
-`HTML` `CSS` `JavaScript`
+`HTML` · `CSS` · `JavaScript`
 
-[**↗ Explore the experience**](https://moataz-portfolio-v3.vercel.app) · [**⌘ Source**](https://github.com/moatazsmohamed/moataz-portfolio-v3)
+[Explore ↗](https://moataz-portfolio-v3.vercel.app) · [Source code ↗](https://github.com/moatazsmohamed/moataz-portfolio-v3)
 </td>
 <td width="50%" valign="top">
 <a href="https://motryx-delta.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/motryx-preview.webp" alt="MOTRYX software and AI studio website preview" width="100%"></a>
@@ -86,9 +69,9 @@ A reel-inspired portfolio with interactive project posters and a project inquiry
 ### 🧠 MOTRYX
 A bilingual digital presence for a software and AI studio, with service pages and case studies.
 
-`Web design` `Software` `AI` `Arabic / English`
+`Web design` · `Software` · `AI` · `Arabic / English`
 
-[**↗ Visit MOTRYX**](https://motryx-delta.vercel.app) · [**✦ More projects**](https://moataz-portfolio-v3.vercel.app)
+[Visit MOTRYX ↗](https://motryx-delta.vercel.app) · [More projects ↗](https://moataz-portfolio-v3.vercel.app)
 </td>
 </tr>
 <tr>
@@ -96,120 +79,58 @@ A bilingual digital presence for a software and AI studio, with service pages an
 <a href="https://mtzz-ai-pi.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/mtz-ai-preview.webp" alt="MTZ AI bilingual workspace preview" width="100%"></a>
 
 ### 🤖 MTZ AI
-A bilingual AI workspace with saved conversations and personal memory.
+A bilingual AI workspace for saved conversations and personal memory.
 
-`AI` `Arabic / English` `RTL / LTR`
+`AI` · `Arabic / English` · `RTL / LTR`
 
-[**↗ Open MTZ AI**](https://mtzz-ai-pi.vercel.app) · [**✦ More projects**](https://moataz-portfolio-v3.vercel.app)
+[Open MTZ AI ↗](https://mtzz-ai-pi.vercel.app) · [More projects ↗](https://moataz-portfolio-v3.vercel.app)
 </td>
 <td width="50%" valign="top">
 <a href="https://pcverse-lac.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/pcverse-preview.webp" alt="PCVERSE interactive 3D computer lab preview" width="100%"></a>
 
 ### 🖥️ PCVERSE
-An interactive 3D computer lab that makes exploring PC components fun and bilingual.
+An interactive 3D computer lab for exploring hardware in Arabic and English.
 
-`Interactive 3D` `Computer hardware` `Bilingual learning`
+`Interactive 3D` · `Computer hardware` · `Bilingual learning`
 
-[**↗ Explore PCVERSE**](https://pcverse-lac.vercel.app) · [**✦ More projects**](https://moataz-portfolio-v3.vercel.app)
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://computer-explorer-three.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/computer-explorer-preview.webp" alt="Computer Explorer 3D components preview" width="100%"></a>
-
-### 🧩 Computer Explorer
-A 3D Arabic guide to computer components, with interactive rotation and zoom.
-
-`Interactive 3D` `Computer hardware` `Arabic UI`
-
-[**↗ Explore**](https://computer-explorer-three.vercel.app) · [**✦ More projects**](https://moataz-portfolio-v3.vercel.app)
-</td>
-<td width="50%" valign="top">
-<a href="https://car-showcase-weld.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/marab-preview.webp" alt="Marab Arabic car showcase preview" width="100%"></a>
-
-### 🚘 مِرَآب · Marab
-An interactive Arabic car showcase with customization and a premium visual experience.
-
-`Interactive showcase` `Automotive` `Arabic UI`
-
-[**↗ Visit Marab**](https://car-showcase-weld.vercel.app) · [**✦ More projects**](https://moataz-portfolio-v3.vercel.app)
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://tafrawear.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/tafra-preview.webp" alt="TAFRA bilingual fashion store preview" width="100%"></a>
-
-### 👕 TAFRA
-A bilingual fashion storefront with search, filters, and WhatsApp ordering.
-
-`JavaScript` `HTML` `CSS` `Supabase`
-
-[**↗ Visit store**](https://tafrawear.vercel.app) · [**⌘ Source**](https://github.com/moatazsmohamed/12.tafra)
-</td>
-<td width="50%" valign="top">
-<a href="https://ms-wood-works.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/mswood-preview.webp" alt="MS Woodworks furniture website preview" width="100%"></a>
-
-### 🪵 MS Woodworks
-A showcase website for a handcrafted furniture business.
-
-`HTML` `CSS` `JavaScript`
-
-[**↗ Visit website**](https://ms-wood-works.vercel.app) · [**⌘ Source**](https://github.com/moatazsmohamed/ms-wood-works)
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://portfolio-moataz.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/portfolio-preview.webp" alt="First bilingual portfolio preview" width="100%"></a>
-
-### 🌐 Personal Portfolio
-My earlier bilingual portfolio, featuring RTL/LTR switching and an AI assistant.
-
-`JavaScript` `HTML` `CSS`
-
-[**↗ Visit portfolio**](https://portfolio-moataz.vercel.app) · [**⌘ Source**](https://github.com/moatazsmohamed/portfolio)
-</td>
-<td width="50%" valign="top">
-
-### ✨ The common thread
-
-I like projects where design meets useful engineering: clear interfaces, real data, thoughtful access rules, and language support built in from day one.
-
-[**See the full portfolio ↗**](https://moataz-portfolio-v3.vercel.app)
-
+[Explore PCVERSE ↗](https://pcverse-lac.vercel.app) · [More projects ↗](https://moataz-portfolio-v3.vercel.app)
 </td>
 </tr>
 </table>
 
+### More projects
+
+- 🧩 **[Computer Explorer](https://computer-explorer-three.vercel.app)** — interactive 3D guide to computer components, in Arabic.
+- 🚘 **[مِرَآب · Marab](https://car-showcase-weld.vercel.app)** — Arabic interactive car showcase with customization.
+- 👕 **[TAFRA](https://tafrawear.vercel.app)** — bilingual fashion storefront with search, filters, and WhatsApp ordering · [Source](https://github.com/moatazsmohamed/12.tafra).
+- 🌐 **[Personal Portfolio](https://portfolio-moataz.vercel.app)** — bilingual portfolio with an AI assistant · [Source](https://github.com/moatazsmohamed/portfolio).
+- 🪵 **[MS Woodworks](https://ms-wood-works.vercel.app)** — handcrafted furniture business website · [Source](https://github.com/moatazsmohamed/ms-wood-works).
+
 <div align="center">
 
-[![Explore the full portfolio](https://img.shields.io/badge/Explore_the_full_portfolio-7c3aed?style=for-the-badge&logo=vercel&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
+[![Explore all projects](https://img.shields.io/badge/Explore_all_projects-Portfolio-7c3aed?style=for-the-badge&logo=vercel&logoColor=white)](https://moataz-portfolio-v3.vercel.app)
 
 </div>
 
-## ✦ GitHub at a glance
+## GitHub activity
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=moatazsmohamed&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Moataz's GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moatazsmohamed&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages" />
+<a href="https://github.com/moatazsmohamed"><img height="165" src="https://github-readme-stats.vercel.app/api?username=moatazsmohamed&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Moataz's GitHub stats" /></a>
+<a href="https://github.com/moatazsmohamed"><img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moatazsmohamed&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages" /></a>
 
 </div>
 
-## ✦ Let’s connect
+## تواصل معي
 
-Have an idea, an opportunity, or just want to say hello? I’d love to hear from you.
+أنا معتز محمد، مطوّر واجهات أمامية من الإسكندرية وطالب IT. ببني منتجات رقمية بتجربة عربية وإنجليزية من البداية، وباهتم بالتفاصيل من الواجهة لحد ربط البيانات والنشر.
 
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:mtzm2225@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moataz-mohamed-342b32399)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/moataz_____mohamed)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Message-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/201280090726)
+متاح لفرص تدريب أو وظيفة **Frontend Developer** للمبتدئين.
 
----
+[البريد الإلكتروني](mailto:mtzm2225@gmail.com) · [LinkedIn](https://www.linkedin.com/in/moataz-mohamed-342b32399) · [Instagram](https://www.instagram.com/moataz_____mohamed) · [WhatsApp](https://wa.me/201280090726)
 
 <div align="center">
 
-**ببني منتجات رقمية بتجربة عربية وإنجليزية — من الفكرة لحد الإطلاق.**
-
-صُنع بشغف في الإسكندرية 🇪🇬
+*Built with care in Alexandria, Egypt 🇪🇬*
 
 </div>
