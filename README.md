@@ -2,8 +2,6 @@
 
 <img src="assets/profile-banner.svg" alt="Moataz Mohamed — Frontend Developer from Alexandria, building Arabic-first web and mobile experiences" width="100%" />
 
-<a href="https://readme-typing-svg.demolab.com"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+for+Arabic+RTL+%26+English+LTR;Turning+ideas+into+real+products;Frontend+%7C+Web+%7C+Mobile+%7C+Product" alt="Building for Arabic RTL and English LTR; turning ideas into real products" /></a>
-
 ### معتز محمد · Frontend Developer
 
 **I turn ideas into polished web & mobile products — with Arabic RTL and English LTR at their core.**
