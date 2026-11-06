@@ -1,18 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430" role="img" aria-labelledby="title desc">
+  <title id="title">Moataz Mohamed — Frontend Developer</title>
+  <desc id="desc">Frontend developer from Alexandria, building Arabic-first web and mobile experiences in Arabic and English.</desc>
   <defs>
-    <linearGradient id="bg" x1="78" y1="20" x2="1430" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#0B1020"/><stop offset=".48" stop-color="#171747"/><stop offset="1" stop-color="#4C1D95"/></linearGradient>
-    <linearGradient id="line" x1="175" y1="105" x2="1280" y2="345" gradientUnits="userSpaceOnUse"><stop stop-color="#67E8F9"/><stop offset=".5" stop-color="#A78BFA"/><stop offset="1" stop-color="#F0ABFC"/></linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(410 0 0 260 1110 126)" gradientUnits="userSpaceOnUse"><stop stop-color="#8B5CF6" stop-opacity=".42"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#C4B5FD" stroke-opacity=".07"/></pattern>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="24"/></filter>
+    <linearGradient id="background" x1="0" y1="0" x2="1500" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset=".55" stop-color="#211B4B"/>
+      <stop offset="1" stop-color="#4C1D75"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="100" y1="0" x2="1390" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset=".52" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F0ABFC"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientTransform="translate(1190 125) rotate(90) scale(265 360)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#C4B5FD" stroke-opacity=".055"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1500" height="430" rx="28"/></clipPath>
   </defs>
-  <rect width="1500" height="430" rx="34" fill="url(#bg)"/><rect width="1500" height="430" rx="34" fill="url(#grid)"/><rect width="1500" height="430" rx="34" fill="url(#glow)"/>
-  <circle cx="1222" cy="216" r="102" fill="#8B5CF6" fill-opacity=".16" filter="url(#blur)"/>
-  <path d="M55 347C310 347 340 94 585 94s276 242 520 242 260-144 340-144" stroke="url(#line)" stroke-opacity=".65" stroke-width="2"/><path d="M55 365C300 365 358 116 585 116s280 236 520 236 245-128 340-128" stroke="url(#line)" stroke-opacity=".2"/>
-  <circle cx="585" cy="94" r="6" fill="#67E8F9"/><circle cx="1105" cy="336" r="6" fill="#F0ABFC"/><circle cx="126" cy="104" r="2" fill="#EDE9FE" fill-opacity=".8"/><circle cx="1390" cy="90" r="2" fill="#EDE9FE" fill-opacity=".8"/><circle cx="1336" cy="300" r="2" fill="#EDE9FE" fill-opacity=".7"/><circle cx="748" cy="58" r="2" fill="#EDE9FE" fill-opacity=".7"/>
-  <rect x="94" y="73" width="86" height="30" rx="15" fill="#FFFFFF" fill-opacity=".08" stroke="#C4B5FD" stroke-opacity=".22"/><text x="137" y="93" fill="#C4B5FD" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" text-anchor="middle">ALEX · EG</text>
-  <text x="94" y="191" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="59" font-weight="750" letter-spacing="-2">MOATAZ</text><text x="94" y="253" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="59" font-weight="750" letter-spacing="-2">MOHAMED</text><text x="96" y="292" fill="#C4B5FD" font-family="Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="3">FRONTEND DEVELOPER</text><text x="96" y="333" fill="#E2E8F0" font-family="Arial,sans-serif" font-size="17">Arabic-first web &amp; mobile experiences</text>
-  <text x="1380" y="183" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="68" font-weight="700" text-anchor="end">معتز</text><text x="1380" y="235" fill="#DDD6FE" font-family="Arial,sans-serif" font-size="26" font-weight="500" text-anchor="end">محمد</text><text x="1380" y="278" fill="#C4B5FD" font-family="Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="2" text-anchor="end">RTL  ←  →  LTR</text>
-  <rect x="1176" y="318" width="204" height="42" rx="21" fill="#FFFFFF" fill-opacity=".08" stroke="#C4B5FD" stroke-opacity=".3"/><circle cx="1200" cy="339" r="5" fill="#34D399"/><text x="1220" y="344" fill="#F8FAFC" font-family="Arial,sans-serif" font-size="12" font-weight="600" letter-spacing=".3">OPEN TO WORK</text>
-  <rect x="1" y="1" width="1498" height="428" rx="33" stroke="#C4B5FD" stroke-opacity=".22" stroke-width="2"/>
+
+  <g clip-path="url(#clip)">
+    <rect width="1500" height="430" fill="url(#background)"/>
+    <rect width="1500" height="430" fill="url(#grid)"/>
+    <rect width="1500" height="430" fill="url(#orb)"/>
+
+    <!-- Subtle flowing line, kept to the lower background so it never crosses the text. -->
+    <path d="M0 365C230 365 345 290 535 290S860 370 1040 330s270-105 460-105" fill="none" stroke="url(#accent)" stroke-opacity=".34" stroke-width="2"/>
+    <path d="M0 385C250 385 355 314 535 314s322 70 495 34 275-100 470-100" fill="none" stroke="url(#accent)" stroke-opacity=".14" stroke-width="1"/>
+
+    <!-- Left identity -->
+    <rect x="92" y="72" width="126" height="34" rx="17" fill="#FFFFFF" fill-opacity=".07" stroke="#C4B5FD" stroke-opacity=".24"/>
+    <circle cx="111" cy="89" r="4" fill="#34D399"/>
+    <text x="125" y="94" fill="#E9D5FF" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.7">ALEXANDRIA · EG</text>
+
+    <text x="92" y="190" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="60" font-weight="700" letter-spacing="-1.6">MOATAZ</text>
+    <text x="92" y="254" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="60" font-weight="700" letter-spacing="-1.6">MOHAMED</text>
+    <rect x="94" y="280" width="54" height="3" rx="1.5" fill="url(#accent)"/>
+    <text x="92" y="320" fill="#DDD6FE" font-family="Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="2.3">FRONTEND DEVELOPER</text>
+    <text x="92" y="354" fill="#E2E8F0" font-family="Arial,sans-serif" font-size="17">Arabic-first web &amp; mobile experiences</text>
+
+    <!-- Right bilingual identity -->
+    <line x1="1055" y1="92" x2="1055" y2="290" stroke="#C4B5FD" stroke-opacity=".22"/>
+    <text x="1370" y="165" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="66" font-weight="700" text-anchor="end">معتز</text>
+    <text x="1370" y="220" fill="#DDD6FE" font-family="Arial,sans-serif" font-size="31" font-weight="500" text-anchor="end">محمد</text>
+    <text x="1370" y="264" fill="#C4B5FD" font-family="Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="2" text-anchor="end">ARABIC RTL  ·  ENGLISH LTR</text>
+
+    <!-- Work status pill: ample width and balanced padding -->
+    <rect x="1110" y="318" width="260" height="48" rx="24" fill="#FFFFFF" fill-opacity=".07" stroke="#C4B5FD" stroke-opacity=".28"/>
+    <circle cx="1137" cy="342" r="5" fill="#34D399"/>
+    <text x="1155" y="347" fill="#F8FAFC" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing=".7">OPEN TO OPPORTUNITIES</text>
+  </g>
+
+  <rect x="1" y="1" width="1498" height="428" rx="27" fill="none" stroke="#C4B5FD" stroke-opacity=".2" stroke-width="2"/>
 </svg>
