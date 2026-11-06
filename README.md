@@ -30,77 +30,91 @@ I care about the whole experience: clear UI, useful product details, thoughtful 
 
 ## Selected work
 
+A few things I’ve designed and built. **Open a preview to try the project; use the source link where available to explore the code.**
+
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://webvault-app.vercel.app"><img src="assets/webvault.webp" alt="WebVault dashboard preview" width="100%"></a>
+<a href="https://webvault-app.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/webvault-preview.webp" alt="WebVault project preview — private dashboard and credential vault" width="100%"></a>
+
+**01 · PRODUCT / WEB**
 
 ### 🔐 WebVault
-A private dashboard for organizing websites, projects, and credentials, with an encrypted credential vault and a bilingual RTL/LTR interface.
+A private dashboard for organizing websites, projects, and credentials—with an encrypted credential vault and a bilingual RTL/LTR interface.
 
-`Next.js` · `TypeScript` · `Supabase` · `PostgreSQL`
+`Next.js` `TypeScript` `Supabase` `PostgreSQL`
 
-[Live demo ↗](https://webvault-app.vercel.app) · [Source code ↗](https://github.com/moatazsmohamed/webvault)
+[**Live demo ↗**](https://webvault-app.vercel.app) &nbsp;·&nbsp; [**Source code ↗**](https://github.com/moatazsmohamed/webvault)
 </td>
 <td width="50%" valign="top">
-<a href="https://madar-m.vercel.app"><img src="assets/madar.png" alt="Madar Arabic team operations platform preview" width="100%"></a>
+<a href="https://madar-m.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/madar-login.webp" alt="Madar project preview — Arabic team operations platform" width="100%"></a>
+
+**02 · PRODUCT / MOBILE**
 
 ### 🗂️ Madar · مدار
 A multi-tenant team-operations platform with a fully Arabic RTL experience for tasks, teams, roles, and reports.
 
-`React Native` · `Expo` · `TypeScript` · `Supabase`
+`React Native` `Expo` `TypeScript` `Supabase`
 
-[Live demo ↗](https://madar-m.vercel.app) · [Source code ↗](https://github.com/moatazsmohamed/madar)
+[**Live demo ↗**](https://madar-m.vercel.app) &nbsp;·&nbsp; [**Source code ↗**](https://github.com/moatazsmohamed/madar)
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://moataz-portfolio-v3.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/preview-desktop.jpg" alt="Portfolio v3 desktop preview" width="100%"></a>
+<a href="https://moataz-portfolio-v3.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/portfolio-preview.webp" alt="Portfolio v3 project preview" width="100%"></a>
+
+**03 · PORTFOLIO / INTERACTIVE**
 
 ### 🎞️ Portfolio v3
 A reel-inspired portfolio with interactive project posters and a project inquiry form.
 
-`HTML` · `CSS` · `JavaScript`
+`HTML` `CSS` `JavaScript`
 
-[Explore ↗](https://moataz-portfolio-v3.vercel.app) · [Source code ↗](https://github.com/moatazsmohamed/moataz-portfolio-v3)
+[**Explore ↗**](https://moataz-portfolio-v3.vercel.app) &nbsp;·&nbsp; [**Source code ↗**](https://github.com/moatazsmohamed/moataz-portfolio-v3)
 </td>
 <td width="50%" valign="top">
-<a href="https://motryx-delta.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/motryx-preview.webp" alt="MOTRYX software and AI studio website preview" width="100%"></a>
+<a href="https://motryx-delta.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/motryx-preview.webp" alt="MOTRYX project preview — bilingual software and AI studio" width="100%"></a>
+
+**04 · BRAND / WEB**
 
 ### 🧠 MOTRYX
 A bilingual digital presence for a software and AI studio, with service pages and case studies.
 
-`Web design` · `Software` · `AI` · `Arabic / English`
+`Web design` `Software` `AI` `Arabic / English`
 
-[Visit MOTRYX ↗](https://motryx-delta.vercel.app) · [More projects ↗](https://moataz-portfolio-v3.vercel.app)
+[**Visit MOTRYX ↗**](https://motryx-delta.vercel.app) &nbsp;·&nbsp; [**More work ↗**](https://moataz-portfolio-v3.vercel.app)
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://mtzz-ai-pi.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/mtz-ai-preview.webp" alt="MTZ AI bilingual workspace preview" width="100%"></a>
+<a href="https://mtzz-ai-pi.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/mtz-ai-preview.webp" alt="MTZ AI project preview — bilingual AI workspace" width="100%"></a>
+
+**05 · AI / BILINGUAL**
 
 ### 🤖 MTZ AI
 A bilingual AI workspace for saved conversations and personal memory.
 
-`AI` · `Arabic / English` · `RTL / LTR`
+`AI` `Arabic / English` `RTL / LTR`
 
-[Open MTZ AI ↗](https://mtzz-ai-pi.vercel.app) · [More projects ↗](https://moataz-portfolio-v3.vercel.app)
+[**Open MTZ AI ↗**](https://mtzz-ai-pi.vercel.app) &nbsp;·&nbsp; [**More work ↗**](https://moataz-portfolio-v3.vercel.app)
 </td>
 <td width="50%" valign="top">
-<a href="https://pcverse-lac.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/pcverse-preview.webp" alt="PCVERSE interactive 3D computer lab preview" width="100%"></a>
+<a href="https://pcverse-lac.vercel.app"><img src="https://raw.githubusercontent.com/moatazsmohamed/moataz-portfolio-v3/main/assets/pcverse-preview.webp" alt="PCVERSE project preview — interactive 3D computer lab" width="100%"></a>
+
+**06 · 3D / LEARNING**
 
 ### 🖥️ PCVERSE
 An interactive 3D computer lab for exploring hardware in Arabic and English.
 
-`Interactive 3D` · `Computer hardware` · `Bilingual learning`
+`Interactive 3D` `Computer hardware` `Bilingual learning`
 
-[Explore PCVERSE ↗](https://pcverse-lac.vercel.app) · [More projects ↗](https://moataz-portfolio-v3.vercel.app)
+[**Explore PCVERSE ↗**](https://pcverse-lac.vercel.app) &nbsp;·&nbsp; [**More work ↗**](https://moataz-portfolio-v3.vercel.app)
 </td>
 </tr>
 </table>
 
 <details>
-<summary><strong>More projects</strong></summary>
+<summary><strong>More projects</strong> · Computer Explorer, Marab, TAFRA, Personal Portfolio, MS Woodworks</summary>
 <br />
 
 - 🧩 **[Computer Explorer](https://computer-explorer-three.vercel.app)** — an interactive 3D guide to computer components in Arabic.
