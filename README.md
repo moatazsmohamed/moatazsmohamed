@@ -22,12 +22,12 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td colspan="2" width="100%" align="center" valign="top">
       <h3><a href="https://m3t-z.vercel.app/">M3T Portfolio</a></h3>
       <a href="https://m3t-z.vercel.app/">
         <picture>
           <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/m3t-hero.jpg" />
-          <img src="./assets/projects/m3t-preview.gif" alt="Animated preview of the M3T portfolio hero and about section" width="100%" loading="lazy" />
+          <img src="./assets/projects/m3t-preview.gif" alt="Wide landscape animated preview of the M3T portfolio, displayed full width" width="100%" loading="lazy" />
         </picture>
       </a>
       <p><strong>My main portfolio · البورتفوليو الرئيسي</strong></p>
@@ -35,7 +35,9 @@
       <p>مساحة ثنائية اللغة لعرض أعمالي ورحلتي وقصص المشاريع.</p>
       <p><code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>Vercel</code></p>
       <p><strong>Focus:</strong> Arabic-first UX · Project storytelling · Responsive UI</p>
-    </td>
+        </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://pcverse-lac.vercel.app/">PCVERSE</a></h3>
       <a href="https://pcverse-lac.vercel.app/">
@@ -49,9 +51,7 @@
       <p>استكشاف مكوّنات الحاسوب والبرمجيات وتجميع الكمبيوتر عبر نماذج ثلاثية الأبعاد ومختبرات تعليمية.</p>
       <p><code>React</code> <code>Three.js</code> <code>TypeScript</code> <code>Vite</code></p>
       <p><strong>Focus:</strong> 3D interaction · Bilingual learning · Educational UX</p>
-    </td>
-  </tr>
-  <tr>
+        </td>
     <td width="50%" valign="top">
       <h3><a href="https://motryx-delta.vercel.app/ar">MOTRYX</a></h3>
       <a href="https://motryx-delta.vercel.app/ar">
@@ -65,7 +65,9 @@
       <p>هوية بصرية ثنائية اللغة لعرض الخدمات والأعمال والأفكار الرقمية.</p>
       <p><code>Vite</code> <code>React</code> <code>TypeScript</code> <code>Vercel</code></p>
       <p><strong>Focus:</strong> Visual systems · Service storytelling · RTL/LTR</p>
-    </td>
+        </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://tafrawear.vercel.app/">TAFRA</a></h3>
       <a href="https://tafrawear.vercel.app/">
@@ -78,9 +80,7 @@
       <p>A black-and-gold storefront with collections, lookbook imagery, sizing guidance, and WhatsApp ordering.</p>
       <p>متجر بهوية سوداء وذهبية، يضم المجموعات واللوك بوك ودليل المقاسات والطلب عبر واتساب.</p>
       <p><strong>Focus:</strong> Product browsing · Brand identity · Clear ordering flow</p>
-    </td>
-  </tr>
-  <tr>
+        </td>
     <td width="50%" valign="top">
       <h3><a href="https://car-showcase-weld.vercel.app/">Marab · مِرَآب</a></h3>
       <a href="https://car-showcase-weld.vercel.app/">
@@ -94,20 +94,22 @@
       <p>تجربة عربية لعرض السيارات، بصور سينمائية وبطاقات للأسطول ومواصفات الأداء وأقسام للمقارنة.</p>
       <p><code>GSAP</code> <code>ScrollTrigger</code> <code>Lenis</code></p>
       <p><strong>Focus:</strong> Motion-led storytelling · RTL design · Visual navigation</p>
-    </td>
-    <td width="50%" valign="top">
+        </td>
+  </tr>
+  <tr>
+    <td colspan="2" width="100%" align="center" valign="top">
       <h3><a href="https://nawa-studio-dun.vercel.app/">NAWA Studio · نَوى</a></h3>
       <a href="https://nawa-studio-dun.vercel.app/">
         <picture>
           <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/nawa-hero.jpg" />
-          <img src="./assets/projects/nawa-preview.gif" alt="Animated preview of NAWA Studio's immersive Arabic creative world" width="100%" loading="lazy" />
+          <img src="./assets/projects/nawa-preview.gif" alt="Animated preview of NAWA Studio's immersive Arabic creative world" width="50%" loading="lazy" />
         </picture>
       </a>
       <p><strong>Immersive creative world · عالم إبداعي تفاعلي</strong></p>
       <p>A space-themed Arabic studio experience built around discovery, playful navigation, and visitor progress.</p>
       <p>تجربة استوديو عربية بطابع فضائي، تعتمد على الاستكشاف والتنقّل المرح وتقدّم الزائر.</p>
       <p><strong>Focus:</strong> Creative interaction · Onboarding · Exploratory UX</p>
-    </td>
+        </td>
   </tr>
 </table>
 
