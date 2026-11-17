@@ -112,8 +112,8 @@ def typing_line():
         "IT Student @ Borg El Arab Technological University",
         "وابنِ واجهات تُقرأ صح في الاتجاهين",
     ]
-    W, H = 820, 46
-    size = 24
+    W, H = 760, 42
+    size = 19
     char_w = size * 0.6
     cycle = 4.0 * len(phrases)
 
@@ -154,7 +154,7 @@ def typing_line():
 
     for i, phrase in enumerate(phrases):
         p.append(f'<g class="ph{i}"><g mask="url(#c{i})">'
-                 f'<text x="{W/2}" y="31" text-anchor="middle" fill="{CYAN}">'
+                 f'<text x="{W/2}" y="28" text-anchor="middle" fill="{CYAN}">'
                  f'{esc(phrase)}</text></g></g>')
 
     p.append(f'<rect class="cur" x="{W/2-6}" y="14" width="10" height="20" fill="{CYAN}"/>')

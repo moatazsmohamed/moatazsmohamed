@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="assets/typing-line.svg" width="820" alt="Frontend Developer · Arabic-first by design"/>
+<img src="assets/typing-line.svg" width="760" alt="Frontend Developer · Arabic-first by design"/>
 
 <br/>
 
