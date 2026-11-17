@@ -363,6 +363,103 @@ def languages_svg(d):
     return "".join(s)
 
 
+LEVELS = ["#161B22", "#0E4F5C", "#127C8C", "#17A9BF", CYAN]
+
+
+def matrix_svg(d):
+    """A 53x7 pixel matrix of the contribution year, plus a progress bar."""
+    days = d["days"]
+    cell, gap = 11.5, 3.0
+    pitch = cell + gap
+    cols = 53
+    left, top = 46, 62
+    W = left + cols * pitch + 22
+    grid_h = 7 * pitch
+    H = int(top + grid_h + 92)
+
+    by_date = {date: count for date, count in days}
+    start = dt.date.fromisoformat(days[0][0])
+    start -= dt.timedelta(days=(start.weekday()))
+    peak = max(1, max(c for _, c in days))
+
+    def level(count):
+        if count <= 0:
+            return 0
+        ratio = count / peak
+        if ratio > 0.66:
+            return 4
+        if ratio > 0.33:
+            return 3
+        if ratio > 0.12:
+            return 2
+        return 1
+
+    s = [head(W, H, f"Contribution matrix — {d['total']} contributions over the last year")]
+    s.append(f'<text x="24" y="32" fill="{TEXT}" font-size="13.5" font-weight="700">'
+             f'Contribution Matrix</text>')
+    s.append(f'<text x="{W-24}" y="32" text-anchor="end" fill="{DIM}" font-size="11">'
+             f'{d["total"]} contributions · last 12 months</text>')
+
+    # month labels
+    seen = set()
+    for i in range(cols):
+        day = start + dt.timedelta(days=i * 7)
+        if day.month not in seen and day.day <= 7:
+            seen.add(day.month)
+            x = left + i * pitch
+            s.append(f'<text x="{x:.0f}" y="{top-10}" fill="{DIM}" font-size="9.5">'
+                     f'{day.strftime("%b")}</text>')
+
+    for wd, label in ((0, "Mon"), (2, "Wed"), (4, "Fri")):
+        y = top + wd * pitch + cell - 2
+        s.append(f'<text x="{left-10}" y="{y:.0f}" text-anchor="end" fill="{DIM}" '
+                 f'font-size="9.5">{label}</text>')
+
+    for i in range(cols):
+        for wd in range(7):
+            day = start + dt.timedelta(days=i * 7 + wd)
+            key = day.isoformat()
+            if key not in by_date and day > dt.date.today():
+                continue
+            count = by_date.get(key, 0)
+            lv = level(count)
+            x = left + i * pitch
+            y = top + wd * pitch
+            fill = LEVELS[lv]
+            extra = ""
+            if lv == 4:
+                extra = f' stroke="{MAGENTA}" stroke-width="1" stroke-opacity="0.9"'
+            s.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{cell}" height="{cell}" '
+                     f'rx="2.5" fill="{fill}"{extra}><title>{key}: {count} '
+                     f'contribution{"s" if count != 1 else ""}</title></rect>')
+
+    # legend
+    lx = left
+    ly = top + grid_h + 26
+    s.append(f'<text x="{lx}" y="{ly+9}" fill="{DIM}" font-size="10.5">Less</text>')
+    lx += 34
+    for lv in range(5):
+        s.append(f'<rect x="{lx}" y="{ly}" width="{cell}" height="{cell}" rx="2.5" '
+                 f'fill="{LEVELS[lv]}"/>')
+        lx += pitch
+    s.append(f'<text x="{lx+4}" y="{ly+9}" fill="{DIM}" font-size="10.5">More</text>')
+
+    # active-day progress bar
+    active = sum(1 for _, c in days if c > 0)
+    ratio = active / len(days)
+    bar_x, bar_w = left, W - left - 24
+    bar_y = ly + 26
+    s.append(f'<rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="8" rx="4" '
+             f'fill="{LEVELS[0]}"/>')
+    s.append(f'<rect x="{bar_x}" y="{bar_y}" width="{bar_w*ratio:.1f}" height="8" '
+             f'rx="4" fill="{CYAN}" fill-opacity="0.85"/>')
+    s.append(f'<text x="{bar_x}" y="{bar_y+26}" fill="{DIM}" font-size="10.5">'
+             f'{active} active days · {ratio*100:.0f}% of the year · peak {peak} in one day</text>')
+
+    s.append("</svg>")
+    return "".join(s)
+
+
 def main():
     os.makedirs(ASSETS, exist_ok=True)
     data = collect()
@@ -370,6 +467,7 @@ def main():
         "telemetry.svg": telemetry_svg(data),
         "activity-graph.svg": activity_svg(data),
         "language-spectrum.svg": languages_svg(data),
+        "contribution-matrix.svg": matrix_svg(data),
     }
     for name, svg in out.items():
         path = os.path.join(ASSETS, name)
