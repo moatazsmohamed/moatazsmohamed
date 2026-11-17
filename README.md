@@ -1,10 +1,16 @@
 <div align="center">
 
-<img src="assets/hero-banner.svg" width="100%" alt="Moataz Mohamed — frontend developer, Arabic-first web and mobile, Alexandria, Egypt"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-banner-light.svg">
+  <img src="assets/hero-banner.svg" width="100%" alt="Moataz Mohamed — frontend developer, Arabic-first web and mobile, Alexandria, Egypt">
+</picture>
 
 <br/>
 
-<img src="assets/typing-line.svg" width="760" alt="Frontend Developer · Arabic-first by design"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/typing-line-light.svg">
+  <img src="assets/typing-line.svg" width="760" alt="Frontend Developer · Arabic-first by design">
+</picture>
 
 <br/>
 
@@ -251,11 +257,20 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 <div align="center">
 
-<img src="assets/telemetry.svg" width="100%" alt="Total contributions, current streak and longest streak"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/telemetry-light.svg">
+  <img src="assets/telemetry.svg" width="100%" alt="Total contributions, current streak and longest streak">
+</picture>
 
-<img src="assets/activity-graph.svg" width="100%" alt="Daily contribution graph for the last 30 days"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-graph-light.svg">
+  <img src="assets/activity-graph.svg" width="100%" alt="Daily contribution graph for the last 30 days">
+</picture>
 
-<img src="assets/language-spectrum.svg" width="100%" alt="Language mix across public repositories"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/language-spectrum-light.svg">
+  <img src="assets/language-spectrum.svg" width="100%" alt="Language mix across public repositories">
+</picture>
 
 <sub>Drawn from the GitHub GraphQL API by <a href="scripts/make_telemetry.py">make_telemetry.py</a> and committed to this repo, so nothing here can rate-limit or go dark. Regenerated daily by <a href=".github/workflows/telemetry.yml">telemetry.yml</a>.</sub>
 
@@ -267,7 +282,10 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 <div align="center">
 
-<img src="assets/contribution-matrix.svg" width="100%" alt="Pixel matrix of the last twelve months of contributions, with a progress bar of active days"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/contribution-matrix-light.svg">
+  <img src="assets/contribution-matrix.svg" width="100%" alt="Pixel matrix of the last twelve months of contributions, with a progress bar of active days">
+</picture>
 
 <sub>53 × 7 cells of real contribution data, drawn by the same <a href="scripts/make_telemetry.py">make_telemetry.py</a> pass — hover any cell to read its date and count.</sub>
 
@@ -275,24 +293,49 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 <img src="assets/divider.svg" width="100%"/>
 
-## Behind the interface · عنّي
+<h2 align="center">🧭 Behind the interface</h2>
 
-I’m **Moataz**, a frontend developer and IT student from Alexandria. I build web and mobile experiences with Arabic RTL and English LTR treated as first-class interfaces.
-
-أنا **معتز**، مطوّر Frontend وطالب IT من الإسكندرية. أبني تجارب ويب وموبايل تهتم بالعربية والإنجليزية من البداية، مع التركيز على وضوح المنتج وتفاصيل الواجهة.
+I’m **Moataz**, a frontend developer and IT student from Alexandria. I build web and mobile experiences where Arabic RTL and English LTR are both treated as first-class interfaces — not one translated from the other.
 
 Open to **junior roles, internships, and collaborations** in product-focused teams.
 
-متاح لفرص **Junior والتدريب والتعاون** مع فرق تهتم بجودة المنتج وتجربة المستخدم.
+<h2 align="center">🇪🇬 بالعربي · النسخة القصيرة</h2>
 
-## Public code · الكود العام
+<div dir="rtl" align="right">
+
+أنا **معتز محمد**، مطوّر Frontend من الإسكندرية وطالب IT في جامعة برج العرب التكنولوجية. بشتغل على منتجات ويب وموبايل بتتعامل مع العربي والإنجليزي كأنهم الاتنين لغة أولى — مش ترجمة بتحصل في الآخر.
+
+**طريقة عملي:** أبدأ من رحلة المستخدم، أفكّك الواجهة لمكوّنات قابلة لإعادة الاستخدام، وأراجع كل تفصيلة على الاتجاهين (RTL / LTR) وعلى أحجام الشاشات المختلفة. أهتم بحالات التحميل والفراغ والخطأ زي ما أهتم بالحالة الطبيعية.
+
+**بحب أبني:** لوحات تحكم عربية، متاجر إلكترونية، ومنتجات فيها حركة وتفاعل مدروس — لأن التفاصيل الصغيرة هي اللي بتخلي المنتج يبان محترم.
+
+**بدور على:** فرصة Junior أو تدريب داخل فريق بيهتم بجودة المنتج، شغل عن بُعد أو من الإسكندرية.
+
+</div>
+
+<h2 align="center">🛰️ Now · الآن</h2>
+
+<div align="center">
+
+| Track | Right now |
+|:---|:---|
+| 🔨 **Building** | **Madar** — a multi-tenant team-operations platform with a fully Arabic RTL interface (tasks, timers, roles, monthly reports) |
+| 🧩 **Refining** | **PCVERSE** — component compatibility rules and a faster 3D explorer |
+| 📚 **Learning** | Postgres data modelling with Prisma · Next.js App Router patterns · RTL-first design systems |
+| 🧪 **Experimenting** | SVG as a rendering target — the dot-portrait terminal above is one output of that |
+| 🎯 **Open to** | Junior frontend roles · internships · freelance UI work |
+| 📍 **Based in** | Alexandria, Egypt · remote-friendly |
+
+</div>
+
+<h2 align="center">📦 Public code · الكود العام</h2>
 
 - [portfolio](https://github.com/moatazsmohamed/portfolio) — bilingual portfolio and AI assistant.
 - [moataz-portfolio-v4](https://github.com/moatazsmohamed/moataz-portfolio-v4) — Next.js, Prisma, and PostgreSQL portfolio.
 - [moneytrack](https://github.com/moatazsmohamed/moneytrack) — finance-tracking project.
 - [moatazsmohamed.github.io](https://github.com/moatazsmohamed/moatazsmohamed.github.io) — personal website.
 
-## Contact · تواصل
+<h2 align="center">✉️ Contact · تواصل</h2>
 
 Have an opportunity, an idea, or a collaboration in mind? I’d love to hear from you.
 
@@ -316,5 +359,8 @@ Have an opportunity, an idea, or a collaboration in mind? I’d love to hear fro
 </div>
 
 <div align="center">
-<img src="assets/divider.svg" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
+  <img src="assets/footer.svg" width="100%" alt="Moataz Mohamed — thanks for stopping by">
+</picture>
 </div>

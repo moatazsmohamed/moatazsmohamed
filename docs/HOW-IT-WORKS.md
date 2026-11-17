@@ -1,0 +1,83 @@
+# How this profile README works
+
+Every graphic you see on the profile is an SVG committed to this repository and
+drawn by a Python script. No badge service, no stats API, no image CDN is
+contacted when the page renders — so nothing here can rate-limit, 404, or go
+dark because someone else's Vercel deployment fell over.
+
+```
+avatar.png ─┐
+            ├─► scripts/make_terminal_portrait.py ─► assets/terminal-portrait.svg
+            │                                          (animated dot portrait)
+GitHub API ─┴─► scripts/make_telemetry.py ──────────► assets/telemetry*.svg
+                                                      assets/activity-graph*.svg
+                                                      assets/language-spectrum*.svg
+                                                      assets/contribution-matrix*.svg
+            ┌─► scripts/make_brand_assets.py ───────► assets/hero-banner*.svg
+                                                      assets/typing-line*.svg
+                                                      assets/footer*.svg
+                                                      assets/divider.svg
+```
+
+## Refresh everything
+
+```sh
+GITHUB_TOKEN=$(gh auth token) ./scripts/refresh.sh
+```
+
+Requires Python 3.10+ and Pillow (`pip install -r scripts/requirements.txt`).
+
+## The four pieces
+
+### 1. Dot portrait terminal — `make_terminal_portrait.py`
+
+The avatar is resized to a 48 × 48 grid, quantised to a 14-colour palette, and
+every cell above a luminance floor becomes one `<rect>`. Cells are grouped into
+12 horizontal bands; each band carries a CSS animation with a staggered
+`animation-delay`, so the portrait paints itself top to bottom. A masked
+`translateX` reveal types the `neofetch` command, then each readout row fades in.
+
+~1,700 dots, ~93 KB, zero JavaScript.
+
+### 2. Telemetry panels — `make_telemetry.py`
+
+One GraphQL request returns the contribution calendar, repository list and
+follower count. From that the script derives the current streak (walking back
+from the last active day), the longest streak, the 30-day series, the language
+mix, and the 53 × 7 matrix. Everything is emitted twice: dark and `-light`.
+
+### 3. Brand assets — `make_brand_assets.py`
+
+Banner, typing line, footer and divider, again in dark and light. The typing
+line cycles four phrases on a 16 s loop using per-phrase keyframes plus a
+translating mask — the reliable way to animate a reveal inside `<img>`-embedded
+SVG.
+
+### 4. README — hand written
+
+`<picture>` + `prefers-color-scheme` picks the variant that matches the
+visitor's theme:
+
+```html
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/telemetry-light.svg">
+  <img src="assets/telemetry.svg" width="100%" alt="...">
+</picture>
+```
+
+## Conventions
+
+- **Alt text on every image.** The SVGs carry `role="img"` and `aria-label` too.
+- **Reduced motion.** Every animation block ends with
+  `@media (prefers-reduced-motion: reduce) { animation: none }`, and the base
+  state of every element is its finished state — so a renderer that ignores CSS
+  animation shows a complete, readable graphic instead of a blank box.
+- **`-light` suffix** = the variant served in light mode.
+- **`assets/archive/`** holds superseded exports. Nothing there is referenced.
+
+## Scheduled refresh
+
+`.github/workflows/telemetry.yml` runs daily at 03:17 UTC, regenerates the
+assets with the repository's `GITHUB_TOKEN`, and commits them if anything
+changed. If the account has a billing hold, the workflow will not start — run
+`scripts/refresh.sh` locally and push in that case.
