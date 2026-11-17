@@ -446,9 +446,12 @@ def matrix_svg(d, t):
     s.append(f'<path d="{path_d}" fill="none" stroke="{t["cyan"]}" stroke-width="8" '
              f'stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.88" '
              f'stroke-dasharray="{body} {period - body:.1f}" class="snake"/>')
+    # the head is a zero-dash, a gap the length of the body, then a short dash:
+    # that puts it exactly on the leading edge instead of the tail
     s.append(f'<path d="{path_d}" fill="none" stroke="{t["violet"]}" stroke-width="12" '
              f'stroke-linecap="round" stroke-linejoin="round" '
-             f'stroke-dasharray="{head_len} {period - head_len:.1f}" class="snake"/>')
+             f'stroke-dasharray="0 {body - head_len} {head_len} '
+             f'{period - body:.1f}" class="snake"/>')
 
     ly = top + 7 * pitch + 26
     s.append(f'<text x="{lx}" y="{ly+9}" fill="{t["dim"]}" font-size="10.5">Less</text>')
