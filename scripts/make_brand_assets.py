@@ -131,11 +131,13 @@ def typing_line():
     for i, w in enumerate(widths):
         p.append(f"@keyframes show{i}{{0%{{opacity:0}}1%{{opacity:1}}"
                  f"88%{{opacity:1}}92%{{opacity:0}}100%{{opacity:0}}}}")
-        p.append(f"@keyframes type{i}{{0%{{width:0}}1%{{width:0}}"
-                 f"17%{{width:{w}px}}100%{{width:{w}px}}}}")
+        p.append(f"@keyframes type{i}{{0%{{transform:translateX(-{w}px)}}"
+                 f"1%{{transform:translateX(-{w}px)}}"
+                 f"17%{{transform:translateX(0)}}100%{{transform:translateX(0)}}}}")
         p.append(f".ph{i}{{opacity:0;animation:show{i} {cycle}s linear "
                  f"{i*4.0}s infinite}}")
-        p.append(f".c{i}{{animation:type{i} {cycle}s linear {i*4.0}s infinite}}")
+        p.append(f".c{i}{{animation:type{i} {cycle}s steps(28,end) "
+                 f"{i*4.0}s infinite}}")
 
     p.append("@media (prefers-reduced-motion:reduce){")
     p.append(".ph0{opacity:1;animation:none}.cur{display:none}")
@@ -144,12 +146,14 @@ def typing_line():
     p.append("}</style>")
 
     for i, w in enumerate(widths):
-        p.append(f'<clipPath id="c{i}"><rect class="c{i}" x="0" y="0" '
-                 f'width="{w}" height="{H}"/></clipPath>')
+        p.append(f'<mask id="c{i}" maskUnits="userSpaceOnUse" x="0" y="0" '
+                 f'width="{W}" height="{H}">'
+                 f'<rect class="c{i}" x="{W/2 - w/2:.0f}" y="0" width="{w}" '
+                 f'height="{H}" fill="#fff"/></mask>')
     p.append("</defs>")
 
     for i, phrase in enumerate(phrases):
-        p.append(f'<g class="ph{i}"><g clip-path="url(#c{i})">'
+        p.append(f'<g class="ph{i}"><g mask="url(#c{i})">'
                  f'<text x="{W/2}" y="31" text-anchor="middle" fill="{CYAN}">'
                  f'{esc(phrase)}</text></g></g>')
 
