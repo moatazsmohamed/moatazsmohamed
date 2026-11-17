@@ -164,6 +164,7 @@ composition, which is why it has to look correct on its own.
 | `activity-graph` | the line draws itself, the area fades up, the dots pop in left to right | `stroke-dashoffset` + staggered opacity |
 | `language-spectrum` | the bar sweeps open left to right | widening mask rect |
 | `contribution-matrix` | the snake walks the loop, head and body on one dash | `stroke-dashoffset` |
+| `projects/card-*` | the shot drifts (Ken Burns), a light sweep crosses, the caption lifts once | `animateTransform` scale/translate + opacity |
 
 Everything above shares one trick: the element's attribute is written at its
 **finished** value, and the animation is expressed as absolute fractions of a

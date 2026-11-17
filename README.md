@@ -62,66 +62,11 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 <img src="assets/divider.svg" width="100%"/>
 
-<h2 align="center">🚀 Active Deployments</h2>
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="50%">
-
-**🎨 M3T Portfolio**
-<br>
-<sub>Bilingual portfolio with project storytelling, motion-led case studies and Arabic RTL treated as a first-class interface</sub>
-<br><br>
-<a href="https://m3t-z.vercel.app/"><img src="https://img.shields.io/badge/Live_Site-m3t--z.vercel.app-FF4438?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A"/></a>
-
-</td>
-<td align="center" width="50%">
-
-**🖥️ PCVERSE**
-<br>
-<sub>Build-a-PC price comparison platform — component picking, compatibility checks and a 3D learning interface</sub>
-<br><br>
-<a href="https://pcverse-lac.vercel.app/"><img src="https://img.shields.io/badge/Live_Site-pcverse--lac.vercel.app-FF8A80?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A"/></a>
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<div align="center">
-
-| Project | Description |
-|:---|:---|
-| 🎨 **M3T Portfolio** | Bilingual (AR/EN) portfolio — project stories, animated previews, Next.js + React + TypeScript |
-| 🖥️ **PCVERSE** | PC-building price comparison and 3D component explorer — Vite + React |
-| 🏛️ **MOTRYX** | Software & AI studio site — cinematic bilingual visual system for services and work |
-| 👗 **TAFRA** | Fashion storefront from Alexandria — collections, lookbook, sizing guide, WhatsApp ordering |
-| 🚗 **Marab** | Luxury car showcase — GSAP scroll storytelling, fleet cards, RTL-native layout |
-| 🌌 **NAWA Studio** | Immersive space-themed Arabic studio world built around exploration and progress |
-
-</div>
-
-<div align="center">
-
-[![M3T](https://img.shields.io/badge/Live-M3T_Portfolio-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://m3t-z.vercel.app/)
-[![PCVERSE](https://img.shields.io/badge/Live-PCVERSE-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://pcverse-lac.vercel.app/)
-[![MOTRYX](https://img.shields.io/badge/Live-MOTRYX-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://motryx-delta.vercel.app/ar)
-[![TAFRA](https://img.shields.io/badge/Live-TAFRA-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://tafrawear.vercel.app/)
-[![Marab](https://img.shields.io/badge/Live-Marab-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://car-showcase-weld.vercel.app/)
-[![NAWA](https://img.shields.io/badge/Live-NAWA_Studio-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://nawa-studio-dun.vercel.app/)
-
-</div>
-
-<img src="assets/divider.svg" width="100%"/>
-
 <h2 align="center">🚀 Launchpad · مشاريع تستحق الاستكشاف</h2>
 
-**Real public projects. Real screenshots. Looping page previews.** Click a preview to explore the project.
+**Real public projects, captured from the live sites.** Every card drifts, sweeps and lifts its caption on its own — click one to open the project.
 
-**مشاريع منشورة وصور حقيقية من واجهاتها**، بمعاينات متحركة من لقطات الصفحات. اضغط على الصورة لزيارة المشروع.
+**مشاريع منشورة، مأخوذة من مواقعها الحيّة.** كل كارت بيتحرك لوحده — اضغط عليه تفتح المشروع.
 
 <table>
   <tr>
