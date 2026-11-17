@@ -141,41 +141,33 @@ def typing_line(t):
     p = []
     p.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
              f'viewBox="0 0 {W} {H}" role="img" aria-label="{esc(phrases[0])}">')
-    p.append("<defs><style>")
-    p.append(f"text{{font-family:{MONO};font-size:{size}px}}")
-    p.append("@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}")
-    p.append(".cur{animation:blink 1s steps(1,end) infinite}")
-
-    for i, w in enumerate(widths):
-        p.append(f"@keyframes show{i}{{0%{{opacity:0}}1%{{opacity:1}}"
-                 f"88%{{opacity:1}}92%{{opacity:0}}100%{{opacity:0}}}}")
-        p.append(f"@keyframes type{i}{{0%{{transform:translateX(-{w}px)}}"
-                 f"1%{{transform:translateX(-{w}px)}}"
-                 f"17%{{transform:translateX(0)}}100%{{transform:translateX(0)}}}}")
-        p.append(f".ph{i}{{opacity:0;animation:show{i} {cycle}s linear "
-                 f"{i*4.0}s infinite}}")
-        p.append(f".c{i}{{animation:type{i} {cycle}s steps(28,end) {i*4.0}s infinite}}")
-
-    p.append("@media (prefers-reduced-motion:reduce){")
-    p.append(".ph0{opacity:1;animation:none}.cur{display:none}")
-    for i in range(len(widths)):
-        p.append(f".c{i}{{animation:none}}")
-    p.append("}</style>")
-
+    # SMIL, not CSS: this animates in renderers that ignore a <style> block
+    # inside an SVG image, and every element carries its finished state as an
+    # attribute so a frozen render still shows one clean phrase, never four
+    # stacked on top of each other.
+    p.append("<defs>")
     for i, w in enumerate(widths):
         p.append(f'<mask id="c{i}" maskUnits="userSpaceOnUse" x="0" y="0" '
                  f'width="{W}" height="{H}">'
-                 f'<rect class="c{i}" x="{W/2 - w/2:.0f}" y="0" width="{w}" '
-                 f'height="{H}" fill="#fff"/></mask>')
+                 f'<rect x="{W/2 - w/2:.0f}" y="0" width="{w}" height="{H}" fill="#fff">'
+                 f'<animateTransform attributeName="transform" type="translate" '
+                 f'values="-{w} 0;0 0;0 0" keyTimes="0;0.11;1" dur="{cycle}s" '
+                 f'begin="{i*4.0}s" repeatCount="indefinite"/></rect></mask>')
     p.append("</defs>")
 
     for i, phrase in enumerate(phrases):
-        p.append(f'<g class="ph{i}"><g mask="url(#c{i})">'
-                 f'<text x="{W/2}" y="28" text-anchor="middle" fill="{t["cyan"]}">'
-                 f'{esc(phrase)}</text></g></g>')
+        base_opacity = 1 if i == 0 else 0
+        p.append(f'<g opacity="{base_opacity}"><g mask="url(#c{i})">'
+                 f'<text x="{W/2}" y="28" text-anchor="middle" fill="{t["cyan"]}" '
+                 f'font-family="{MONO}" font-size="{size}">{esc(phrase)}</text></g>'
+                 f'<rect x="{W/2 + widths[i]/2 + 6:.0f}" y="13" width="9" height="18" '
+                 f'fill="{t["cyan"]}"><animate attributeName="opacity" '
+                 f'values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1s" '
+                 f'repeatCount="indefinite"/></rect>'
+                 f'<animate attributeName="opacity" values="0;1;1;0;0" '
+                 f'keyTimes="0;0.01;0.21;0.24;1" dur="{cycle}s" '
+                 f'begin="{i*4.0}s" repeatCount="indefinite"/></g>')
 
-    p.append(f'<rect class="cur" x="{W/2 + max(widths)/2 + 4:.0f}" y="13" '
-             f'width="9" height="18" fill="{t["cyan"]}"/>')
     p.append("</svg>")
     return "".join(p)
 

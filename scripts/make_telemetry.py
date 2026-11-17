@@ -432,26 +432,20 @@ def matrix_svg(d, t):
     body, head_len = 124, 17
     period = plen + body
     dur = period / 62.0
-    s.append(
-        "<style>"
-        f"@keyframes slither{{from{{stroke-dashoffset:0}}"
-        f"to{{stroke-dashoffset:-{period:.1f}}}}}"
-        f".snake{{animation:slither {dur:.1f}s linear infinite}}"
-        "@media (prefers-reduced-motion:reduce){.snake{display:none}}"
-        "</style>"
-    )
+    anim = (f'<animate attributeName="stroke-dashoffset" from="0" '
+            f'to="-{period:.1f}" dur="{dur:.1f}s" repeatCount="indefinite"/>')
     s.append(f'<path d="{path_d}" fill="none" stroke="{t["cyan"]}" stroke-width="18" '
              f'stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.15" '
-             f'stroke-dasharray="{body + 12} {period - body - 12:.1f}" class="snake"/>')
+             f'stroke-dasharray="{body + 12} {period - body - 12:.1f}">{anim}</path>')
     s.append(f'<path d="{path_d}" fill="none" stroke="{t["cyan"]}" stroke-width="8" '
              f'stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.88" '
-             f'stroke-dasharray="{body} {period - body:.1f}" class="snake"/>')
+             f'stroke-dasharray="{body} {period - body:.1f}">{anim}</path>')
     # the head is a zero-dash, a gap the length of the body, then a short dash:
     # that puts it exactly on the leading edge instead of the tail
     s.append(f'<path d="{path_d}" fill="none" stroke="{t["violet"]}" stroke-width="12" '
              f'stroke-linecap="round" stroke-linejoin="round" '
              f'stroke-dasharray="0 {body - head_len} {head_len} '
-             f'{period - body:.1f}" class="snake"/>')
+             f'{period - body:.1f}">{anim}</path>')
 
     ly = top + 7 * pitch + 26
     s.append(f'<text x="{lx}" y="{ly+9}" fill="{t["dim"]}" font-size="10.5">Less</text>')
