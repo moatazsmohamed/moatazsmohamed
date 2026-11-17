@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:4C1D95,100:22D3EE&height=280&section=header&text=MOATAZ&fontSize=88&fontColor=FFFFFF&animation=fadeIn&fontAlignY=32&desc=Frontend%20Developer%20%C2%B7%20Arabic-first%20web%20%26%20mobile&descAlignY=52&descSize=20&descColor=22D3EE" width="100%" alt="Moataz Mohamed — frontend developer"/>
+<img src="assets/hero-banner.svg" width="100%" alt="Moataz Mohamed — frontend developer, Arabic-first web and mobile, Alexandria, Egypt"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=22D3EE&center=true&vCenter=true&width=900&height=45&lines=Frontend+Developer+%C2%B7+Arabic-first+by+design;React+%C2%B7+Next.js+%C2%B7+TypeScript+%C2%B7+Supabase;IT+Student+%40+Borg+El+Arab+Technological+University;%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA+%D8%AA%D9%82%D8%B1%D8%A3+%D8%B5%D8%AD+%D9%81%D9%8A+%D8%A7%D9%84%D8%A7%D8%AA%D8%AC%D8%A7%D9%87%D9%8A%D9%86" alt="Typing SVG"/>
+<img src="assets/typing-line.svg" width="900" alt="Frontend Developer · Arabic-first by design"/>
 
 <p>
   <img src="https://img.shields.io/badge/%F0%9F%93%8D-Alexandria%2C_Egypt-0D1117?style=for-the-badge&labelColor=0D1117&color=22D3EE" alt="Alexandria, Egypt"/>
@@ -17,7 +17,7 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:22D3EE&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">🖥️ System Diagnostics</h2>
 
@@ -33,7 +33,7 @@
 I build Arabic-first interfaces — React and Next.js on the front, Supabase and PostgreSQL underneath, and a stubborn attention to how a page reads once the text starts running right-to-left. Six of those products are live right now: a PC-building comparison engine, a fashion storefront, a supercar showcase, an immersive studio world. Most nights I'm either shipping the next one or rebuilding a layout until both directions feel native.
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22D3EE,100:0D1117&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">🧬 Interface Engine</h2>
 
@@ -50,7 +50,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:22D3EE&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">🚀 Active Deployments</h2>
 
@@ -105,7 +105,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22D3EE,100:0D1117&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">🚀 Launchpad · مشاريع تستحق الاستكشاف</h2>
 
@@ -206,13 +206,13 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
   </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:22D3EE&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">🛠️ Arsenal & Tech Stack</h2>
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,nodejs,supabase,postgres,git,github,figma,vite,vercel&theme=dark&perline=8" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, Supabase, PostgreSQL, Git, GitHub, Figma, Vite, Vercel"/>
+<img src="assets/tech-icons.svg" width="460" alt="HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Node.js, Supabase, PostgreSQL, Git, GitHub, Figma, Vite, Vercel"/>
 
 <br><br>
 
@@ -241,7 +241,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
   </ul>
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22D3EE,100:0D1117&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">📡 Live Telemetry</h2>
 
@@ -257,7 +257,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:22D3EE&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">🐍 Contribution Matrix</h2>
 
@@ -269,7 +269,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22D3EE,100:0D1117&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 ## Behind the interface · عنّي
 
@@ -296,7 +296,7 @@ Have an opportunity, an idea, or a collaboration in mind? I’d love to hear fro
 
 [Email · mtzm2225@gmail.com](mailto:mtzm2225@gmail.com) · [LinkedIn · Moataz Mohamed](https://www.linkedin.com/in/moataz-mohamed-342b32399)
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:22D3EE&height=3&width=100%25" width="100%"/>
+<img src="assets/divider.svg" width="100%"/>
 
 <h2 align="center">🤝 Let's Connect</h2>
 
@@ -312,5 +312,5 @@ Have an opportunity, an idea, or a collaboration in mind? I’d love to hear fro
 </div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,50:4C1D95,100:0D1117&height=150&section=footer&animation=fadeIn"/>
+<img src="assets/divider.svg" width="100%"/>
 </div>
