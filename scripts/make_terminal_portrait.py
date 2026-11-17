@@ -122,11 +122,11 @@ def build(avatar_path, out_path, static=False):
         ".mono{font-size:12.5px}"
         ".band{opacity:1;animation:paint .24s ease-out backwards}"
         ".row{opacity:1;animation:fade .32s ease-out backwards}"
-        ".typerect{animation:widen 1.05s steps(26,end) .35s backwards}"
+        ".typerect{animation:widen 1.05s steps(24,end) .35s backwards}"
         ".cursor{animation:blink 1.1s steps(1,end) infinite}"
         "@keyframes paint{from{opacity:0}to{opacity:1}}"
         "@keyframes fade{from{opacity:0}to{opacity:1}}"
-        "@keyframes widen{from{width:0}to{width:%dpx}}"
+        "@keyframes widen{from{transform:translateX(-%dpx)}to{transform:translateX(0)}}"
         "@keyframes blink{0%%,49%%{opacity:1}50%%,100%%{opacity:0}}"
         "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
     ) % cmd_w
@@ -139,8 +139,9 @@ def build(avatar_path, out_path, static=False):
         f'followed by a neofetch-style profile readout">'
     )
     parts.append("<defs><style>" + css + "</style>"
-                 f'<clipPath id="typeclip"><rect class="typerect" x="0" y="40" '
-                 f'width="{cmd_w}" height="30"/></clipPath></defs>')
+                 f'<mask id="typeclip" maskUnits="userSpaceOnUse" x="0" y="40" '
+                 f'width="{W}" height="40"><rect class="typerect" x="168" y="40" '
+                 f'width="{cmd_w}" height="34" fill="#fff"/></mask></defs>')
 
     parts.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" '
                  f'fill="{BG}" stroke="{STROKE}"/>')
@@ -155,7 +156,7 @@ def build(avatar_path, out_path, static=False):
     parts.append(f'<text class="mono" x="26" y="63" fill="{GREEN}">moataz@github</text>'
                  f'<text class="mono" x="134" y="63" fill="{CYAN}">~</text>'
                  f'<text class="mono" x="150" y="63" fill="{DIM}">%</text>')
-    clip = "" if static else ' clip-path="url(#typeclip)"'
+    clip = "" if static else ' mask="url(#typeclip)"'
     parts.append(f'<g{clip}><text class="mono" x="168" y="63" '
                  f'fill="{TEXT}">{esc(cmd)}</text></g>')
     parts.append(f'<rect class="cursor" x="{168 + cmd_w + 3}" y="51" width="8" '

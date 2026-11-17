@@ -112,8 +112,8 @@ def typing_line():
         "IT Student @ Borg El Arab Technological University",
         "وابنِ واجهات تُقرأ صح في الاتجاهين",
     ]
-    W, H = 900, 46
-    size = 21
+    W, H = 820, 46
+    size = 24
     char_w = size * 0.6
     cycle = 4.0 * len(phrases)
 

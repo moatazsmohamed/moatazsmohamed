@@ -2,7 +2,11 @@
 
 <img src="assets/hero-banner.svg" width="100%" alt="Moataz Mohamed — frontend developer, Arabic-first web and mobile, Alexandria, Egypt"/>
 
-<img src="assets/typing-line.svg" width="900" alt="Frontend Developer · Arabic-first by design"/>
+<br/>
+
+<img src="assets/typing-line.svg" width="820" alt="Frontend Developer · Arabic-first by design"/>
+
+<br/>
 
 <p>
   <img src="https://img.shields.io/badge/%F0%9F%93%8D-Alexandria%2C_Egypt-0D1117?style=for-the-badge&labelColor=0D1117&color=22D3EE" alt="Alexandria, Egypt"/>
