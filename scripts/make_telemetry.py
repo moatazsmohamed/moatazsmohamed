@@ -429,7 +429,7 @@ def matrix_svg(d, t):
     # One dash travels a closed loop; a shorter, brighter dash sits on its
     # leading edge as the head. Pure CSS, so it animates inside an <img>.
     path_d, plen = snake_path(left, top, pitch, cell, cols)
-    body, head_len = 84, 15
+    body, head_len = 124, 17
     period = plen + body
     dur = period / 62.0
     s.append(
