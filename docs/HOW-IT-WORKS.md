@@ -46,6 +46,13 @@ follower count. From that the script derives the current streak (walking back
 from the last active day), the longest streak, the 30-day series, the language
 mix, and the 53 × 7 matrix. Everything is emitted twice: dark and `-light`.
 
+The snake on the matrix is one `<path>` stroked with a single dash: the dash is
+the body, a shorter brighter dash on the same offset is the head, and animating
+`stroke-dashoffset` walks it along the route. The route itself is a closed loop —
+a sine wave rightwards, its mirror back — with the frequency picked so both
+branches meet exactly on the middle row at both edges, which removes the seam a
+straight run would leave when the dash wraps around.
+
 ### 3. Brand assets — `make_brand_assets.py`
 
 Banner, typing line, footer and divider, again in dark and light. The typing

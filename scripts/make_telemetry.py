@@ -17,6 +17,7 @@ Usage: python3 scripts/make_telemetry.py
 
 import datetime as dt
 import json
+import math
 import os
 import sys
 import urllib.request
@@ -338,6 +339,35 @@ def languages_svg(d, t, light):
 
 
 # ------------------------------------------------------------------ panel 4 ---
+def snake_path(left, top, pitch, cell, cols, rows=7):
+    """A closed, smoothly-wandering loop through the matrix, plus its length.
+
+    The snake travels right along one wave and back along its mirror image. The
+    wave frequency is chosen so both branches land exactly on the middle row at
+    the left and right edges, which makes the loop close on itself — no seam for
+    the dash pattern to jump across.
+    """
+    waves = 9
+    omega = waves * math.pi / cols
+    per_col = 8
+    n = cols * per_col
+
+    def branch(sign):
+        pts = []
+        rng = range(n + 1) if sign > 0 else range(n, -1, -1)
+        for k in rng:
+            c = k / per_col
+            y = 3.0 + sign * 2.55 * math.sin(c * omega)
+            y = max(0.3, min(rows - 1.3, y))
+            pts.append((left + c * pitch + cell / 2, top + y * pitch + cell / 2))
+        return pts
+
+    pts = branch(1) + branch(-1)
+    d = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
+    length = sum(math.dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1))
+    return d, length
+
+
 def matrix_svg(d, t):
     days = d["days"]
     cell, gap = 11.5, 3.0
@@ -395,6 +425,31 @@ def matrix_svg(d, t):
                      f'</title></rect>')
 
     lx = left
+    # --------------------------------------------------------------- snake ---
+    # One dash travels a closed loop; a shorter, brighter dash sits on its
+    # leading edge as the head. Pure CSS, so it animates inside an <img>.
+    path_d, plen = snake_path(left, top, pitch, cell, cols)
+    body, head_len = 84, 15
+    period = plen + body
+    dur = period / 62.0
+    s.append(
+        "<style>"
+        f"@keyframes slither{{from{{stroke-dashoffset:0}}"
+        f"to{{stroke-dashoffset:-{period:.1f}}}}}"
+        f".snake{{animation:slither {dur:.1f}s linear infinite}}"
+        "@media (prefers-reduced-motion:reduce){.snake{display:none}}"
+        "</style>"
+    )
+    s.append(f'<path d="{path_d}" fill="none" stroke="{t["cyan"]}" stroke-width="18" '
+             f'stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.15" '
+             f'stroke-dasharray="{body + 12} {period - body - 12:.1f}" class="snake"/>')
+    s.append(f'<path d="{path_d}" fill="none" stroke="{t["cyan"]}" stroke-width="8" '
+             f'stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.88" '
+             f'stroke-dasharray="{body} {period - body:.1f}" class="snake"/>')
+    s.append(f'<path d="{path_d}" fill="none" stroke="{t["violet"]}" stroke-width="12" '
+             f'stroke-linecap="round" stroke-linejoin="round" '
+             f'stroke-dasharray="{head_len} {period - head_len:.1f}" class="snake"/>')
+
     ly = top + 7 * pitch + 26
     s.append(f'<text x="{lx}" y="{ly+9}" fill="{t["dim"]}" font-size="10.5">Less</text>')
     lx += 34

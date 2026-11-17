@@ -350,3 +350,4 @@ Have an opportunity, an idea, or a collaboration in mind? I’d love to hear fro
 <img src="assets/footer.svg#gh-dark-mode-only" width="100%" alt="Moataz Mohamed — thanks for stopping by">
 <img src="assets/footer-light.svg#gh-light-mode-only" width="100%" alt="Moataz Mohamed — thanks for stopping by">
 </div>
+<sub>53 × 7 cells of real contribution data, drawn by the same <a href="scripts/make_telemetry.py">make_telemetry.py</a> pass — hover any cell to read its date and count. The snake is a single CSS dash travelling a closed path, so it keeps crawling inside an <code>&lt;img&gt;</code> with no JavaScript.</sub>
