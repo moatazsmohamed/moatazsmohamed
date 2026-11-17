@@ -30,21 +30,25 @@ SANS = "'Segoe UI',Ubuntu,-apple-system,Helvetica,Arial,sans-serif"
 
 THEMES = {
     "dark": {
-        "panel": "#0B0F14", "stroke": "#21262D", "grid": "#1B222B",
-        "text": "#C9D1D9", "title": "#E6EDF3", "dim": "#8B949E",
-        "cyan": "#22D3EE", "violet": "#8B5CF6", "magenta": "#E879F9", "green": "#3FB950",
-        "levels": ["#161B22", "#0E4F5C", "#127C8C", "#17A9BF", "#22D3EE"],
+        "panel": "#0A0A0A", "stroke": "#242424", "grid": "#1A1A1A",
+        "text": "#D8D8D3", "title": "#FAFAF9", "dim": "#8A8A85",
+        "cyan": "#FF4438", "violet": "#FF8A80", "magenta": "#B33A2E", "green": "#FF4438",
+        "levels": ["#141414", "#3D1512", "#7A231C", "#C33027", "#FF4438"],
     },
     "light": {
-        "panel": "#F6F8FA", "stroke": "#D0D7DE", "grid": "#E4E8ED",
-        "text": "#1F2328", "title": "#1F2328", "dim": "#656D76",
-        "cyan": "#0891B2", "violet": "#7C3AED", "magenta": "#C026D3", "green": "#1A7F37",
-        "levels": ["#EBEDF0", "#B6E3EC", "#7FCFDE", "#3FB0C8", "#0891B2"],
+        "panel": "#FAF9F6", "stroke": "#E2E0DA", "grid": "#EDEBE5",
+        "text": "#2B2B28", "title": "#0A0A0A", "dim": "#6B6B66",
+        "cyan": "#D92B1E", "violet": "#B91C1C", "magenta": "#8C1F14", "green": "#D92B1E",
+        "levels": ["#EDEBE5", "#F3C9C4", "#E8998F", "#D9534A", "#D92B1E"],
     },
 }
 
-PALETTE_DARK = ["#22D3EE", "#8B5CF6", "#E879F9", "#3FB950", "#F59E0B", "#F472B6"]
-PALETTE_LIGHT = ["#0891B2", "#7C3AED", "#C026D3", "#1A7F37", "#B45309", "#DB2777"]
+
+
+# language spectrum: a red ramp plus neutral tones, so the chart stays inside
+# the brand instead of turning into a rainbow
+PALETTE_DARK = ["#FF4438", "#FF8A80", "#B33A2E", "#6E6E68", "#4A4A46", "#31312E"]
+PALETTE_LIGHT = ["#D92B1E", "#EF7C71", "#8C1F14", "#6B6B66", "#A8A8A0", "#2B2B28"]
 
 
 # ------------------------------------------------------------------ fetch ---
@@ -206,7 +210,7 @@ def telemetry_svg(d, t):
              f'stroke-dasharray="{circ*pct:.1f} {circ:.1f}" '
              f'transform="rotate(-90 {cx} {cy})"/>')
     s.append(f'<text class="num" x="{cx}" y="{cy+9}" text-anchor="middle" '
-             f'fill="{t["magenta"]}" font-size="26" font-weight="700">'
+             f'fill="{t["title"]}" font-size="26" font-weight="700">'
              f'{d["current_streak"]}</text>')
     s.append(f'<text x="{cx}" y="{cy+r+24}" text-anchor="middle" fill="{t["cyan"]}" '
              f'font-size="13.5" font-weight="600" letter-spacing="1.4">CURRENT STREAK</text>')

@@ -65,6 +65,32 @@ visitor's theme:
 </picture>
 ```
 
+## The SIGNAL identity
+
+One visual system covers every asset, defined once per generator in a `THEMES`
+dict (`dark` / `light`). The rule is editorial: **ink, paper, and exactly one
+accent.**
+
+| Role | Dark | Light |
+| --- | --- | --- |
+| Background / panel | `#0A0A0A` | `#FFFFFF` / `#FAF9F6` |
+| Primary ink | `#FAFAF9` | `#0A0A0A` |
+| Accent (the only saturated colour) | `#FF4438` | `#D92B1E` |
+| Hairline / stroke | `#242424` | `#E2E0DA` |
+| Muted text | `#8A8A85` | `#6B6B66` |
+
+Everything that is not the accent is a neutral step, which is why the language
+spectrum is a red ramp plus greys instead of a rainbow, the terminal window
+chrome is grey rather than red/amber/green, and the avatar is pressed into a
+single ink-to-paper duotone (`MONO_PORTRAIT` in the portrait script) so the red
+stays reserved for interface elements. Shaded areas — the contribution matrix,
+the activity area fill, the streak ring — all derive from the same accent, so
+the page reads as one printed sheet rather than a dashboard.
+
+Editorial furniture is part of the theme too: hairline rules, monospaced micro
+labels (`M3T — PROFILE`, `OPEN TO WORK`) and generous letter-spacing on the
+display type.
+
 ## Conventions
 
 - **Alt text on every image.** The SVGs carry `role="img"` and `aria-label` too.

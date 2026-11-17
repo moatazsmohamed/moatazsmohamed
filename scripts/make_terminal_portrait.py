@@ -19,14 +19,17 @@ from PIL import Image
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 W, H = 940, 452
-BG = "#0D1117"
-BAR = "#161B22"
-STROKE = "#21262D"
-CYAN = "#22D3EE"
-MAGENTA = "#E879F9"
-GREEN = "#3FB950"
-DIM = "#8B949E"
-TEXT = "#C9D1D9"
+BG = "#0A0A0A"
+BAR = "#141414"
+STROKE = "#262626"
+CYAN = "#FF4438"          # the single signal accent
+MAGENTA = "#FF8A80"
+GREEN = "#FAFAF9"         # hostname reads as plain ink, not a second accent
+DIM = "#7C7C76"
+TEXT = "#D8D8D3"
+DUO_LO = (18, 18, 18)     # portrait ramp: ink
+DUO_HI = (250, 250, 249)  # portrait ramp: paper
+MONO_PORTRAIT = True      # False keeps the avatar's original colours
 
 GRID = 48           # dots per side
 PITCH = 4.9         # px between dot origins
@@ -49,6 +52,12 @@ def load_dots(path):
             lum = 0.299 * r + 0.587 * g + 0.114 * b
             if lum < 14:            # near-black background -> leave the cell empty
                 continue
+            if MONO_PORTRAIT:
+                # duotone: press the avatar into a single ink -> paper ramp so the
+                # red stays reserved for the interface chrome
+                k = (lum / 255.0) ** 0.85
+                r, g, b = (round(lo + (hi - lo) * k)
+                           for lo, hi in zip(DUO_LO, DUO_HI))
             dots.append((gx, gy, "#%02X%02X%02X" % (r, g, b)))
     return dots
 
@@ -148,7 +157,7 @@ def build(avatar_path, out_path, static=False):
     parts.append(f'<path d="M0.5 14.5a14 14 0 0 1 14-14h{W-29}a14 14 0 0 1 14 14v20H0.5z" '
                  f'fill="{BAR}"/>')
     parts.append(f'<line x1="0.5" y1="34.5" x2="{W-0.5}" y2="34.5" stroke="{STROKE}"/>')
-    for i, colour in enumerate(("#FF5F57", "#FEBC2E", "#28C840")):
+    for i, colour in enumerate(("#3A3A3A", "#4A4A4A", "#5A5A5A")):
         parts.append(f'<circle cx="{22 + i*18}" cy="17.5" r="5.5" fill="{colour}"/>')
     parts.append(f'<text x="{W/2}" y="21.5" text-anchor="middle" fill="{DIM}" '
                  f'font-size="11.5">moataz@github — zsh — 120×32</text>')
@@ -182,7 +191,9 @@ def build(avatar_path, out_path, static=False):
         )
 
     sw_y = name_y + 34 + len(rows) * row_h + 6
-    for i, colour in enumerate([BG, "#30363D", "#484F58", CYAN, "#8B5CF6", MAGENTA, GREEN, TEXT]):
+    # a tonal ramp instead of a rainbow: ink -> paper, closed by the one accent
+    for i, colour in enumerate([BG, "#262626", "#3F3F3F", "#5C5C5C",
+                                "#8A8A85", "#B5B5B0", TEXT, CYAN]):
         parts.append(f'<rect x="{info_x + i*22}" y="{sw_y:.0f}" width="18" height="9" '
                      f'rx="2" fill="{colour}"/>')
 

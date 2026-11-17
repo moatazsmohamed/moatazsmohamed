@@ -15,14 +15,14 @@
 <br/>
 
 <p>
-  <img src="https://img.shields.io/badge/%F0%9F%93%8D-Alexandria%2C_Egypt-0D1117?style=for-the-badge&labelColor=0D1117&color=22D3EE" alt="Alexandria, Egypt"/>
-  <img src="https://img.shields.io/badge/%F0%9F%8E%93-IT_Student_%40_BATU-0D1117?style=for-the-badge&labelColor=0D1117&color=E879F9" alt="IT student at BATU"/>
-  <img src="https://img.shields.io/badge/Open_to-Junior_roles_%26_internships-0D1117?style=for-the-badge&labelColor=0D1117&color=22D3EE" alt="Open to junior roles and internships"/>
+  <img src="https://img.shields.io/badge/%F0%9F%93%8D-Alexandria%2C_Egypt-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=FF4438" alt="Alexandria, Egypt"/>
+  <img src="https://img.shields.io/badge/%F0%9F%8E%93-IT_Student_%40_BATU-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=FF8A80" alt="IT student at BATU"/>
+  <img src="https://img.shields.io/badge/Open_to-Junior_roles_%26_internships-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=FF4438" alt="Open to junior roles and internships"/>
 </p>
 
 <p>
-  <img src="https://komarev.com/ghpvc/?username=moatazsmohamed&color=22d3ee&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
-  <img src="https://img.shields.io/github/followers/moatazsmohamed?style=for-the-badge&color=22D3EE&labelColor=0D1117&logo=github&logoColor=white&label=FOLLOWERS" alt="GitHub followers"/>
+  <img src="https://komarev.com/ghpvc/?username=moatazsmohamed&color=ff4438&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
+  <img src="https://img.shields.io/github/followers/moatazsmohamed?style=for-the-badge&color=FF4438&labelColor=0A0A0A&logo=github&logoColor=white&label=FOLLOWERS" alt="GitHub followers"/>
 </p>
 
 </div>
@@ -51,10 +51,10 @@ I build Arabic-first interfaces — React and Next.js on the front, Supabase and
 
 The terminal above <i>is</i> the engine's output. The raw artifacts — one photo turned into a dot-matrix portrait — live behind these buttons:
 
-[![Live_Portfolio](https://img.shields.io/badge/%E2%96%B6_LIVE_PORTFOLIO-m3t--z.vercel.app-22D3EE?style=for-the-badge&labelColor=0D1117)](https://m3t-z.vercel.app/)
-[![SVG_Source](https://img.shields.io/badge/SVG_SOURCE-1,692_dots-E879F9?style=for-the-badge&labelColor=0D1117)](assets/terminal-portrait.svg)
-[![Generator](https://img.shields.io/badge/GENERATOR-make_terminal_portrait.py-0D1117?style=for-the-badge&labelColor=0D1117&logo=python&logoColor=22D3EE)](scripts/make_terminal_portrait.py)
-[![Telemetry](https://img.shields.io/badge/TELEMETRY-make_telemetry.py-0D1117?style=for-the-badge&labelColor=0D1117&logo=gnubash&logoColor=22D3EE)](scripts/make_telemetry.py)
+[![Live_Portfolio](https://img.shields.io/badge/%E2%96%B6_LIVE_PORTFOLIO-m3t--z.vercel.app-FF4438?style=for-the-badge&labelColor=0A0A0A)](https://m3t-z.vercel.app/)
+[![SVG_Source](https://img.shields.io/badge/SVG_SOURCE-1,692_dots-FF8A80?style=for-the-badge&labelColor=0A0A0A)](assets/terminal-portrait.svg)
+[![Generator](https://img.shields.io/badge/GENERATOR-make_terminal_portrait.py-0A0A0A?style=for-the-badge&labelColor=0A0A0A&logo=python&logoColor=FF4438)](scripts/make_terminal_portrait.py)
+[![Telemetry](https://img.shields.io/badge/TELEMETRY-make_telemetry.py-0A0A0A?style=for-the-badge&labelColor=0A0A0A&logo=gnubash&logoColor=FF4438)](scripts/make_telemetry.py)
 
 <sub><b>pipeline:</b> photo → 14-colour palette quantisation → 48×48 dot grid → luminance cut → 12 staggered bands → <b>1,692 dots</b> → SVG + CSS keyframes · <b>zero manual drawing</b> — every dot, every panel below, is computed by <a href="scripts/make_terminal_portrait.py">make_terminal_portrait.py</a> and <a href="scripts/make_telemetry.py">make_telemetry.py</a>, then refreshed daily by GitHub Actions.</sub>
 
@@ -74,7 +74,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 <br>
 <sub>Bilingual portfolio with project storytelling, motion-led case studies and Arabic RTL treated as a first-class interface</sub>
 <br><br>
-<a href="https://m3t-z.vercel.app/"><img src="https://img.shields.io/badge/Live_Site-m3t--z.vercel.app-22D3EE?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0D1117"/></a>
+<a href="https://m3t-z.vercel.app/"><img src="https://img.shields.io/badge/Live_Site-m3t--z.vercel.app-FF4438?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A"/></a>
 
 </td>
 <td align="center" width="50%">
@@ -83,7 +83,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 <br>
 <sub>Build-a-PC price comparison platform — component picking, compatibility checks and a 3D learning interface</sub>
 <br><br>
-<a href="https://pcverse-lac.vercel.app/"><img src="https://img.shields.io/badge/Live_Site-pcverse--lac.vercel.app-E879F9?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0D1117"/></a>
+<a href="https://pcverse-lac.vercel.app/"><img src="https://img.shields.io/badge/Live_Site-pcverse--lac.vercel.app-FF8A80?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A"/></a>
 
 </td>
 </tr>
@@ -106,12 +106,12 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 <div align="center">
 
-[![M3T](https://img.shields.io/badge/Live-M3T_Portfolio-22D3EE?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117)](https://m3t-z.vercel.app/)
-[![PCVERSE](https://img.shields.io/badge/Live-PCVERSE-22D3EE?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117)](https://pcverse-lac.vercel.app/)
-[![MOTRYX](https://img.shields.io/badge/Live-MOTRYX-22D3EE?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117)](https://motryx-delta.vercel.app/ar)
-[![TAFRA](https://img.shields.io/badge/Live-TAFRA-22D3EE?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117)](https://tafrawear.vercel.app/)
-[![Marab](https://img.shields.io/badge/Live-Marab-22D3EE?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117)](https://car-showcase-weld.vercel.app/)
-[![NAWA](https://img.shields.io/badge/Live-NAWA_Studio-22D3EE?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117)](https://nawa-studio-dun.vercel.app/)
+[![M3T](https://img.shields.io/badge/Live-M3T_Portfolio-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://m3t-z.vercel.app/)
+[![PCVERSE](https://img.shields.io/badge/Live-PCVERSE-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://pcverse-lac.vercel.app/)
+[![MOTRYX](https://img.shields.io/badge/Live-MOTRYX-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://motryx-delta.vercel.app/ar)
+[![TAFRA](https://img.shields.io/badge/Live-TAFRA-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://tafrawear.vercel.app/)
+[![Marab](https://img.shields.io/badge/Live-Marab-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://car-showcase-weld.vercel.app/)
+[![NAWA](https://img.shields.io/badge/Live-NAWA_Studio-FF4438?style=flat-square&logo=vercel&logoColor=white&labelColor=0A0A0A)](https://nawa-studio-dun.vercel.app/)
 
 </div>
 
@@ -349,10 +349,10 @@ Have an opportunity, an idea, or a collaboration in mind? I’d love to hear fro
 
 <div align="center">
 
-<a href="https://m3t-z.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-m3t--z.vercel.app-22D3EE?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0D1117"/></a>
-<a href="https://www.linkedin.com/in/moataz-mohamed-342b32399"><img src="https://img.shields.io/badge/LinkedIn-Moataz_Mohamed-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117"/></a>
-<a href="mailto:mtzm2225@gmail.com"><img src="https://img.shields.io/badge/Email-mtzm2225%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117"/></a>
-<img src="https://img.shields.io/github/followers/moatazsmohamed?style=for-the-badge&color=22D3EE&labelColor=0D1117&logo=github&logoColor=white&label=Followers"/>
+<a href="https://m3t-z.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-m3t--z.vercel.app-FF4438?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A"/></a>
+<a href="https://www.linkedin.com/in/moataz-mohamed-342b32399"><img src="https://img.shields.io/badge/LinkedIn-Moataz_Mohamed-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A0A0A"/></a>
+<a href="mailto:mtzm2225@gmail.com"><img src="https://img.shields.io/badge/Email-mtzm2225%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0A0A0A"/></a>
+<img src="https://img.shields.io/github/followers/moatazsmohamed?style=for-the-badge&color=FF4438&labelColor=0A0A0A&logo=github&logoColor=white&label=Followers"/>
 
 <br><br>
 

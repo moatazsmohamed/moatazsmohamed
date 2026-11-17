@@ -21,16 +21,16 @@ MONO = "'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,
 
 THEMES = {
     "dark": {
-        "bg1": "#0D1117", "bg2": "#120E24", "bg3": "#0B1220",
-        "ink1": "#FFFFFF", "ink2": "#22D3EE", "ink3": "#8B5CF6",
-        "cyan": "#22D3EE", "violet": "#8B5CF6", "magenta": "#E879F9",
-        "dim": "#8B949E", "dots": "#FFFFFF", "dot_op": "0.06",
+        "bg1": "#0A0A0A", "bg2": "#131313", "bg3": "#0A0A0A",
+        "ink1": "#FAFAF9", "ink2": "#FF4438", "ink3": "#FAFAF9",
+        "cyan": "#FF4438", "violet": "#FF4438", "magenta": "#FF8A80",
+        "dim": "#8A8A85", "dots": "#FAFAF9", "dot_op": "0.05", "glow_op": "0.5",
     },
     "light": {
-        "bg1": "#FFFFFF", "bg2": "#F3F0FF", "bg3": "#ECFEFF",
-        "ink1": "#0F172A", "ink2": "#0891B2", "ink3": "#7C3AED",
-        "cyan": "#0891B2", "violet": "#7C3AED", "magenta": "#C026D3",
-        "dim": "#57606A", "dots": "#0F172A", "dot_op": "0.05",
+        "bg1": "#FFFFFF", "bg2": "#FAF9F6", "bg3": "#FFFFFF",
+        "ink1": "#0A0A0A", "ink2": "#D92B1E", "ink3": "#0A0A0A",
+        "cyan": "#D92B1E", "violet": "#B91C1C", "magenta": "#8C1F14",
+        "dim": "#6B6B66", "dots": "#0A0A0A", "dot_op": "0.05", "glow_op": "0.10",
     },
 }
 
@@ -76,6 +76,7 @@ def hero_banner(t):
              ".name{font-size:96px;font-weight:800;letter-spacing:12px}"
              ".role{font-size:21px;letter-spacing:5.5px;font-weight:600}"
              ".loc{font-size:14px;letter-spacing:2.6px}"
+             ".meta{font-family:" + MONO + ";font-size:10.5px;letter-spacing:2.4px}"
              "@keyframes drift{0%{transform:translateX(-60px)}"
              "50%{transform:translateX(60px)}100%{transform:translateX(-60px)}}"
              "@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}"
@@ -87,7 +88,7 @@ def hero_banner(t):
 
     p.append(f'<rect width="{W}" height="{H}" fill="url(#bg)"/>')
     p.append(f'<ellipse cx="{W*0.5}" cy="96" rx="430" ry="150" fill="url(#glow)" '
-             f'opacity="{"0.55" if t["ink1"] == "#FFFFFF" else "0.28"}"/>')
+             f'opacity="{t["glow_op"]}"/>')
 
     p.append(f'<g fill="{t["dots"]}" opacity="{t["dot_op"]}">')
     for y in range(24, 220, 26):
@@ -102,6 +103,14 @@ def hero_banner(t):
     p.append(f'<g class="w2"><path d="M-80 250 C 200 210, 420 284, 680 244 '
              f'S 1060 210, 1290 254" fill="none" stroke="url(#wave2)" stroke-width="1.4" '
              f'stroke-opacity="0.7"/></g>')
+
+    # editorial furniture: hairline rules + monospaced micro labels
+    p.append(f'<line x1="0" y1="24.5" x2="{W}" y2="24.5" stroke="{t["ink1"]}" '
+             f'stroke-opacity="0.10"/>')
+    p.append(f'<text class="meta" x="34" y="17" fill="{t["dim"]}">'
+             f'M3T — PROFILE</text>')
+    p.append(f'<text class="meta" x="{W-34}" y="17" text-anchor="end" '
+             f'fill="{t["cyan"]}">OPEN TO WORK</text>')
 
     p.append(f'<text class="name" x="{W/2}" y="140" text-anchor="middle" '
              f'fill="url(#ink)">MOATAZ</text>')
@@ -165,8 +174,8 @@ def typing_line(t):
                  f'<text x="{W/2}" y="28" text-anchor="middle" fill="{t["cyan"]}">'
                  f'{esc(phrase)}</text></g></g>')
 
-    p.append(f'<rect class="cur" x="{W/2-5}" y="13" width="9" height="18" '
-             f'fill="{t["cyan"]}"/>')
+    p.append(f'<rect class="cur" x="{W/2 + max(widths)/2 + 4:.0f}" y="13" '
+             f'width="9" height="18" fill="{t["cyan"]}"/>')
     p.append("</svg>")
     return "".join(p)
 
@@ -178,11 +187,11 @@ def divider():
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
             f'viewBox="0 0 {W} {H}" role="img" aria-label="section divider">'
             f'<defs><linearGradient id="d" x1="0" y1="0" x2="1" y2="0">'
-            f'<stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>'
-            f'<stop offset="0.2" stop-color="#22D3EE" stop-opacity="0.85"/>'
-            f'<stop offset="0.55" stop-color="#8B5CF6" stop-opacity="0.85"/>'
-            f'<stop offset="0.85" stop-color="#E879F9" stop-opacity="0.6"/>'
-            f'<stop offset="1" stop-color="#E879F9" stop-opacity="0"/>'
+            f'<stop offset="0" stop-color="#FF4438" stop-opacity="0"/>'
+            f'<stop offset="0.18" stop-color="#FF4438" stop-opacity="0.75"/>'
+            f'<stop offset="0.5" stop-color="#FF4438" stop-opacity="0.9"/>'
+            f'<stop offset="0.82" stop-color="#FF4438" stop-opacity="0.75"/>'
+            f'<stop offset="1" stop-color="#FF4438" stop-opacity="0"/>'
             f'</linearGradient></defs>'
             f'<rect width="{W}" height="{H}" fill="url(#d)"/></svg>')
 
@@ -222,9 +231,9 @@ def footer(t):
              f'<path d="M-60 144 C 220 126, 440 166, 680 140 S 1080 122, 1280 148" '
              f'fill="none" stroke="url(#fw)" stroke-width="1.2" stroke-opacity="0.55"/></g>')
     p.append(f'<text class="fname" x="{W/2}" y="62" text-anchor="middle" '
-             f'fill="{t["ink2"]}">MOATAZ MOHAMED</text>')
+             f'fill="{t["ink1"]}">MOATAZ MOHAMED</text>')
     p.append(f'<text class="ftag" x="{W/2}" y="86" text-anchor="middle" '
-             f'fill="{t["dim"]}">FRONTEND DEVELOPER · ARABIC-FIRST</text>')
+             f'fill="{t["cyan"]}">FRONTEND DEVELOPER · ARABIC-FIRST</text>')
     p.append(f'<text class="fmeta" x="{W/2}" y="108" text-anchor="middle" '
              f'fill="{t["dim"]}" opacity="0.75">ALEXANDRIA, EGYPT · THANKS FOR '
              f'STOPPING BY</text>')
