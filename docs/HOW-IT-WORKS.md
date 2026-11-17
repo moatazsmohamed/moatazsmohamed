@@ -154,6 +154,22 @@ SMIL has no `prefers-reduced-motion` equivalent, so the finished base state is
 also the reduced-motion fallback: readers who disable animation get the static
 composition, which is why it has to look correct on its own.
 
+### Where the motion is
+
+| Asset | What moves | Technique |
+| --- | --- | --- |
+| `hero-banner` | the two rule-waves drift in opposite directions, the dot field breathes | `animateTransform` + `animate opacity` |
+| `typing-line` | one phrase per 4 s slot, typed by a sliding mask, own caret | `animate opacity` + `animateTransform` |
+| `terminal-portrait` | 12 bands paint top to bottom, then 10 readout rows fade in | one shared 3.36 s timeline, `keyTimes` per element |
+| `activity-graph` | the line draws itself, the area fades up, the dots pop in left to right | `stroke-dashoffset` + staggered opacity |
+| `language-spectrum` | the bar sweeps open left to right | widening mask rect |
+| `contribution-matrix` | the snake walks the loop, head and body on one dash | `stroke-dashoffset` |
+
+Everything above shares one trick: the element's attribute is written at its
+**finished** value, and the animation is expressed as absolute fractions of a
+single timeline starting at `0s`. Nothing waits on a `begin` offset, so nothing
+can flash its finished state before its turn.
+
 ## Scheduled refresh
 
 `.github/workflows/telemetry.yml` runs daily at 03:17 UTC, regenerates the
