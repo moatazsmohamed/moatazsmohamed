@@ -78,14 +78,12 @@ def hero_banner():
     p.append(f'<rect width="{W}" height="{H}" fill="url(#bg)"/>')
     p.append(f'<ellipse cx="{W*0.5}" cy="96" rx="430" ry="150" fill="url(#glow)"/>')
 
-    # faint dot texture
     p.append('<g fill="#FFFFFF" opacity="0.06">')
     for y in range(24, 220, 26):
         for x in range(24, W - 20, 26):
             p.append(f'<circle class="dot" cx="{x}" cy="{y}" r="1.1"/>')
     p.append("</g>")
 
-    # waves
     p.append(f'<g class="w1"><path d="M-80 278 C 160 232, 380 306, 640 266 '
              f'S 1080 232, 1290 274" fill="none" stroke="url(#wave1)" stroke-width="2.5"/>'
              f'<path d="M-80 296 C 180 256, 400 322, 660 286 S 1100 254, 1290 294" '
@@ -94,7 +92,6 @@ def hero_banner():
              f'S 1060 210, 1290 254" fill="none" stroke="url(#wave2)" stroke-width="1.4" '
              f'stroke-opacity="0.7"/></g>')
 
-    # name
     p.append(f'<text class="name" x="{W/2}" y="140" text-anchor="middle" '
              f'fill="url(#ink)">MOATAZ</text>')
     p.append(f'<line x1="{W/2-150}" y1="164" x2="{W/2+150}" y2="164" '
@@ -120,36 +117,41 @@ def typing_line():
     char_w = size * 0.6
     cycle = 4.0 * len(phrases)
 
+    widths = [int(len(p) * char_w) + 16 for p in phrases]
+
     p = []
     p.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
              f'viewBox="0 0 {W} {H}" role="img" aria-label="'
              f'{esc(phrases[0])}">')
-    p.append("<defs>")
-    p.append("<style>"
-             f"text{{font-family:{MONO};font-size:{size}px}}"
-             ".cur{animation:blink 1s steps(1,end) infinite}"
-             "@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}"
-             "@keyframes hide{0%{opacity:0}1%{opacity:1}88%{opacity:1}"
-             "92%{opacity:0}100%{opacity:0}}"
-             "@keyframes wipe{0%{width:0}1%{width:0}18%{width:var(--w)}"
-             "100%{width:var(--w)}}"
-             ".ph{opacity:0;animation:hide var(--cycle)s linear infinite}"
-             ".clip{animation:wipe var(--cycle)s linear infinite}"
-             "@media (prefers-reduced-motion:reduce){.ph{opacity:1;animation:none}"
-             ".cur{display:none}.clip{animation:none}}"
-             "</style>")
-    for i, phrase in enumerate(phrases):
-        w = int(len(phrase) * char_w) + 12
-        p.append(f'<clipPath id="c{i}"><rect class="clip" x="0" y="0" width="{w}" '
-                 f'height="{H}" style="--w:{w}px;--cycle:{cycle}s;'
-                 f'animation-delay:{i*4.0}s"/></clipPath>')
+    p.append("<defs><style>")
+    p.append(f"text{{font-family:{MONO};font-size:{size}px}}")
+    p.append("@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}")
+    p.append(".cur{animation:blink 1s steps(1,end) infinite}")
+
+    for i, w in enumerate(widths):
+        p.append(f"@keyframes show{i}{{0%{{opacity:0}}1%{{opacity:1}}"
+                 f"88%{{opacity:1}}92%{{opacity:0}}100%{{opacity:0}}}}")
+        p.append(f"@keyframes type{i}{{0%{{width:0}}1%{{width:0}}"
+                 f"17%{{width:{w}px}}100%{{width:{w}px}}}}")
+        p.append(f".ph{i}{{opacity:0;animation:show{i} {cycle}s linear "
+                 f"{i*4.0}s infinite}}")
+        p.append(f".c{i}{{animation:type{i} {cycle}s linear {i*4.0}s infinite}}")
+
+    p.append("@media (prefers-reduced-motion:reduce){")
+    p.append(".ph0{opacity:1;animation:none}.cur{display:none}")
+    for i in range(len(widths)):
+        p.append(f".c{i}{{animation:none}}")
+    p.append("}</style>")
+
+    for i, w in enumerate(widths):
+        p.append(f'<clipPath id="c{i}"><rect class="c{i}" x="0" y="0" '
+                 f'width="{w}" height="{H}"/></clipPath>')
     p.append("</defs>")
 
     for i, phrase in enumerate(phrases):
-        p.append(f'<g class="ph" style="--cycle:{cycle}s;'
-                 f'animation-delay:{i*4.0}s">'
-                 f'<g clip-path="url(#c{i})"><text x="{W/2}" y="31" '
-                 f'text-anchor="middle" fill="{CYAN}">{esc(phrase)}</text></g></g>')
+        p.append(f'<g class="ph{i}"><g clip-path="url(#c{i})">'
+                 f'<text x="{W/2}" y="31" text-anchor="middle" fill="{CYAN}">'
+                 f'{esc(phrase)}</text></g></g>')
 
     p.append(f'<rect class="cur" x="{W/2-6}" y="14" width="10" height="20" fill="{CYAN}"/>')
     p.append("</svg>")
