@@ -73,17 +73,6 @@ def hero_banner(t):
              "</linearGradient>"
              "<style>"
              "text{font-family:" + SANS + "}"
-             ".name{font-size:96px;font-weight:800;letter-spacing:12px}"
-             ".role{font-size:21px;letter-spacing:5.5px;font-weight:600}"
-             ".loc{font-size:14px;letter-spacing:2.6px}"
-             ".meta{font-family:" + MONO + ";font-size:10.5px;letter-spacing:2.4px}"
-             "@keyframes drift{0%{transform:translateX(-60px)}"
-             "50%{transform:translateX(60px)}100%{transform:translateX(-60px)}}"
-             "@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}"
-             ".w1{animation:drift 14s ease-in-out infinite}"
-             ".w2{animation:drift 18s ease-in-out infinite reverse}"
-             ".dot{animation:pulse 4s ease-in-out infinite}"
-             "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
              "</style></defs>")
 
     p.append(f'<rect width="{W}" height="{H}" fill="url(#bg)"/>')
@@ -93,32 +82,43 @@ def hero_banner(t):
     p.append(f'<g fill="{t["dots"]}" opacity="{t["dot_op"]}">')
     for y in range(24, 220, 26):
         for x in range(24, W - 20, 26):
-            p.append(f'<circle class="dot" cx="{x}" cy="{y}" r="1.1"/>')
-    p.append("</g>")
+            p.append(f'<circle cx="{x}" cy="{y}" r="1.1"/>')
+    p.append(f'<animate attributeName="opacity" '
+             f'values="{t["dot_op"]};{float(t["dot_op"]) * 1.7:.3f};{t["dot_op"]}" '
+             f'dur="6s" repeatCount="indefinite"/></g>')
 
-    p.append(f'<g class="w1"><path d="M-80 278 C 160 232, 380 306, 640 266 '
+    p.append(f'<g><animateTransform attributeName="transform" type="translate" '
+             f'values="-60 0;60 0;-60 0" dur="14s" repeatCount="indefinite"/>'
+             f'<path d="M-80 278 C 160 232, 380 306, 640 266 '
              f'S 1080 232, 1290 274" fill="none" stroke="url(#wave1)" stroke-width="2.5"/>'
              f'<path d="M-80 296 C 180 256, 400 322, 660 286 S 1100 254, 1290 294" '
              f'fill="none" stroke="url(#wave1)" stroke-width="1.6" stroke-opacity="0.6"/></g>')
-    p.append(f'<g class="w2"><path d="M-80 250 C 200 210, 420 284, 680 244 '
+    p.append(f'<g><animateTransform attributeName="transform" type="translate" '
+             f'values="60 0;-60 0;60 0" dur="18s" repeatCount="indefinite"/>'
+             f'<path d="M-80 250 C 200 210, 420 284, 680 244 '
              f'S 1060 210, 1290 254" fill="none" stroke="url(#wave2)" stroke-width="1.4" '
              f'stroke-opacity="0.7"/></g>')
 
     # editorial furniture: hairline rules + monospaced micro labels
     p.append(f'<line x1="0" y1="24.5" x2="{W}" y2="24.5" stroke="{t["ink1"]}" '
              f'stroke-opacity="0.10"/>')
-    p.append(f'<text class="meta" x="34" y="17" fill="{t["dim"]}">'
+    p.append(f'<text x="34" y="17" font-family="{MONO}" font-size="10.5" '
+             f'letter-spacing="2.4" fill="{t["dim"]}">'
              f'M3T — PROFILE</text>')
-    p.append(f'<text class="meta" x="{W-34}" y="17" text-anchor="end" '
+    p.append(f'<text x="{W-34}" y="17" text-anchor="end" font-family="{MONO}" '
+             f'font-size="10.5" letter-spacing="2.4" '
              f'fill="{t["cyan"]}">OPEN TO WORK</text>')
 
-    p.append(f'<text class="name" x="{W/2}" y="140" text-anchor="middle" '
+    p.append(f'<text x="{W/2}" y="140" text-anchor="middle" font-size="96" '
+             f'font-weight="800" letter-spacing="12" '
              f'fill="url(#ink)">MOATAZ</text>')
     p.append(f'<line x1="{W/2-150}" y1="164" x2="{W/2+150}" y2="164" '
              f'stroke="{t["cyan"]}" stroke-opacity="0.55" stroke-width="1.5"/>')
-    p.append(f'<text class="role" x="{W/2}" y="198" text-anchor="middle" '
+    p.append(f'<text x="{W/2}" y="198" text-anchor="middle" font-size="21" '
+             f'font-weight="600" letter-spacing="5.5" '
              f'fill="{t["cyan"]}">FRONTEND DEVELOPER</text>')
-    p.append(f'<text class="loc" x="{W/2}" y="226" text-anchor="middle" '
+    p.append(f'<text x="{W/2}" y="226" text-anchor="middle" font-size="14" '
+             f'letter-spacing="2.6" '
              f'fill="{t["dim"]}">ARABIC-FIRST WEB &amp; MOBILE · ALEXANDRIA, EGYPT</text>')
     p.append("</svg>")
     return "".join(p)
@@ -208,25 +208,23 @@ def footer(t):
              "</linearGradient>"
              "<style>"
              "text{font-family:" + SANS + "}"
-             ".fname{font-size:26px;font-weight:800;letter-spacing:7px}"
-             ".ftag{font-size:13px;letter-spacing:3px}"
-             ".fmeta{font-size:11.5px;letter-spacing:2.2px}"
-             "@keyframes drift{0%{transform:translateX(-40px)}"
-             "50%{transform:translateX(40px)}100%{transform:translateX(-40px)}}"
-             ".w{animation:drift 16s ease-in-out infinite}"
-             "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
              "</style></defs>")
 
     p.append(f'<rect width="{W}" height="{H}" fill="url(#fbg)"/>')
-    p.append(f'<g class="w"><path d="M-60 130 C 200 108, 420 152, 660 124 '
+    p.append(f'<g><animateTransform attributeName="transform" type="translate" '
+             f'values="-40 0;40 0;-40 0" dur="16s" repeatCount="indefinite"/>'
+             f'<path d="M-60 130 C 200 108, 420 152, 660 124 '
              f'S 1060 104, 1280 134" fill="none" stroke="url(#fw)" stroke-width="2"/>'
              f'<path d="M-60 144 C 220 126, 440 166, 680 140 S 1080 122, 1280 148" '
              f'fill="none" stroke="url(#fw)" stroke-width="1.2" stroke-opacity="0.55"/></g>')
-    p.append(f'<text class="fname" x="{W/2}" y="62" text-anchor="middle" '
+    p.append(f'<text x="{W/2}" y="62" text-anchor="middle" font-size="26" '
+             f'font-weight="800" letter-spacing="7" '
              f'fill="{t["ink1"]}">MOATAZ MOHAMED</text>')
-    p.append(f'<text class="ftag" x="{W/2}" y="86" text-anchor="middle" '
+    p.append(f'<text x="{W/2}" y="86" text-anchor="middle" font-size="13" '
+             f'letter-spacing="3" '
              f'fill="{t["cyan"]}">FRONTEND DEVELOPER · ARABIC-FIRST</text>')
-    p.append(f'<text class="fmeta" x="{W/2}" y="108" text-anchor="middle" '
+    p.append(f'<text x="{W/2}" y="108" text-anchor="middle" font-size="11.5" '
+             f'letter-spacing="2.2" '
              f'fill="{t["dim"]}" opacity="0.75">ALEXANDRIA, EGYPT · THANKS FOR '
              f'STOPPING BY</text>')
     p.append("</svg>")

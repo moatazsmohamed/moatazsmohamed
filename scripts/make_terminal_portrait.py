@@ -78,12 +78,15 @@ def portrait_svg(dots, static):
     out = []
     per_band_delay = 0.13
     start = 1.5
+    PAINT_T = start + BANDS * per_band_delay + 0.3
     for band in range(BANDS):
         if band not in by_band:
             continue
         delay = 0 if static else start + band * per_band_delay
-        style = f' style="animation-delay:{delay:.2f}s"' if not static else ""
-        out.append(f'<g class="band"{style}>')
+        anim = ""
+        if not static:
+            anim = smil_fade(delay, 0.24, PAINT_T)
+        out.append(f'<g opacity="1">{anim}')
         for colour, cells in by_band[band]:
             out.append(f'<g fill="{colour}">')
             for gx, gy in cells:
@@ -92,11 +95,24 @@ def portrait_svg(dots, static):
                 out.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{DOT}" height="{DOT}"/>')
             out.append("</g>")
         out.append("</g>")
-    return "".join(out), start + BANDS * per_band_delay + 0.3
+    return "".join(out), PAINT_T
 
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def smil_fade(delay, length, total, frm="0", to="1"):
+    """A one-shot fade expressed as absolute fractions of one shared timeline.
+
+    begin stays at 0 for every element, so there is no pre-begin state to
+    flash: the element is simply held at `frm` until its slot opens.
+    """
+    k0 = max(0.0, min(0.999, delay / total))
+    k1 = max(k0 + 0.001, min(0.9995, (delay + length) / total))
+    return (f'<animate attributeName="opacity" values="{frm};{frm};{to};{to}" '
+            f'keyTimes="0;{k0:.4f};{k1:.4f};1" dur="{total:.2f}s" '
+            f'begin="0s" fill="freeze"/>')
 
 
 def build(avatar_path, out_path, static=False):
@@ -105,6 +121,9 @@ def build(avatar_path, out_path, static=False):
 
     cmd = "neofetch --dots --profile"
     cmd_w = int(9.6 * len(cmd)) + 8
+    type_anim = (f'<animateTransform attributeName="transform" type="translate" '
+                 f'values="-{cmd_w} 0;-{cmd_w} 0;0 0;0 0" keyTimes="0;0.12;0.42;1" '
+                 f'dur="{cmd_w / 260:.2f}s" begin="0.2s" fill="freeze"/>')
 
     rows = [
         ("OS", "Alexandria, Egypt"),
@@ -129,16 +148,7 @@ def build(avatar_path, out_path, static=False):
         f".k{{fill:{DIM};font-size:12.5px}}"
         f".v{{fill:{TEXT};font-size:12.5px}}"
         ".mono{font-size:12.5px}"
-        ".band{opacity:1;animation:paint .24s ease-out backwards}"
-        ".row{opacity:1;animation:fade .32s ease-out backwards}"
-        ".typerect{animation:widen 1.05s steps(24,end) .35s backwards}"
-        ".cursor{animation:blink 1.1s steps(1,end) infinite}"
-        "@keyframes paint{from{opacity:0}to{opacity:1}}"
-        "@keyframes fade{from{opacity:0}to{opacity:1}}"
-        "@keyframes widen{from{transform:translateX(-%dpx)}to{transform:translateX(0)}}"
-        "@keyframes blink{0%%,49%%{opacity:1}50%%,100%%{opacity:0}}"
-        "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
-    ) % cmd_w
+    )
 
     parts = []
     parts.append(
@@ -149,8 +159,9 @@ def build(avatar_path, out_path, static=False):
     )
     parts.append("<defs><style>" + css + "</style>"
                  f'<mask id="typeclip" maskUnits="userSpaceOnUse" x="0" y="40" '
-                 f'width="{W}" height="40"><rect class="typerect" x="168" y="40" '
-                 f'width="{cmd_w}" height="34" fill="#fff"/></mask></defs>')
+                 f'width="{W}" height="40"><rect x="168" y="40" width="{cmd_w}" '
+                 f'height="34" fill="#fff">{"" if static else type_anim}</rect>'
+                 f'</mask></defs>')
 
     parts.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" '
                  f'fill="{BG}" stroke="{STROKE}"/>')
@@ -165,11 +176,13 @@ def build(avatar_path, out_path, static=False):
     parts.append(f'<text class="mono" x="26" y="63" fill="{GREEN}">moataz@github</text>'
                  f'<text class="mono" x="134" y="63" fill="{CYAN}">~</text>'
                  f'<text class="mono" x="150" y="63" fill="{DIM}">%</text>')
-    clip = "" if static else ' mask="url(#typeclip)"'
+    clip = "" if static else ' mask="url(#typeclip)"' 
     parts.append(f'<g{clip}><text class="mono" x="168" y="63" '
                  f'fill="{TEXT}">{esc(cmd)}</text></g>')
-    parts.append(f'<rect class="cursor" x="{168 + cmd_w + 3}" y="51" width="8" '
-                 f'height="15" fill="{CYAN}"/>')
+    parts.append(f'<rect x="{168 + cmd_w + 3}" y="51" width="8" height="15" fill="{CYAN}">'
+                 f'<animate attributeName="opacity" values="1;1;0;0" '
+                 f'keyTimes="0;0.49;0.5;1" dur="1.1s" repeatCount="indefinite"/>'
+                 f'</rect>')
 
     parts.append(portrait)
 
@@ -181,10 +194,11 @@ def build(avatar_path, out_path, static=False):
 
     for i, (k, v) in enumerate(rows):
         y = name_y + 34 + i * row_h
-        delay = 0 if static else paint_done * 0.35 + 0.85 + i * 0.15
-        style = "" if static else f' style="animation-delay:{delay:.2f}s"'
+        row_start = paint_done * 0.35 + 0.85
+        row_t = row_start + len(rows) * 0.15 + 0.4
+        anim = "" if static else smil_fade(row_start + i * 0.15, 0.32, row_t)
         parts.append(
-            f'<g class="row"{style}>'
+            f'<g opacity="1">{anim}'
             f'<text class="k" x="{info_x}" y="{y:.0f}">{esc(k)}</text>'
             f'<text class="k" x="{info_x + 72}" y="{y:.0f}" fill="{MAGENTA}">.</text>'
             f'<text class="v" x="{info_x + 130}" y="{y:.0f}">{esc(v)}</text></g>'

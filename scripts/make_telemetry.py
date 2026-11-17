@@ -269,15 +269,29 @@ def activity_svg(d, t, span=30):
     area = (f"M{pts[0][0]:.1f},{bottom} L"
             + " L".join(f"{x:.1f},{y:.1f}" for x, y, _, _ in pts)
             + f" L{pts[-1][0]:.1f},{bottom} Z")
-    s.append(f'<path d="{area}" fill="url(#fade)"/>')
+    s.append(f'<path d="{area}" fill="url(#fade)"><animate attributeName="opacity" '
+             f'values="0;0;0.9;0.9" keyTimes="0;0.10;0.55;1" dur="1.9s" begin="0s" '
+             f'fill="freeze"/></path>')
+    # the line draws itself: dasharray is its own length, so offset 0 (the static
+    # base state) already shows the finished line
+    length = sum(((pts[i][0]-pts[i-1][0])**2 + (pts[i][1]-pts[i-1][1])**2) ** 0.5
+                 for i in range(1, len(pts)))
     s.append('<polyline points="' + " ".join(f"{x:.1f},{y:.1f}" for x, y, _, _ in pts)
              + f'" fill="none" stroke="{t["cyan"]}" stroke-width="2.2" '
-               f'stroke-linejoin="round" stroke-linecap="round"/>')
+               f'stroke-linejoin="round" stroke-linecap="round" '
+               f'stroke-dasharray="{length:.0f}" stroke-dashoffset="0">'
+               f'<animate attributeName="stroke-dashoffset" '
+               f'values="{length:.0f};0;0" keyTimes="0;0.62;1" dur="1.9s" '
+               f'begin="0s" fill="freeze"/></polyline>')
 
-    for x, y, _, count in pts:
+    for i, (x, y, _, count) in enumerate(pts):
         if count > 0:
+            k0 = 0.30 + 0.30 * i / max(1, n - 1)
             s.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.1" fill="{t["panel"]}" '
-                     f'stroke="{t["cyan"]}" stroke-width="1.8"/>')
+                     f'stroke="{t["cyan"]}" stroke-width="1.8">'
+                     f'<animate attributeName="opacity" values="0;0;1;1" '
+                     f'keyTimes="0;{k0:.3f};{min(0.995, k0 + 0.06):.3f};1" '
+                     f'dur="1.9s" begin="0s" fill="freeze"/></circle>')
             if count == peak:
                 s.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6.5" fill="{t["magenta"]}" '
                          f'opacity="0.22"/>')
@@ -318,7 +332,14 @@ def languages_svg(d, t, light):
     x = bar_x
     s.append(f'<clipPath id="barclip"><rect x="{bar_x}" y="{bar_y}" width="{bar_w}" '
              f'height="{bar_h}" rx="7"/></clipPath>')
-    s.append('<g clip-path="url(#barclip)">')
+    # the spectrum opens left to right: the mask rect carries the animation, its
+    # static width is the finished width
+    s.append(f'<mask id="sweep" maskUnits="userSpaceOnUse" x="{bar_x}" y="{bar_y}" '
+             f'width="{bar_w}" height="{bar_h}"><rect x="{bar_x}" y="{bar_y}" '
+             f'width="{bar_w}" height="{bar_h}" rx="7" fill="#fff">'
+             f'<animate attributeName="width" values="0;{bar_w};{bar_w}" '
+             f'keyTimes="0;0.55;1" dur="1.4s" begin="0s" fill="freeze"/></rect></mask>')
+    s.append('<g clip-path="url(#barclip)" mask="url(#sweep)">')
     for i, (_, _, pct) in enumerate(langs):
         w = bar_w * pct / total
         s.append(f'<rect x="{x:.1f}" y="{bar_y}" width="{w:.1f}" height="{bar_h}" '
