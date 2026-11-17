@@ -1,16 +1,12 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-banner-light.svg">
-  <img src="assets/hero-banner.svg" width="100%" alt="Moataz Mohamed — frontend developer, Arabic-first web and mobile, Alexandria, Egypt">
-</picture>
+<img src="assets/hero-banner.svg#gh-dark-mode-only" width="100%" alt="Moataz Mohamed — frontend developer, Arabic-first web and mobile, Alexandria, Egypt">
+<img src="assets/hero-banner-light.svg#gh-light-mode-only" width="100%" alt="Moataz Mohamed — frontend developer, Arabic-first web and mobile, Alexandria, Egypt">
 
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/typing-line-light.svg">
-  <img src="assets/typing-line.svg" width="760" alt="Frontend Developer · Arabic-first by design">
-</picture>
+<img src="assets/typing-line.svg#gh-dark-mode-only" width="760" alt="Frontend Developer · Arabic-first by design">
+<img src="assets/typing-line-light.svg#gh-light-mode-only" width="760" alt="Frontend Developer · Arabic-first by design">
 
 <br/>
 
@@ -257,20 +253,14 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/telemetry-light.svg">
-  <img src="assets/telemetry.svg" width="100%" alt="Total contributions, current streak and longest streak">
-</picture>
+<img src="assets/telemetry.svg#gh-dark-mode-only" width="100%" alt="Total contributions, current streak and longest streak">
+<img src="assets/telemetry-light.svg#gh-light-mode-only" width="100%" alt="Total contributions, current streak and longest streak">
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-graph-light.svg">
-  <img src="assets/activity-graph.svg" width="100%" alt="Daily contribution graph for the last 30 days">
-</picture>
+<img src="assets/activity-graph.svg#gh-dark-mode-only" width="100%" alt="Daily contribution graph for the last 30 days">
+<img src="assets/activity-graph-light.svg#gh-light-mode-only" width="100%" alt="Daily contribution graph for the last 30 days">
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/language-spectrum-light.svg">
-  <img src="assets/language-spectrum.svg" width="100%" alt="Language mix across public repositories">
-</picture>
+<img src="assets/language-spectrum.svg#gh-dark-mode-only" width="100%" alt="Language mix across public repositories">
+<img src="assets/language-spectrum-light.svg#gh-light-mode-only" width="100%" alt="Language mix across public repositories">
 
 <sub>Drawn from the GitHub GraphQL API by <a href="scripts/make_telemetry.py">make_telemetry.py</a> and committed to this repo, so nothing here can rate-limit or go dark. Regenerated daily by <a href=".github/workflows/telemetry.yml">telemetry.yml</a>.</sub>
 
@@ -282,10 +272,8 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/contribution-matrix-light.svg">
-  <img src="assets/contribution-matrix.svg" width="100%" alt="Pixel matrix of the last twelve months of contributions, with a progress bar of active days">
-</picture>
+<img src="assets/contribution-matrix.svg#gh-dark-mode-only" width="100%" alt="Pixel matrix of the last twelve months of contributions, with a progress bar of active days">
+<img src="assets/contribution-matrix-light.svg#gh-light-mode-only" width="100%" alt="Pixel matrix of the last twelve months of contributions, with a progress bar of active days">
 
 <sub>53 × 7 cells of real contribution data, drawn by the same <a href="scripts/make_telemetry.py">make_telemetry.py</a> pass — hover any cell to read its date and count.</sub>
 
@@ -359,8 +347,6 @@ Have an opportunity, an idea, or a collaboration in mind? I’d love to hear fro
 </div>
 
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
-  <img src="assets/footer.svg" width="100%" alt="Moataz Mohamed — thanks for stopping by">
-</picture>
+<img src="assets/footer.svg#gh-dark-mode-only" width="100%" alt="Moataz Mohamed — thanks for stopping by">
+<img src="assets/footer-light.svg#gh-light-mode-only" width="100%" alt="Moataz Mohamed — thanks for stopping by">
 </div>
