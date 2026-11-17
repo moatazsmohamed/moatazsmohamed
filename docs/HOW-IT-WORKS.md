@@ -63,17 +63,23 @@ SVG.
 ### 4. README — hand written
 
 Each theme graphic is served as a pair of images carrying GitHub's own theme
-fragments:
+`<picture>` + `prefers-color-scheme`:
 
 ```html
-<img src="assets/telemetry.svg#gh-dark-mode-only" width="100%" alt="...">
-<img src="assets/telemetry-light.svg#gh-light-mode-only" width="100%" alt="...">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/telemetry-light.svg">
+  <img src="assets/telemetry.svg" width="100%" alt="...">
+</picture>
 ```
 
-The fragments are resolved by GitHub's stylesheet against the theme the visitor
-picked on GitHub. A `<picture>` element with `prefers-color-scheme` looks
-tempting, but it resolves against the operating system instead — a visitor on a
-dark GitHub theme with a light OS gets the light banners on a dark page.
+Two alternatives were tried and rejected. The `#gh-dark-mode-only` /
+`#gh-light-mode-only` URL fragments only work when GitHub's markdown pipeline
+adds the matching class to the element — it does not do that for a plain `<img>`
+in a README any more, so both variants render at once. Writing the classes by
+hand is the other option, but those classes are legacy. `<picture>` is the form
+GitHub actually honours: it resolves against the operating system rather than
+the theme picked on github.com, which is a minor cosmetic mismatch at worst and
+never a duplicated banner.
 
 ## The SIGNAL identity
 
