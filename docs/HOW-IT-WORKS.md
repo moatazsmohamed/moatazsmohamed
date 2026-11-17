@@ -55,15 +55,18 @@ SVG.
 
 ### 4. README — hand written
 
-`<picture>` + `prefers-color-scheme` picks the variant that matches the
-visitor's theme:
+Each theme graphic is served as a pair of images carrying GitHub's own theme
+fragments:
 
 ```html
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/telemetry-light.svg">
-  <img src="assets/telemetry.svg" width="100%" alt="...">
-</picture>
+<img src="assets/telemetry.svg#gh-dark-mode-only" width="100%" alt="...">
+<img src="assets/telemetry-light.svg#gh-light-mode-only" width="100%" alt="...">
 ```
+
+The fragments are resolved by GitHub's stylesheet against the theme the visitor
+picked on GitHub. A `<picture>` element with `prefers-color-scheme` looks
+tempting, but it resolves against the operating system instead — a visitor on a
+dark GitHub theme with a light OS gets the light banners on a dark page.
 
 ## The SIGNAL identity
 
