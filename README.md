@@ -40,7 +40,7 @@
 </div>
 
 <p align="center">
-I build Arabic-first interfaces — React and Next.js on the front, Supabase and PostgreSQL underneath, and a stubborn attention to how a page reads once the text starts running right-to-left. Six of those products are live right now: a PC-building comparison engine, a fashion storefront, a supercar showcase, an immersive studio world. Most nights I'm either shipping the next one or rebuilding a layout until both directions feel native.
+I build Arabic-first interfaces — React and Next.js on the front, Supabase and PostgreSQL underneath, and a stubborn attention to how a page reads once the text starts running right-to-left. Six of those products are live right now: an academic ecosystem for my own university, an analytics workspace, an Arabic design house, a wood atelier's client site, an accounting platform — and this profile itself. Most nights I'm either shipping the next one or rebuilding a layout until both directions feel native.
 </p>
 
 <img src="assets/divider.svg" width="100%"/>
@@ -128,91 +128,63 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
     <td colspan="2" width="100%" align="center" valign="top">
       <h3><a href="https://m3t-z.vercel.app/">M3T Portfolio</a></h3>
       <a href="https://m3t-z.vercel.app/">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/m3t-hero.jpg" />
-          <img src="./assets/projects/m3t-preview.gif" alt="Wide landscape animated preview of the M3T portfolio, displayed full width" width="100%" loading="lazy" />
-        </picture>
+        <img src="./assets/projects/card-m3t.svg" alt="Project card: the M3T portfolio homepage, live screenshot" width="100%" loading="lazy" />
       </a>
-      <p><strong>My main portfolio · البورتفوليو الرئيسي</strong></p>
-      <p>A bilingual space for my work, journey, and project stories.</p>
-      <p>مساحة ثنائية اللغة لعرض أعمالي ورحلتي وقصص المشاريع.</p>
-      <p><code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>Vercel</code></p>
-      <p><strong>Focus:</strong> Arabic-first UX · Project storytelling · Responsive UI</p>
-        </td>
+      <p><strong>My own space · مساحتي الشخصية</strong></p>
+      <p>A bilingual space for my work, journey and the stories behind each build.</p>
+      <p>مساحة ثنائية اللغة لعرض أعمالي ورحلتي وقصص كل مشروع.</p>
+    </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://pcverse-lac.vercel.app/">PCVERSE</a></h3>
-      <a href="https://pcverse-lac.vercel.app/">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/pcverse-hero.jpg" />
-          <img src="./assets/projects/pcverse-preview.gif" alt="Animated preview of PCVERSE and its 3D computer learning interface" width="100%" loading="lazy" />
-        </picture>
+      <h3><a href="https://sanad-academic.vercel.app/">SANAD · سَنَد</a></h3>
+      <a href="https://sanad-academic.vercel.app/">
+        <img src="./assets/projects/card-sanad.svg" alt="Project card: SANAD, an Arabic academic platform, live screenshot" width="100%" loading="lazy" />
       </a>
-      <p><strong>Interactive computer explorer · تعلّم الكمبيوتر بالتجربة</strong></p>
-      <p>Explore hardware, software, and PC assembly through 3D models and learning labs.</p>
-      <p>استكشاف مكوّنات الحاسوب والبرمجيات وتجميع الكمبيوتر عبر نماذج ثلاثية الأبعاد ومختبرات تعليمية.</p>
-      <p><code>React</code> <code>Three.js</code> <code>TypeScript</code> <code>Vite</code></p>
-      <p><strong>Focus:</strong> 3D interaction · Bilingual learning · Educational UX</p>
-        </td>
+      <p><strong>AI academic ecosystem · نظام أكاديمي متكامل</strong></p>
+      <p>Six connected layers — library, student community, project centre, AI assistant, defence academy and admin — with server-side permissions and per-university isolation.</p>
+      <p>ست طبقات مترابطة: المكتبة والمجتمع الطلابي ومركز المشاريع والمساعد الذكي وأكاديمية المناقشة ولوحة الإدارة — بصلاحيات على الخادم وعزل بيانات لكل جامعة.</p> <code>React · tRPC · Drizzle · Neon</code>
+    </td>
     <td width="50%" valign="top">
-      <h3><a href="https://motryx-delta.vercel.app/ar">MOTRYX</a></h3>
-      <a href="https://motryx-delta.vercel.app/ar">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/motryx-hero.jpg" />
-          <img src="./assets/projects/motryx-preview.gif" alt="Animated preview of MOTRYX's bilingual software and AI studio website" width="100%" loading="lazy" />
-        </picture>
+      <h3><a href="https://social-intelligence-gilt.vercel.app/">Social Intelligence</a></h3>
+      <a href="https://social-intelligence-gilt.vercel.app/">
+        <img src="./assets/projects/card-social.svg" alt="Project card: Social Intelligence, an analytics dashboard, live screenshot" width="100%" loading="lazy" />
       </a>
-      <p><strong>Software &amp; AI studio · واجهة استوديو برمجيات وذكاء اصطناعي</strong></p>
-      <p>A cinematic bilingual visual system for services, work, and product ideas.</p>
-      <p>هوية بصرية ثنائية اللغة لعرض الخدمات والأعمال والأفكار الرقمية.</p>
-      <p><code>Vite</code> <code>React</code> <code>TypeScript</code> <code>Vercel</code></p>
-      <p><strong>Focus:</strong> Visual systems · Service storytelling · RTL/LTR</p>
-        </td>
+      <p><strong>Analytics workspace · مساحة تحليلات</strong></p>
+      <p>A React 19 + Supabase dashboard that turns raw social data into reach, engagement and growth signals you can read at a glance.</p>
+      <p>لوحة تحوّل بيانات السوشيال الخام إلى مؤشرات وصول وتفاعل ونمو تُقرأ من نظرة واحدة.</p> <code>React 19 · Supabase · Recharts</code>
+    </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://tafrawear.vercel.app/">TAFRA</a></h3>
-      <a href="https://tafrawear.vercel.app/">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/tafra-hero.jpg" />
-          <img src="./assets/projects/tafra-preview.gif" alt="Animated preview of TAFRA's fashion storefront and lookbook" width="100%" loading="lazy" />
-        </picture>
+      <h3><a href="https://zakhraf.vercel.app/">ZAKHRAF · زخرف</a></h3>
+      <a href="https://zakhraf.vercel.app/">
+        <img src="./assets/projects/card-zakhraf.svg" alt="Project card: Zakhraf, an Arabic design house, live screenshot" width="100%" loading="lazy" />
       </a>
-      <p><strong>Fashion storefront · متجر أزياء من الإسكندرية</strong></p>
-      <p>A black-and-gold storefront with collections, lookbook imagery, sizing guidance, and WhatsApp ordering.</p>
-      <p>متجر بهوية سوداء وذهبية، يضم المجموعات واللوك بوك ودليل المقاسات والطلب عبر واتساب.</p>
-      <p><strong>Focus:</strong> Product browsing · Brand identity · Clear ordering flow</p>
-        </td>
+      <p><strong>Arabic design house · بيت تصميم عربي</strong></p>
+      <p>An ornamental identity built on Islamic geometry — pattern systems, quiet motion and a bilingual type pairing.</p>
+      <p>هوية زخرفية مبنية على الهندسة الإسلامية: أنماط وحركة هادئة وتناغم طباعي ثنائي اللغة.</p> <code>HTML · CSS · Vanilla JS</code>
+    </td>
     <td width="50%" valign="top">
-      <h3><a href="https://car-showcase-weld.vercel.app/">Marab · مِرَآب</a></h3>
-      <a href="https://car-showcase-weld.vercel.app/">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/marab-hero.jpg" />
-          <img src="./assets/projects/marab-preview.gif" alt="Animated preview of Marab's Arabic supercar showcase and fleet cards" width="100%" loading="lazy" />
-        </picture>
+      <h3><a href="https://ms-wood-works.vercel.app/">MS Woodworks</a></h3>
+      <a href="https://ms-wood-works.vercel.app/">
+        <img src="./assets/projects/card-wood.svg" alt="Project card: MS Woodworks, a wood atelier website, live screenshot" width="100%" loading="lazy" />
       </a>
-      <p><strong>Luxury car showcase · معرض السيارات الخارقة</strong></p>
-      <p>An Arabic RTL automotive experience with a cinematic hero, fleet cards, performance specs, and comparison sections.</p>
-      <p>تجربة عربية لعرض السيارات، بصور سينمائية وبطاقات للأسطول ومواصفات الأداء وأقسام للمقارنة.</p>
-      <p><code>GSAP</code> <code>ScrollTrigger</code> <code>Lenis</code></p>
-      <p><strong>Focus:</strong> Motion-led storytelling · RTL design · Visual navigation</p>
-        </td>
+      <p><strong>Client site · موقع عميل</strong></p>
+      <p>A workshop site for Mohamed Ismail &amp; Sons — catalogue, gallery and an enquiry flow behind a session-based admin.</p>
+      <p>موقع ورشة محمد إسماعيل وأولاده: كتالوج ومعرض ومسار استفسار مع لوحة إدارة محمية بجلسة.</p> <code>Express · PostgreSQL</code>
+    </td>
   </tr>
   <tr>
     <td colspan="2" width="100%" align="center" valign="top">
-      <h3><a href="https://nawa-studio-dun.vercel.app/">NAWA Studio · نَوى</a></h3>
-      <a href="https://nawa-studio-dun.vercel.app/">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="./assets/projects/nawa-hero.jpg" />
-          <img src="./assets/projects/nawa-preview.gif" alt="Animated preview of NAWA Studio's immersive Arabic creative world" width="50%" loading="lazy" />
-        </picture>
+      <h3><a href="https://tasheela.vercel.app/">TASHEELA · تسهيلا</a></h3>
+      <a href="https://tasheela.vercel.app/">
+        <img src="./assets/projects/card-tasheela.svg" alt="Project card: Tasheela, an Arabic accounting platform, live screenshot" width="100%" loading="lazy" />
       </a>
-      <p><strong>Immersive creative world · عالم إبداعي تفاعلي</strong></p>
-      <p>A space-themed Arabic studio experience built around discovery, playful navigation, and visitor progress.</p>
-      <p>تجربة استوديو عربية بطابع فضائي، تعتمد على الاستكشاف والتنقّل المرح وتقدّم الزائر.</p>
-      <p><strong>Focus:</strong> Creative interaction · Onboarding · Exploratory UX</p>
-        </td>
+      <p><strong>Accounting &amp; operations · محاسبة وتشغيل</strong></p>
+      <p>An Arabic platform that runs a working accounting team's day: records, review and reporting in one place.</p>
+      <p>منصة عربية تدير يوم فريق محاسبة كامل: التسجيل والمراجعة والتقارير في مكان واحد.</p> <code>React · tRPC · Drizzle</code>
+    </td>
   </tr>
 </table>
 
