@@ -32,8 +32,7 @@
 <text x="30" y="40" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" font-size="12.5" letter-spacing="2.6" fill="rgba(255,255,255,0.62)">03 — 06</text>
 <text x="970" y="40" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" font-size="12.5" letter-spacing="2.6" fill="#FF4438">LIVE <tspan fill="#FF4438"><animate attributeName="opacity" values="1;1;0.25;0.25" keyTimes="0;0.5;0.55;1" dur="1.8s" repeatCount="indefinite"/>&#8599;</tspan></text>
 <g>
-<animateTransform attributeName="transform" type="translate" values="0 18;0 18;0 0;0 0" keyTimes="0;0.04;0.13;1" dur="6s" fill="freeze"/>
-<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.04;0.13;1" dur="6s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 12;0 12;0 0;0 0" keyTimes="0;0.04;0.13;1" dur="6s" fill="freeze"/>
 <rect x="30" y="467" width="52" height="3" fill="#FF4438"/>
 <text x="30" y="505" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="35" font-weight="800" letter-spacing="0.6" fill="#FFFFFF">SOCIAL INTELLIGENCE</text>
 <text x="30" y="533" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" font-size="14.5" letter-spacing="1.4" fill="rgba(255,255,255,0.66)">ANALYTICS DASHBOARD</text>

@@ -83,8 +83,7 @@ def card(p, index, total, dur):
 <text x="30" y="40" font-family="{MONO}" font-size="12.5" letter-spacing="2.6" fill="rgba(255,255,255,0.62)">{index:02d} — {total:02d}</text>
 <text x="{W-30}" y="40" text-anchor="end" font-family="{MONO}" font-size="12.5" letter-spacing="2.6" fill="{ACCENT}">LIVE <tspan fill="{ACCENT}"><animate attributeName="opacity" values="1;1;0.25;0.25" keyTimes="0;0.5;0.55;1" dur="1.8s" repeatCount="indefinite"/>&#8599;</tspan></text>
 <g>
-<animateTransform attributeName="transform" type="translate" values="0 18;0 18;0 0;0 0" keyTimes="0;0.04;0.13;1" dur="6s" fill="freeze"/>
-<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.04;0.13;1" dur="6s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 12;0 12;0 0;0 0" keyTimes="0;0.04;0.13;1" dur="6s" fill="freeze"/>
 <rect x="30" y="{H-96}" width="52" height="3" fill="{ACCENT}"/>
 <text x="30" y="{H-58}" font-family="{SANS}" font-size="35" font-weight="800" letter-spacing="0.6" fill="{INK}">{esc(p['name'])}</text>
 <text x="30" y="{H-30}" font-family="{MONO}" font-size="14.5" letter-spacing="1.4" fill="{DIM}">{esc(p['kind'])}</text>
