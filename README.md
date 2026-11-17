@@ -35,7 +35,7 @@
 
 <a href="https://m3t-z.vercel.app/"><img src="assets/terminal-portrait.svg" width="940" alt="Animated terminal that paints Moataz Mohamed's portrait from 1,692 real-colour dots, then prints a neofetch-style profile readout"/></a>
 
-<sub>⚡ The terminal above is a <b>live animation</b>, not a screenshot — <a href="scripts/make_terminal_portrait.py">make_terminal_portrait.py</a> slices my photo into a 48×48 grid, quantises it to 14 colours and repaints it band by band: <b>1,692 dots</b>, then the readout types itself. Pure SVG + CSS inside GitHub markdown, no JavaScript and no third-party service.</sub>
+<sub>⚡ The terminal above is a <b>live animation</b>, not a screenshot — <a href="scripts/make_terminal_portrait.py">make_terminal_portrait.py</a> slices my photo into a 48×48 grid, quantises it to 14 colours and repaints it band by band: <b>1,692 dots</b>, then the readout types itself. Pure SVG with SMIL motion inside GitHub markdown — no JavaScript, no CSS keyframes and no third-party service.</sub>
 
 </div>
 
@@ -56,7 +56,7 @@ The terminal above <i>is</i> the engine's output. The raw artifacts — one phot
 [![Generator](https://img.shields.io/badge/GENERATOR-make_terminal_portrait.py-0A0A0A?style=for-the-badge&labelColor=0A0A0A&logo=python&logoColor=FF4438)](scripts/make_terminal_portrait.py)
 [![Telemetry](https://img.shields.io/badge/TELEMETRY-make_telemetry.py-0A0A0A?style=for-the-badge&labelColor=0A0A0A&logo=gnubash&logoColor=FF4438)](scripts/make_telemetry.py)
 
-<sub><b>pipeline:</b> photo → 14-colour palette quantisation → 48×48 dot grid → luminance cut → 12 staggered bands → <b>1,692 dots</b> → SVG + CSS keyframes · <b>zero manual drawing</b> — every dot, every panel below, is computed by <a href="scripts/make_terminal_portrait.py">make_terminal_portrait.py</a> and <a href="scripts/make_telemetry.py">make_telemetry.py</a>, then refreshed daily by GitHub Actions.</sub>
+<sub><b>pipeline:</b> photo → 14-colour palette quantisation → 48×48 dot grid → luminance cut → 12 staggered bands → <b>1,692 dots</b> → SVG + SMIL timeline · <b>zero manual drawing</b> — every dot, every panel below, is computed by <a href="scripts/make_terminal_portrait.py">make_terminal_portrait.py</a> and <a href="scripts/make_telemetry.py">make_telemetry.py</a>, then refreshed daily by GitHub Actions.</sub>
 
 </div>
 
