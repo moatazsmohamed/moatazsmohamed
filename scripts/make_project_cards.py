@@ -21,7 +21,7 @@ ASSETS = os.path.join(ROOT, "assets", "projects")
 SHOTS = "/home/ubuntu/profile/shots"
 
 W, H = 1000, 563
-ACCENT = "#FF4438"
+ACCENT = "#ffff23"
 INK = "#FFFFFF"
 DIM = "rgba(255,255,255,0.66)"
 SANS = ("'Inter','Helvetica Neue',Helvetica,Arial,sans-serif")
