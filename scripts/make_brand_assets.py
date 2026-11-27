@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Moataz Mohamed (@moatazsmohamed). All rights reserved.
+# Unauthorized copying, redistribution or reuse is prohibited. See LICENSE.
+# Authorship marker: mm-aa947cabaa72f985
 """
 Self-hosted brand assets for the profile README — no third-party image services,
 so nothing can 404, rate-limit or freeze. Every asset ships in a dark and a

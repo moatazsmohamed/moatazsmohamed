@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Moataz Mohamed (@moatazsmohamed). All rights reserved.
+# Unauthorized copying, redistribution or reuse is prohibited. See LICENSE.
+# Authorship marker: mm-aa947cabaa72f985
 """
 Builds the self-hosted "Live Telemetry" panels for the profile README, in a dark
 and a light variant each:

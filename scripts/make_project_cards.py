@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Moataz Mohamed (@moatazsmohamed). All rights reserved.
+# Unauthorized copying, redistribution or reuse is prohibited. See LICENSE.
+# Authorship marker: mm-aa947cabaa72f985
 """Project cards — one self-contained SVG per project.
 
 Each card embeds its screenshot as a base64 JPEG, so the file survives GitHub's
