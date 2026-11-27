@@ -22,14 +22,14 @@ MONO = "'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,
 THEMES = {
     "dark": {
         "bg1": "#0A0A0A", "bg2": "#131313", "bg3": "#0A0A0A",
-        "ink1": "#FAFAF9", "ink2": "#FF4438", "ink3": "#FAFAF9",
-        "cyan": "#FF4438", "violet": "#FF4438", "magenta": "#FF8A80",
+        "ink1": "#FAFAF9", "ink2": "#ffff23", "ink3": "#FAFAF9",
+        "cyan": "#ffff23", "violet": "#ffff23", "magenta": "#ffff8a",
         "dim": "#8A8A85", "dots": "#FAFAF9", "dot_op": "0.05", "glow_op": "0.5",
     },
     "light": {
         "bg1": "#FFFFFF", "bg2": "#FAF9F6", "bg3": "#FFFFFF",
-        "ink1": "#0A0A0A", "ink2": "#D92B1E", "ink3": "#0A0A0A",
-        "cyan": "#D92B1E", "violet": "#B91C1C", "magenta": "#8C1F14",
+        "ink1": "#0A0A0A", "ink2": "#a89f00", "ink3": "#0A0A0A",
+        "cyan": "#a89f00", "violet": "#989200", "magenta": "#6f6a00",
         "dim": "#6B6B66", "dots": "#0A0A0A", "dot_op": "0.05", "glow_op": "0.10",
     },
 }
@@ -179,11 +179,11 @@ def divider():
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
             f'viewBox="0 0 {W} {H}" role="img" aria-label="section divider">'
             f'<defs><linearGradient id="d" x1="0" y1="0" x2="1" y2="0">'
-            f'<stop offset="0" stop-color="#FF4438" stop-opacity="0"/>'
-            f'<stop offset="0.18" stop-color="#FF4438" stop-opacity="0.75"/>'
-            f'<stop offset="0.5" stop-color="#FF4438" stop-opacity="0.9"/>'
-            f'<stop offset="0.82" stop-color="#FF4438" stop-opacity="0.75"/>'
-            f'<stop offset="1" stop-color="#FF4438" stop-opacity="0"/>'
+            f'<stop offset="0" stop-color="#ffff23" stop-opacity="0"/>'
+            f'<stop offset="0.18" stop-color="#ffff23" stop-opacity="0.75"/>'
+            f'<stop offset="0.5" stop-color="#ffff23" stop-opacity="0.9"/>'
+            f'<stop offset="0.82" stop-color="#ffff23" stop-opacity="0.75"/>'
+            f'<stop offset="1" stop-color="#ffff23" stop-opacity="0"/>'
             f'</linearGradient></defs>'
             f'<rect width="{W}" height="{H}" fill="url(#d)"/></svg>')
 

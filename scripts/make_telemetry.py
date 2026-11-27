@@ -33,14 +33,14 @@ THEMES = {
     "dark": {
         "panel": "#0A0A0A", "stroke": "#242424", "grid": "#1A1A1A",
         "text": "#D8D8D3", "title": "#FAFAF9", "dim": "#8A8A85",
-        "cyan": "#FF4438", "violet": "#FF8A80", "magenta": "#B33A2E", "green": "#FF4438",
-        "levels": ["#141414", "#3D1512", "#7A231C", "#C33027", "#FF4438"],
+        "cyan": "#ffff23", "violet": "#ffff8a", "magenta": "#ada614", "green": "#ffff23",
+        "levels": ["#141414", "#33300a", "#6f6a0c", "#c4bc16", "#ffff23"],
     },
     "light": {
         "panel": "#FAF9F6", "stroke": "#E2E0DA", "grid": "#EDEBE5",
         "text": "#2B2B28", "title": "#0A0A0A", "dim": "#6B6B66",
-        "cyan": "#D92B1E", "violet": "#B91C1C", "magenta": "#8C1F14", "green": "#D92B1E",
-        "levels": ["#EDEBE5", "#F3C9C4", "#E8998F", "#D9534A", "#D92B1E"],
+        "cyan": "#a89f00", "violet": "#989200", "magenta": "#6f6a00", "green": "#a89f00",
+        "levels": ["#EDEBE5", "#f1eda6", "#e3df58", "#c9c400", "#a89f00"],
     },
 }
 
@@ -48,8 +48,8 @@ THEMES = {
 
 # language spectrum: a red ramp plus neutral tones, so the chart stays inside
 # the brand instead of turning into a rainbow
-PALETTE_DARK = ["#FF4438", "#FF8A80", "#B33A2E", "#6E6E68", "#4A4A46", "#31312E"]
-PALETTE_LIGHT = ["#D92B1E", "#EF7C71", "#8C1F14", "#6B6B66", "#A8A8A0", "#2B2B28"]
+PALETTE_DARK = ["#ffff23", "#ffff8a", "#ada614", "#6E6E68", "#4A4A46", "#31312E"]
+PALETTE_LIGHT = ["#a89f00", "#d9d500", "#6f6a00", "#6B6B66", "#A8A8A0", "#2B2B28"]
 
 
 # ------------------------------------------------------------------ fetch ---
