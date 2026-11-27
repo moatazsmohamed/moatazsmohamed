@@ -177,3 +177,7 @@ can flash its finished state before its turn.
 assets with the repository's `GITHUB_TOKEN`, and commits them if anything
 changed. If the account has a billing hold, the workflow will not start — run
 `scripts/refresh.sh` locally and push in that case.
+
+## Troubleshooting
+
+If the daily telemetry panels stop updating, open the Actions tab and check the "Refresh profile telemetry" run. A failed run with no steps usually means the account has a billing or Actions restriction, not a code problem. Re-run the workflow with "Run workflow" once it is fixed.
